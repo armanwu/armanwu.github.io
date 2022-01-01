@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Just another architect..</title>
-    <link>https://armanwu.github.io/about/categories/</link>
+    <link>https://armanwu.github.io/categories/</link>
     <description>Recent content in Categories on Just another architect..</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 11 Aug 2020 22:16:12 +0700</lastBuildDate><atom:link href="https://armanwu.github.io/about/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Aug 2020 22:16:12 +0700</lastBuildDate><atom:link href="https://armanwu.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Celoteh</title>
-      <link>https://armanwu.github.io/about/categories/celoteh/</link>
+      <link>https://armanwu.github.io/categories/celoteh/</link>
       <pubDate>Tue, 11 Aug 2020 22:16:12 +0700</pubDate>
       
-      <guid>https://armanwu.github.io/about/categories/celoteh/</guid>
+      <guid>https://armanwu.github.io/categories/celoteh/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Puisi</title>
-      <link>https://armanwu.github.io/about/categories/puisi/</link>
+      <link>https://armanwu.github.io/categories/puisi/</link>
       <pubDate>Tue, 09 Apr 2019 20:01:15 +0700</pubDate>
       
-      <guid>https://armanwu.github.io/about/categories/puisi/</guid>
+      <guid>https://armanwu.github.io/categories/puisi/</guid>
       <description></description>
     </item>
     

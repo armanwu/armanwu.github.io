@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 11 Aug 2020 22:16:12 +0700</lastBuildDate><atom:link href="https://armanwu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Jan 2022 21:44:46 +0700</lastBuildDate><atom:link href="https://armanwu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Computational Thinking in Architectural Design Process</title>
+      <link>https://armanwu.github.io/architecture/computational_think/</link>
+      <pubDate>Thu, 06 Jan 2022 21:44:46 +0700</pubDate>
+      
+      <guid>https://armanwu.github.io/architecture/computational_think/</guid>
+      <description>The use of computers in the world of architectural design was initially only used to digitize what is usually done manually. Modeling or drawing using computers still uses additive logic, which is adding information overlapping without any associative relations whose consistency is very dependent on the designer. This additive logic lasts a long time because it is considered stable in the exploration and refinement of variations through traditional image media. This logic has limitations, there is no connection between the elements depicted and cannot include the physically relevant aspects that drive the generation of forms in the real world.</description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>https://armanwu.github.io/about/</link>

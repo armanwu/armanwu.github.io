@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer on Arman Wu&#39;s Blog</title>
+    <link>https://armanwu.github.io/categories/computer/</link>
+    <description>Recent content in Computer on Arman Wu&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 02 Jul 2023 20:04:46 +0700</lastBuildDate><atom:link href="https://armanwu.github.io/categories/computer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Church and Virtual Reality: Exploring the Intersection</title>
+      <link>https://armanwu.github.io/computer/church_and_vr/</link>
+      <pubDate>Sun, 02 Jul 2023 20:04:46 +0700</pubDate>
+      
+      <guid>https://armanwu.github.io/computer/church_and_vr/</guid>
+      <description>Have you ever felt that our lives are constantly moving at a rapid pace? Every day, we&amp;rsquo;re confronted with technological advancements that change the way we interact, learn, and even worship. Just think about it – in just a few short years, we have witnessed developments like smartphones that unite the world at our fingertips and streaming technology that brings entertainment directly to our screens. But what does all of this mean for our religious lives?</description>
+    </item>
+    
+  </channel>
+</rss>

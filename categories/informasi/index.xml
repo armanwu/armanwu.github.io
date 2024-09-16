@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Informasi on Arman Wu&#39;s Blog</title>
-    <link>http://localhost:1313/categories/informasi/</link>
+    <link>https://armanwu.github.io/categories/informasi/</link>
     <description>Recent content in Informasi on Arman Wu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 09 Jul 2023 21:02:57 +0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/informasi/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://armanwu.github.io/categories/informasi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gereja dan Teknologi Digital: Membangun Jembatan antara Tradisi dan Inovasi</title>
-      <link>http://localhost:1313/blog-id/informasi/teknologi_gereja/</link>
+      <link>https://armanwu.github.io/posts/2023/07/gereja-dan-teknologi-digital-membangun-jembatan-antara-tradisi-dan-inovasi/</link>
       <pubDate>Sun, 09 Jul 2023 21:02:57 +0700</pubDate>
-      <guid>http://localhost:1313/blog-id/informasi/teknologi_gereja/</guid>
+      <guid>https://armanwu.github.io/posts/2023/07/gereja-dan-teknologi-digital-membangun-jembatan-antara-tradisi-dan-inovasi/</guid>
       <description>Dalam era digital yang semakin maju, gereja perlu menyikapi perkembangan teknologi dengan bijaksana. Mari kita menjelajahi pandangan baru tentang peran gereja dalam dunia digital dan bagaimana gereja dapat menjadi sarana komunitas yang adaptif dalam menghadapi perubahan budaya dan teknologi. Gereja memiliki kesempatan untuk memanfaatkan teknologi digital dengan cara yang memperkuat tradisi gereja yang berharga sambil tetap berinovasi. Mari melihat beberapa aspek penting tentang bagaimana gereja dapat menggabungkan tradisi dan inovasi dalam era digital yang maju.</description>
     </item>
     <item>
       <title>Mengenal Game Age Rating: Melindungi Anak dari Konten yang Tidak Sesuai</title>
-      <link>http://localhost:1313/blog-id/informasi/usia_di_permainan/</link>
+      <link>https://armanwu.github.io/posts/2023/07/mengenal-game-age-rating-melindungi-anak-dari-konten-yang-tidak-sesuai/</link>
       <pubDate>Thu, 06 Jul 2023 19:28:58 +0700</pubDate>
-      <guid>http://localhost:1313/blog-id/informasi/usia_di_permainan/</guid>
+      <guid>https://armanwu.github.io/posts/2023/07/mengenal-game-age-rating-melindungi-anak-dari-konten-yang-tidak-sesuai/</guid>
       <description>Banyak orang tua merasa khawatir tentang jenis game yang dimainkan oleh anak-anak mereka. Mereka merasa bahwa beberapa game mungkin tidak cocok untuk usia anak-anak mereka. Namun, seringkali mereka tidak menyadari bahwa setiap game sebenarnya telah dilengkapi dengan age rating yang ditentukan oleh developer dan publisher-nya. Age rating ini dirancang untuk memberikan panduan kepada orang tua tentang apakah sebuah game sesuai atau tidak untuk anak-anak mereka.&#xA;Setiap developer dan publisher game memiliki target market yang dituju, dan mereka sangat memperhatikan hal ini ketika menentukan age rating untuk game mereka.</description>
     </item>
   </channel>

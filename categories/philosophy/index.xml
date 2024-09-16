@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Philosophy on Arman Wu&#39;s Blog</title>
-    <link>https://armanwu.github.io/categories/philosophy/</link>
+    <link>http://localhost:1313/categories/philosophy/</link>
     <description>Recent content in Philosophy on Arman Wu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Fri, 14 Jul 2023 21:54:46 +0700</lastBuildDate>
-    <atom:link href="https://armanwu.github.io/categories/philosophy/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/philosophy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Architecture, Computer, and Philosophy</title>
-      <link>https://armanwu.github.io/architecture/arch_comp_phil/</link>
+      <link>http://localhost:1313/architecture/arch_comp_phil/</link>
       <pubDate>Fri, 14 Jul 2023 21:54:46 +0700</pubDate>
-      <guid>https://armanwu.github.io/architecture/arch_comp_phil/</guid>
+      <guid>http://localhost:1313/architecture/arch_comp_phil/</guid>
       <description>In the ever-evolving world of architecture, the integration of philosophy and computer technology has emerged as a vital component in shaping the future of design. Architects are no longer solely focused on aesthetics and functionality; they are now exploring the profound intersections between architecture, philosophy, and computer science. This article delves into the significance of merging these three fields, highlighting how their interplay contributes to the creation of innovative and socially responsible architectural solutions.</description>
     </item>
     <item>
       <title>Striking a Balance: The Pitfalls of Excessive Social Media Usage in Churches</title>
-      <link>https://armanwu.github.io/philosophy/church_and_socmed/</link>
+      <link>http://localhost:1313/philosophy/church_and_socmed/</link>
       <pubDate>Tue, 04 Jul 2023 20:04:46 +0700</pubDate>
-      <guid>https://armanwu.github.io/philosophy/church_and_socmed/</guid>
+      <guid>http://localhost:1313/philosophy/church_and_socmed/</guid>
       <description>In the ever-evolving digital era, social media has transformed the way we communicate, interact, and acquire information. Platforms like Facebook, Instagram, Twitter, and YouTube have become powerful tools for spreading messages and connecting with people worldwide. It&amp;rsquo;s not surprising that religious organizations, including churches, have embraced social media to disseminate their religious messages to a broader audience.&#xA;Benefits of Social Media Usage Utilizing social media can provide significant benefits for churches.</description>
     </item>
     <item>
       <title>Church and Virtual Reality: Exploring the Intersection</title>
-      <link>https://armanwu.github.io/philosophy/church_and_vr/</link>
+      <link>http://localhost:1313/philosophy/church_and_vr/</link>
       <pubDate>Sun, 02 Jul 2023 20:04:46 +0700</pubDate>
-      <guid>https://armanwu.github.io/philosophy/church_and_vr/</guid>
+      <guid>http://localhost:1313/philosophy/church_and_vr/</guid>
       <description>Have you ever felt that our lives are constantly moving at a rapid pace? Every day, we&amp;rsquo;re confronted with technological advancements that change the way we interact, learn, and even worship. Just think about it – in just a few short years, we have witnessed developments like smartphones that unite the world at our fingertips and streaming technology that brings entertainment directly to our screens.&#xA;But what does all of this mean for our religious lives?</description>
     </item>
   </channel>

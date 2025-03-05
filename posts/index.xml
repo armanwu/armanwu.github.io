@@ -1,20 +1,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Arman Wu&#39;s Blog</title>
-        <link>https://armanwu.github.io/posts/</link>
+        <link>http://localhost:1313/posts/</link>
         <description>Recent content in Posts on Arman Wu&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Sun, 22 Sep 2024 16:01:46 +0700</lastBuildDate>
-        <atom:link href="https://armanwu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Wed, 05 Mar 2025 18:44:46 +0700</lastBuildDate>
+        <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Melindungi Identitas di Era Tanpa Batas</title>
+            <link>http://localhost:1313/posts/2025/03/melindungi-identitas-di-era-tanpa-batas/</link>
+            <pubDate>Wed, 05 Mar 2025 18:44:46 +0700</pubDate>
+            
+            <guid>http://localhost:1313/posts/2025/03/melindungi-identitas-di-era-tanpa-batas/</guid>
+            <description>Saat ini, kasus pembajakan akun media sosial semakin marak terjadi. Banyak orang yang tiba-tiba kehilangan akses ke akun mereka, atau bahkan akun mereka digunakan untuk tindakan yang merugikan. Untuk melindungi diri, penting bagi kita untuk memahami bagaimana cara orang jahat mengambil alih akun-akun ini dan bagaimana kita bisa mencegahnya.
+Tahap 1: Pengumpulan Informasi (Reconnaissance) Pada tahap ini, hacker mengumpulkan informasi sebanyak mungkin tentang target, seperti:
+Alamat email dan nomor telepon. Informasi pribadi dari media sosial (tanggal lahir, nama anggota keluarga, tempat tinggal, dll.</description>
+            <content type="html"><![CDATA[<p>Saat ini, kasus pembajakan akun media sosial semakin marak terjadi. Banyak orang yang tiba-tiba kehilangan akses ke akun mereka, atau bahkan akun mereka digunakan untuk tindakan yang merugikan. Untuk melindungi diri, penting bagi kita untuk memahami bagaimana cara orang jahat mengambil alih akun-akun ini dan bagaimana kita bisa mencegahnya.</p>
+<h2 id="tahap-1-pengumpulan-informasi-reconnaissance">Tahap 1: Pengumpulan Informasi (Reconnaissance)</h2>
+<p>Pada tahap ini, hacker mengumpulkan informasi sebanyak mungkin tentang target, seperti:</p>
+<ul>
+<li>Alamat email dan nomor telepon.</li>
+<li>Informasi pribadi dari media sosial (tanggal lahir, nama anggota keluarga, tempat tinggal, dll.).</li>
+<li>Kebiasaan online dan pola penggunaan perangkat.</li>
+</ul>
+<h2 id="tahap-2-pemilihan-metode-serangan">Tahap 2: Pemilihan Metode Serangan</h2>
+<p>Hacker kemudian memilih teknik serangan yang sesuai, misalnya:</p>
+<h3 id="phishing">Phishing</h3>
+<p>Membuat halaman login palsu yang mirip dengan situs asli untuk mencuri kredensial (username dan password).</p>
+<h3 id="social-engineering">Social Engineering</h3>
+<p>Mengelabui target untuk memberikan informasi sensitif secara sukarela, misalnya melalui telepon atau pesan teks.</p>
+<h3 id="brute-force-attack">Brute Force Attack</h3>
+<p>Mencoba semua kombinasi password secara otomatis hingga menemukan yang benar (biasanya jika password lemah).</p>
+<h3 id="man-in-the-middle-mitm">Man-in-the-Middle (MitM)</h3>
+<p>Mencegat komunikasi antara pengguna dan aplikasi, misalnya pada jaringan WiFi publik.</p>
+<h2 id="tahap-3-eksekusi-serangan">Tahap 3: Eksekusi Serangan</h2>
+<p>Berdasarkan metode yang dipilih, hacker menjalankan aksinya:</p>
+<ul>
+<li>Phishing: Mengirim link palsu melalui email atau pesan, lalu korban diarahkan ke halaman palsu dan memasukkan kredensialnya.</li>
+<li>Social Engineering: Mengaku sebagai pihak resmi (misal customer service) dan meminta kode OTP atau data sensitif.</li>
+<li>Menyebar Malware: Melalui lampiran email atau aplikasi palsu, malware ini bisa mencuri data login dari perangkat korban.</li>
+</ul>
+<h2 id="tahap-4-mengambil-alih-akun">Tahap 4: Mengambil Alih Akun</h2>
+<p>Setelah mendapatkan kredensial atau akses ke perangkat:</p>
+<ul>
+<li>Login ke akun media sosial atau WhatsApp korban.</li>
+<li>Mengubah password dan pengaturan keamanan agar pemilik asli tidak bisa mengakses kembali.</li>
+<li>Menonaktifkan otentikasi dua faktor (jika ada) atau mengubah nomor telepon/email pemulihan.</li>
+</ul>
+<h2 id="tahap-5-eksploitasi-akun">Tahap 5: Eksploitasi Akun</h2>
+<p>Setelah akun berhasil diambil alih, hacker bisa:</p>
+<ul>
+<li>Mengirim pesan ke kontak korban untuk melakukan penipuan.</li>
+<li>Mengakses data pribadi atau foto/video di dalam akun.</li>
+<li>Menggunakan akun tersebut untuk menyebarkan malware atau kampanye jahat lainnya.</li>
+</ul>
+<h2 id="tahap-6-menyembunyikan-jejak">Tahap 6: Menyembunyikan Jejak</h2>
+<p>Untuk menghindari deteksi, hacker bisa:</p>
+<ul>
+<li>Menghapus notifikasi atau log aktivitas di akun.</li>
+<li>Menggunakan jaringan VPN atau perangkat lunak anonim agar tidak mudah dilacak.</li>
+</ul>
+<h2 id="cara-melindungi-diri">Cara Melindungi Diri</h2>
+<ul>
+<li>Aktifkan Otentikasi Dua Faktor (2FA) di semua akun penting.</li>
+<li>Waspada terhadap Phishing: Jangan klik link mencurigakan atau berikan kode OTP kepada siapapun.</li>
+<li>Gunakan Password yang Kuat dan berbeda untuk setiap akun.</li>
+<li>Rutin Cek Aktivitas Masuk Akun untuk melihat perangkat yang terhubung.</li>
+<li>Hindari Menggunakan WiFi Publik Tanpa VPN, terutama untuk login ke akun penting.</li>
+</ul>
+<h2 id="kesimpulan">Kesimpulan</h2>
+<p>Memahami cara kerja hacker dalam mengambil alih akun media sosial bisa membantu kita lebih waspada dan mengambil langkah-langkah pencegahan yang tepat. Jangan lupa untuk selalu memperbarui pengaturan keamanan akun dan edukasi diri mengenai keamanan digital!</p>
+]]></content>
+        </item>
         
         <item>
             <title>Intuition and Algorithm in Harmony: Architects in the Age of Artificial Intelligence</title>
-            <link>https://armanwu.github.io/posts/2024/09/intuition-and-algorithm-in-harmony-architects-in-the-age-of-artificial-intelligence/</link>
+            <link>http://localhost:1313/posts/2024/09/intuition-and-algorithm-in-harmony-architects-in-the-age-of-artificial-intelligence/</link>
             <pubDate>Sun, 22 Sep 2024 16:01:46 +0700</pubDate>
             
-            <guid>https://armanwu.github.io/posts/2024/09/intuition-and-algorithm-in-harmony-architects-in-the-age-of-artificial-intelligence/</guid>
+            <guid>http://localhost:1313/posts/2024/09/intuition-and-algorithm-in-harmony-architects-in-the-age-of-artificial-intelligence/</guid>
             <description>As artificial intelligence (AI) continues to influence various industries, including architecture, it raises important questions: How can the intuitive intelligence built over years of experience be combined with algorithmic logic? Both have powerful roles, and when united, they can create a new harmony in the world of architecture. However, to achieve this balance, architects need to understand how to work with AI while maintaining the essence of their intuition.</description>
             <content type="html"><![CDATA[<p><img src="/architecture/images/very_simple_expressive_fragmented_and_distorted_geometr.jpg" alt="Sketch"></p>
 <p>As artificial intelligence (AI) continues to influence various industries, including architecture, it raises important questions: How can the intuitive intelligence built over years of experience be combined with algorithmic logic? Both have powerful roles, and when united, they can create a new harmony in the world of architecture. However, to achieve this balance, architects need to understand how to work with AI while maintaining the essence of their intuition.</p>
@@ -70,10 +137,10 @@
         
         <item>
             <title>The Importance of Critiquing BIM in the Architecture World: Fostering Open-Mindedness for Advancement</title>
-            <link>https://armanwu.github.io/posts/2023/07/the-importance-of-critiquing-bim-in-the-architecture-world-fostering-open-mindedness-for-advancement/</link>
+            <link>http://localhost:1313/posts/2023/07/the-importance-of-critiquing-bim-in-the-architecture-world-fostering-open-mindedness-for-advancement/</link>
             <pubDate>Mon, 17 Jul 2023 21:01:46 +0700</pubDate>
             
-            <guid>https://armanwu.github.io/posts/2023/07/the-importance-of-critiquing-bim-in-the-architecture-world-fostering-open-mindedness-for-advancement/</guid>
+            <guid>http://localhost:1313/posts/2023/07/the-importance-of-critiquing-bim-in-the-architecture-world-fostering-open-mindedness-for-advancement/</guid>
             <description>As an architect and BIM practitioner, I fully recognize the tremendous potential of Building Information Modeling (BIM) in improving the efficiency and quality of architectural projects. However, in order to ensure ongoing progress, it&amp;rsquo;s crucial for BIM practitioners not to turn a blind eye to any weaknesses that may still exist in this technology. In this article, I will explain why criticism of BIM is important and how having an open-minded approach to criticism can drive advancements in this technology within the architecture industry.</description>
             <content type="html"><![CDATA[<p><img src="/architecture/images/review-g0968a8216_1920.jpg" alt="Review"></p>
 <p>As an architect and BIM practitioner, I fully recognize the tremendous potential of Building Information Modeling (BIM) in improving the efficiency and quality of architectural projects. However, in order to ensure ongoing progress, it&rsquo;s crucial for BIM practitioners not to turn a blind eye to any weaknesses that may still exist in this technology. In this article, I will explain why criticism of BIM is important and how having an open-minded approach to criticism can drive advancements in this technology within the architecture industry.</p>
@@ -99,10 +166,10 @@
         
         <item>
             <title>Architecture, Computer, and Philosophy</title>
-            <link>https://armanwu.github.io/posts/2023/07/architecture-computer-and-philosophy/</link>
+            <link>http://localhost:1313/posts/2023/07/architecture-computer-and-philosophy/</link>
             <pubDate>Fri, 14 Jul 2023 21:54:46 +0700</pubDate>
             
-            <guid>https://armanwu.github.io/posts/2023/07/architecture-computer-and-philosophy/</guid>
+            <guid>http://localhost:1313/posts/2023/07/architecture-computer-and-philosophy/</guid>
             <description>In the ever-evolving world of architecture, the integration of philosophy and computer technology has emerged as a vital component in shaping the future of design. Architects are no longer solely focused on aesthetics and functionality; they are now exploring the profound intersections between architecture, philosophy, and computer science. This article delves into the significance of merging these three fields, highlighting how their interplay contributes to the creation of innovative and socially responsible architectural solutions.</description>
             <content type="html"><![CDATA[<p><img src="/architecture/images/steve-driscoll-VsBl5PwVZpY-unsplash.jpg" alt="Architecture"></p>
 <p>In the ever-evolving world of architecture, the integration of philosophy and computer technology has emerged as a vital component in shaping the future of design. Architects are no longer solely focused on aesthetics and functionality; they are now exploring the profound intersections between architecture, philosophy, and computer science. This article delves into the significance of merging these three fields, highlighting how their interplay contributes to the creation of innovative and socially responsible architectural solutions.</p>
@@ -144,10 +211,10 @@
         
         <item>
             <title>Gereja dan Teknologi Digital: Membangun Jembatan antara Tradisi dan Inovasi</title>
-            <link>https://armanwu.github.io/posts/2023/07/gereja-dan-teknologi-digital-membangun-jembatan-antara-tradisi-dan-inovasi/</link>
+            <link>http://localhost:1313/posts/2023/07/gereja-dan-teknologi-digital-membangun-jembatan-antara-tradisi-dan-inovasi/</link>
             <pubDate>Sun, 09 Jul 2023 21:02:57 +0700</pubDate>
             
-            <guid>https://armanwu.github.io/posts/2023/07/gereja-dan-teknologi-digital-membangun-jembatan-antara-tradisi-dan-inovasi/</guid>
+            <guid>http://localhost:1313/posts/2023/07/gereja-dan-teknologi-digital-membangun-jembatan-antara-tradisi-dan-inovasi/</guid>
             <description>Dalam era digital yang semakin maju, gereja perlu menyikapi perkembangan teknologi dengan bijaksana. Mari kita menjelajahi pandangan baru tentang peran gereja dalam dunia digital dan bagaimana gereja dapat menjadi sarana komunitas yang adaptif dalam menghadapi perubahan budaya dan teknologi. Gereja memiliki kesempatan untuk memanfaatkan teknologi digital dengan cara yang memperkuat tradisi gereja yang berharga sambil tetap berinovasi. Mari melihat beberapa aspek penting tentang bagaimana gereja dapat menggabungkan tradisi dan inovasi dalam era digital yang maju.</description>
             <content type="html"><![CDATA[<p><img src="/blog-id/informasi/image/samantha-borges-EeS69TTPQ18-unsplash.jpg" alt="Ibadah Daring"></p>
 <p>Dalam era digital yang semakin maju, gereja perlu menyikapi perkembangan teknologi dengan bijaksana. Mari kita menjelajahi pandangan baru tentang peran gereja dalam dunia digital dan bagaimana gereja dapat menjadi sarana komunitas yang adaptif dalam menghadapi perubahan budaya dan teknologi. Gereja memiliki kesempatan untuk memanfaatkan teknologi digital dengan cara yang memperkuat tradisi gereja yang berharga sambil tetap berinovasi. Mari melihat beberapa aspek penting tentang bagaimana gereja dapat menggabungkan tradisi dan inovasi dalam era digital yang maju.</p>
@@ -168,10 +235,10 @@
         
         <item>
             <title>Mengenal Game Age Rating: Melindungi Anak dari Konten yang Tidak Sesuai</title>
-            <link>https://armanwu.github.io/posts/2023/07/mengenal-game-age-rating-melindungi-anak-dari-konten-yang-tidak-sesuai/</link>
+            <link>http://localhost:1313/posts/2023/07/mengenal-game-age-rating-melindungi-anak-dari-konten-yang-tidak-sesuai/</link>
             <pubDate>Thu, 06 Jul 2023 19:28:58 +0700</pubDate>
             
-            <guid>https://armanwu.github.io/posts/2023/07/mengenal-game-age-rating-melindungi-anak-dari-konten-yang-tidak-sesuai/</guid>
+            <guid>http://localhost:1313/posts/2023/07/mengenal-game-age-rating-melindungi-anak-dari-konten-yang-tidak-sesuai/</guid>
             <description>Banyak orang tua merasa khawatir tentang jenis game yang dimainkan oleh anak-anak mereka. Mereka merasa bahwa beberapa game mungkin tidak cocok untuk usia anak-anak mereka. Namun, seringkali mereka tidak menyadari bahwa setiap game sebenarnya telah dilengkapi dengan age rating yang ditentukan oleh developer dan publisher-nya. Age rating ini dirancang untuk memberikan panduan kepada orang tua tentang apakah sebuah game sesuai atau tidak untuk anak-anak mereka.
 Setiap developer dan publisher game memiliki target market yang dituju, dan mereka sangat memperhatikan hal ini ketika menentukan age rating untuk game mereka.</description>
             <content type="html"><![CDATA[<p>Banyak orang tua merasa khawatir tentang jenis <em>game</em> yang dimainkan oleh anak-anak mereka. Mereka merasa bahwa beberapa <em>game</em> mungkin tidak cocok untuk usia anak-anak mereka. Namun, seringkali mereka tidak menyadari bahwa setiap <em>game</em> sebenarnya telah dilengkapi dengan <em>age rating</em> yang ditentukan oleh <em>developer</em> dan <em>publisher</em>-nya. <em>Age rating</em> ini dirancang untuk memberikan panduan kepada orang tua tentang apakah sebuah <em>game</em> sesuai atau tidak untuk anak-anak mereka.</p>
@@ -195,10 +262,10 @@ Setiap developer dan publisher game memiliki target market yang dituju, dan mere
         
         <item>
             <title>Striking a Balance: The Pitfalls of Excessive Social Media Usage in Churches</title>
-            <link>https://armanwu.github.io/posts/2023/07/striking-a-balance-the-pitfalls-of-excessive-social-media-usage-in-churches/</link>
+            <link>http://localhost:1313/posts/2023/07/striking-a-balance-the-pitfalls-of-excessive-social-media-usage-in-churches/</link>
             <pubDate>Tue, 04 Jul 2023 20:04:46 +0700</pubDate>
             
-            <guid>https://armanwu.github.io/posts/2023/07/striking-a-balance-the-pitfalls-of-excessive-social-media-usage-in-churches/</guid>
+            <guid>http://localhost:1313/posts/2023/07/striking-a-balance-the-pitfalls-of-excessive-social-media-usage-in-churches/</guid>
             <description>In the ever-evolving digital era, social media has transformed the way we communicate, interact, and acquire information. Platforms like Facebook, Instagram, Twitter, and YouTube have become powerful tools for spreading messages and connecting with people worldwide. It&amp;rsquo;s not surprising that religious organizations, including churches, have embraced social media to disseminate their religious messages to a broader audience.
 Benefits of Social Media Usage Utilizing social media can provide significant benefits for churches.</description>
             <content type="html"><![CDATA[<p>In the ever-evolving digital era, social media has transformed the way we communicate, interact, and acquire information. Platforms like Facebook, Instagram, Twitter, and YouTube have become powerful tools for spreading messages and connecting with people worldwide. It&rsquo;s not surprising that religious organizations, including churches, have embraced social media to disseminate their religious messages to a broader audience.</p>
@@ -221,10 +288,10 @@ Benefits of Social Media Usage Utilizing social media can provide significant be
         
         <item>
             <title>Church and Virtual Reality: Exploring the Intersection</title>
-            <link>https://armanwu.github.io/posts/2023/07/church-and-virtual-reality-exploring-the-intersection/</link>
+            <link>http://localhost:1313/posts/2023/07/church-and-virtual-reality-exploring-the-intersection/</link>
             <pubDate>Sun, 02 Jul 2023 20:04:46 +0700</pubDate>
             
-            <guid>https://armanwu.github.io/posts/2023/07/church-and-virtual-reality-exploring-the-intersection/</guid>
+            <guid>http://localhost:1313/posts/2023/07/church-and-virtual-reality-exploring-the-intersection/</guid>
             <description>Have you ever felt that our lives are constantly moving at a rapid pace? Every day, we&amp;rsquo;re confronted with technological advancements that change the way we interact, learn, and even worship. Just think about it – in just a few short years, we have witnessed developments like smartphones that unite the world at our fingertips and streaming technology that brings entertainment directly to our screens.
 But what does all of this mean for our religious lives?</description>
             <content type="html"><![CDATA[<p>Have you ever felt that our lives are constantly moving at a rapid pace? Every day, we&rsquo;re confronted with technological advancements that change the way we interact, learn, and even worship. Just think about it – in just a few short years, we have witnessed developments like smartphones that unite the world at our fingertips and streaming technology that brings entertainment directly to our screens.</p>
@@ -253,10 +320,10 @@ But what does all of this mean for our religious lives?</description>
         
         <item>
             <title>Exploring the Techniques of Generative Design</title>
-            <link>https://armanwu.github.io/posts/2023/06/exploring-the-techniques-of-generative-design/</link>
+            <link>http://localhost:1313/posts/2023/06/exploring-the-techniques-of-generative-design/</link>
             <pubDate>Fri, 23 Jun 2023 22:01:46 +0700</pubDate>
             
-            <guid>https://armanwu.github.io/posts/2023/06/exploring-the-techniques-of-generative-design/</guid>
+            <guid>http://localhost:1313/posts/2023/06/exploring-the-techniques-of-generative-design/</guid>
             <description>Generative design, as a powerful approach in architecture, encompasses a range of techniques that push the boundaries of creativity and innovation. By leveraging computational algorithms, generative design unlocks new possibilities and opens up uncharted territories in the realm of architectural exploration. Among the many techniques used in generative design, several prominent ones stand out, including cellular automata, genetic algorithms, shape grammar, and more.
 Cellular automata, first introduced by mathematician John von Neumann and popularized by scientist Stephen Wolfram, provide a fascinating tool for generative design.</description>
             <content type="html"><![CDATA[<p>Generative design, as a powerful approach in architecture, encompasses a range of techniques that push the boundaries of creativity and innovation. By leveraging computational algorithms, generative design unlocks new possibilities and opens up uncharted territories in the realm of architectural exploration. Among the many techniques used in generative design, several prominent ones stand out, including cellular automata, genetic algorithms, shape grammar, and more.</p>
@@ -270,10 +337,10 @@ Cellular automata, first introduced by mathematician John von Neumann and popula
         
         <item>
             <title>Discovering Harmony in Architecture with Generative Design</title>
-            <link>https://armanwu.github.io/posts/2023/06/discovering-harmony-in-architecture-with-generative-design/</link>
+            <link>http://localhost:1313/posts/2023/06/discovering-harmony-in-architecture-with-generative-design/</link>
             <pubDate>Thu, 22 Jun 2023 20:44:46 +0700</pubDate>
             
-            <guid>https://armanwu.github.io/posts/2023/06/discovering-harmony-in-architecture-with-generative-design/</guid>
+            <guid>http://localhost:1313/posts/2023/06/discovering-harmony-in-architecture-with-generative-design/</guid>
             <description>In the complex world of architecture, generative design has emerged, opening doors to thousands of possibilities for harmonious and aesthetic designs. The collaboration between humans and computers gives rise to surprising solutions, unearthing new ideas with unlimited freedom.
 Generative design involves the consideration of complex factors, including spatial layout, lighting, and energy efficiency. In this remarkable process, algorithms can be programmed to optimize designs based on specific criteria, creating unexpected harmony in the combination of variables.</description>
             <content type="html"><![CDATA[<p>In the complex world of architecture, generative design has emerged, opening doors to thousands of possibilities for harmonious and aesthetic designs. The collaboration between humans and computers gives rise to surprising solutions, unearthing new ideas with unlimited freedom.</p>
@@ -285,10 +352,10 @@ Generative design involves the consideration of complex factors, including spati
         
         <item>
             <title>Computational Thinking in Architectural Design Process</title>
-            <link>https://armanwu.github.io/posts/2022/01/computational-thinking-in-architectural-design-process/</link>
+            <link>http://localhost:1313/posts/2022/01/computational-thinking-in-architectural-design-process/</link>
             <pubDate>Thu, 06 Jan 2022 21:44:46 +0700</pubDate>
             
-            <guid>https://armanwu.github.io/posts/2022/01/computational-thinking-in-architectural-design-process/</guid>
+            <guid>http://localhost:1313/posts/2022/01/computational-thinking-in-architectural-design-process/</guid>
             <description>The use of computers in the field of architectural design initially only involved digitizing tasks that were traditionally done manually. Computer-based modeling or drawing still relied on additive logic, which involved adding overlapped information without associative relationships, heavily relying on the designer&amp;rsquo;s consistency. This additive logic persisted for a long time as it was considered stable for exploring and refining variations through traditional image media. However, this logic had limitations as it lacked connections between depicted elements and couldn&amp;rsquo;t incorporate physically relevant aspects that shape the generation of real-world forms.</description>
             <content type="html"><![CDATA[<p>The use of computers in the field of architectural design initially only involved digitizing tasks that were traditionally done manually. Computer-based modeling or drawing still relied on additive logic, which involved adding overlapped information without associative relationships, heavily relying on the designer&rsquo;s consistency. This additive logic persisted for a long time as it was considered stable for exploring and refining variations through traditional image media. However, this logic had limitations as it lacked connections between depicted elements and couldn&rsquo;t incorporate physically relevant aspects that shape the generation of real-world forms. These limitations prompted architects to develop their design mindset.</p>
 <p>In 1963, a computer expert named Ivan Sutherland discovered a tool called the Sketchpad, which is considered the first CAD tool and served as a precursor to popular CAD computer applications in subsequent years. This marked the transition from additive logic to associative logic. Associative logic became the foundation for the use of computing in design, supported by the advancements in information technology and computer science.</p>
@@ -324,10 +391,10 @@ a set of procedures to solve problems.</p>
         
         <item>
             <title>Ketika TUHAN Mendengar</title>
-            <link>https://armanwu.github.io/posts/2020/08/ketika-tuhan-mendengar/</link>
+            <link>http://localhost:1313/posts/2020/08/ketika-tuhan-mendengar/</link>
             <pubDate>Tue, 11 Aug 2020 22:16:12 +0700</pubDate>
             
-            <guid>https://armanwu.github.io/posts/2020/08/ketika-tuhan-mendengar/</guid>
+            <guid>http://localhost:1313/posts/2020/08/ketika-tuhan-mendengar/</guid>
             <description>“Bila kamu ingin mengenal seseorang dengan baik, maka datanglah padanya dan diamlah berada dekat dengannya..“
 Pernahkah kita dihadapkan pada situasi ketika ada dua orang yang berbicara dengan waktu bersamaan kepada kita? Bagaimana kita meresponnya? Apakah kita dapat memahami keduanya? Apakah kita dapat memahami yang satu namun tidak dengan yang lainnya? Atau malah kita tidak dapat memahami keduanya?
 Berikan waktu sejenak terhadap pertanyaan-pertanyaan di atas sebelum membaca tulisan-tulisan di bawah ini.</description>
@@ -353,10 +420,10 @@ Berikan waktu sejenak terhadap pertanyaan-pertanyaan di atas sebelum membaca tul
         
         <item>
             <title>Dengar dan Berkata</title>
-            <link>https://armanwu.github.io/posts/2020/08/dengar-dan-berkata/</link>
+            <link>http://localhost:1313/posts/2020/08/dengar-dan-berkata/</link>
             <pubDate>Tue, 11 Aug 2020 22:16:00 +0700</pubDate>
             
-            <guid>https://armanwu.github.io/posts/2020/08/dengar-dan-berkata/</guid>
+            <guid>http://localhost:1313/posts/2020/08/dengar-dan-berkata/</guid>
             <description>“When people talk, listen completely. Most people never listen.” -Ernest Hemingway-
 Apakah mendengar? Apakah berkata?
 Apa yang dapat didengar dan apa yang dapat dikatakan?
@@ -381,10 +448,10 @@ Kapan kita memutuskan untuk mendengar? Apakah kita dapat memilah apa yang ingin 
         
         <item>
             <title>Menjaga Kata</title>
-            <link>https://armanwu.github.io/posts/2020/05/menjaga-kata/</link>
+            <link>http://localhost:1313/posts/2020/05/menjaga-kata/</link>
             <pubDate>Sat, 23 May 2020 22:15:52 +0700</pubDate>
             
-            <guid>https://armanwu.github.io/posts/2020/05/menjaga-kata/</guid>
+            <guid>http://localhost:1313/posts/2020/05/menjaga-kata/</guid>
             <description>Beberapa orang memang dilahirkan untuk senang bercerita. Kesukaan mereka tersebut seringkali menjadi kelebihan mereka. Cerita yang biasa akan menjadi luar biasa bila diceritakan kembali oleh mereka. Sebaliknya bagi sebagian orang, bercerita adalah sesuatu hal yang sangat sulit. Apalagi bila hal tersebut dilakukan di sebuah forum yang akan dibaca atau didengar orang banyak. Seringkali bukan karena isi cerita yang menarik, namun karena bagaimana si pencerita menceritakannya.
 Berita apakah yang sedang “asik” dibicarakan saat ini?</description>
             <content type="html"><![CDATA[<p>Beberapa orang memang dilahirkan untuk senang bercerita. Kesukaan mereka tersebut seringkali menjadi kelebihan mereka. Cerita yang biasa akan menjadi luar biasa bila diceritakan kembali oleh mereka. Sebaliknya bagi sebagian orang, bercerita adalah sesuatu hal yang sangat sulit. Apalagi bila hal tersebut dilakukan di sebuah forum yang akan dibaca atau didengar orang banyak. Seringkali bukan karena isi cerita yang menarik, namun karena bagaimana si pencerita menceritakannya.</p>
@@ -400,10 +467,10 @@ Berita apakah yang sedang “asik” dibicarakan saat ini?</description>
         
         <item>
             <title>Apakah Kita Lupa?</title>
-            <link>https://armanwu.github.io/posts/2019/09/apakah-kita-lupa/</link>
+            <link>http://localhost:1313/posts/2019/09/apakah-kita-lupa/</link>
             <pubDate>Sun, 22 Sep 2019 22:15:45 +0700</pubDate>
             
-            <guid>https://armanwu.github.io/posts/2019/09/apakah-kita-lupa/</guid>
+            <guid>http://localhost:1313/posts/2019/09/apakah-kita-lupa/</guid>
             <description>Perkembangan jaman (terutama teknologi) seringkali mengubah pola kehidupan kita, termasuk dalam hal beribadah. Salahkah? Saya rasa tidak. Kebetulan tema khotbah di gereja minggu ini cukup menegur saya. Ya, saya adalah pencinta teknologi. Saya menyukai perkembangan teknologi. Saya menyukai gawai-gawai modern. Saya tergila-gila pada hal berbau digital. Pekerjaan saya pun berhubungan dengan hal tersebut.
 Jadi tidak ada salahnya bila liturgi sebuah ibadah berubah-ubah pakemnya sesuai dengan perkembangan jaman dan teknologi. Namun, seringkali kita lupa.</description>
             <content type="html"><![CDATA[<p>Perkembangan jaman (terutama teknologi) seringkali mengubah pola kehidupan kita, termasuk dalam hal beribadah. Salahkah? Saya rasa tidak. Kebetulan tema khotbah di gereja minggu ini cukup menegur saya. Ya, saya adalah pencinta teknologi. Saya menyukai perkembangan teknologi. Saya menyukai gawai-gawai modern. Saya tergila-gila pada hal berbau digital. Pekerjaan saya pun berhubungan dengan hal tersebut.</p>
@@ -419,10 +486,10 @@ Jadi tidak ada salahnya bila liturgi sebuah ibadah berubah-ubah pakemnya sesuai 
         
         <item>
             <title>Mereka</title>
-            <link>https://armanwu.github.io/posts/2019/04/mereka/</link>
+            <link>http://localhost:1313/posts/2019/04/mereka/</link>
             <pubDate>Tue, 09 Apr 2019 20:01:15 +0700</pubDate>
             
-            <guid>https://armanwu.github.io/posts/2019/04/mereka/</guid>
+            <guid>http://localhost:1313/posts/2019/04/mereka/</guid>
             <description>Yang seringkali tak terlihat namun bergaung
 mereka berpentas tanpa mendapat panggung
 bersinar dalam kegelapan yang terbendung
@@ -444,10 +511,10 @@ mereka hadir</p>
         
         <item>
             <title>Ketulusan dalam Ibadah</title>
-            <link>https://armanwu.github.io/posts/2019/04/ketulusan-dalam-ibadah/</link>
+            <link>http://localhost:1313/posts/2019/04/ketulusan-dalam-ibadah/</link>
             <pubDate>Mon, 08 Apr 2019 22:15:34 +0700</pubDate>
             
-            <guid>https://armanwu.github.io/posts/2019/04/ketulusan-dalam-ibadah/</guid>
+            <guid>http://localhost:1313/posts/2019/04/ketulusan-dalam-ibadah/</guid>
             <description>Sebetulnya ini tuh tema khotbah hari minggu sore kemarin di gereja. Sebuah perenungan yang cukup dalam. Sejujurnya hal tersebut sedikit banyak mengetuk hati saya yang sedari kecil sudah beribadah dan pelayanan di gereja. Bahkan dulu mah ampe semua kunci ruangan gereja pun saya punya. Mau minta kunci gerbang juga ada :p. Dikatakan bahwa ibadah itu memberi, melayani. Yup! Ibadah itu pelayanan. Kembali kepada isu klise dan klasik yang terus berputar-berputar di seputaran gereja.</description>
             <content type="html"><![CDATA[<p>Sebetulnya ini tuh tema khotbah hari minggu sore kemarin di gereja. Sebuah perenungan yang cukup dalam. Sejujurnya hal tersebut sedikit banyak mengetuk hati saya yang sedari kecil sudah beribadah dan pelayanan di gereja. Bahkan dulu mah ampe semua kunci ruangan gereja pun saya punya. Mau minta kunci gerbang juga ada :p. Dikatakan bahwa ibadah itu memberi, melayani. Yup! Ibadah itu pelayanan. Kembali kepada isu klise dan klasik yang terus berputar-berputar di seputaran gereja. Apa sih makna PELAYANAN?</p>
 <p>Saat ini saya juga gak bisa jawab dan bukan kapasitas saya untuk menjawab. Satu hal yang pasti dan seringkali saya rasakan sekarang ini adalah PAKSAAN dan TUNTUTAN yang kemudian seringkali menjadi BEBAN untuk saya datang beribadah. Ada masa-masa ketika saya betul-betul bersemangat untuk melakukan apapun di gereja. Ceritanya mah itu TOTALITAS PELAYANAN :p Betulkah? gak tau. TUHAN yang berhak menilai 🙂</p>
@@ -458,10 +525,10 @@ mereka hadir</p>
         
         <item>
             <title>Saya dan Toilet Umum</title>
-            <link>https://armanwu.github.io/posts/2019/04/saya-dan-toilet-umum/</link>
+            <link>http://localhost:1313/posts/2019/04/saya-dan-toilet-umum/</link>
             <pubDate>Fri, 05 Apr 2019 22:10:58 +0700</pubDate>
             
-            <guid>https://armanwu.github.io/posts/2019/04/saya-dan-toilet-umum/</guid>
+            <guid>http://localhost:1313/posts/2019/04/saya-dan-toilet-umum/</guid>
             <description>Seringkali saya masuk ke sebuah toko atau mal hanya untuk numpang ke toilet. Yup tujuan saya jelas, cuma numpang menyalurkan beban dan memberi kelegaan batin dan jasmani kepada tubuh ini. Setelahnya ya udah keluar lagi aja.
 Salah satu rintangan berat biasanya ketika berhadapan dengan Mbak dari mini market ternama yang ada hampir di setiap sudut wilayah Bandung dan sekitarnya. Ada 2 tuh yang biasanya sebelah-sebelahan atau saling berhadapan dengan nuansa warna yang hampir sama, merah biru kuning.</description>
             <content type="html"><![CDATA[<p>Seringkali saya masuk ke sebuah toko atau mal hanya untuk numpang ke toilet. Yup tujuan saya jelas, cuma numpang menyalurkan beban dan memberi kelegaan batin dan jasmani kepada tubuh ini. Setelahnya ya udah keluar lagi aja.</p>
@@ -472,10 +539,10 @@ Salah satu rintangan berat biasanya ketika berhadapan dengan Mbak dari mini mark
         
         <item>
             <title>Memilih</title>
-            <link>https://armanwu.github.io/posts/2019/04/memilih/</link>
+            <link>http://localhost:1313/posts/2019/04/memilih/</link>
             <pubDate>Mon, 01 Apr 2019 20:01:05 +0700</pubDate>
             
-            <guid>https://armanwu.github.io/posts/2019/04/memilih/</guid>
+            <guid>http://localhost:1313/posts/2019/04/memilih/</guid>
             <description>Yang tulus dan peduli
 relasi yang abadi
 damai dalam sunyi
@@ -493,10 +560,10 @@ duka bagai berkabung</p>
         
         <item>
             <title>Berbeda</title>
-            <link>https://armanwu.github.io/posts/2019/03/berbeda/</link>
+            <link>http://localhost:1313/posts/2019/03/berbeda/</link>
             <pubDate>Sat, 30 Mar 2019 20:00:57 +0700</pubDate>
             
-            <guid>https://armanwu.github.io/posts/2019/03/berbeda/</guid>
+            <guid>http://localhost:1313/posts/2019/03/berbeda/</guid>
             <description>Tidak ada yang benar hitam
 dan tidak ada yang benar putih
 akui saja keberadaan masing-masing
@@ -514,10 +581,10 @@ ataukah cukup untuk mengakui?</p>
         
         <item>
             <title>Satu Hari di Bulan Desember</title>
-            <link>https://armanwu.github.io/posts/2018/12/satu-hari-di-bulan-desember/</link>
+            <link>http://localhost:1313/posts/2018/12/satu-hari-di-bulan-desember/</link>
             <pubDate>Fri, 28 Dec 2018 19:55:58 +0700</pubDate>
             
-            <guid>https://armanwu.github.io/posts/2018/12/satu-hari-di-bulan-desember/</guid>
+            <guid>http://localhost:1313/posts/2018/12/satu-hari-di-bulan-desember/</guid>
             <description>Desember telah tiba
 waktunya menghias pohon
 membungkus kado
@@ -558,10 +625,10 @@ hari kelahiran Sang Raja Damai</p>
         
         <item>
             <title>Menebar Damai</title>
-            <link>https://armanwu.github.io/posts/2018/12/menebar-damai/</link>
+            <link>http://localhost:1313/posts/2018/12/menebar-damai/</link>
             <pubDate>Mon, 17 Dec 2018 19:51:54 +0700</pubDate>
             
-            <guid>https://armanwu.github.io/posts/2018/12/menebar-damai/</guid>
+            <guid>http://localhost:1313/posts/2018/12/menebar-damai/</guid>
             <description>Matahari terang memancar
 tampaklah cerah alam sekitar
 tiada elok bila hati bermuram
@@ -601,10 +668,10 @@ tanpa lelah senandung damai berdendang</p>
         
         <item>
             <title>Daun Kering</title>
-            <link>https://armanwu.github.io/posts/2018/12/daun-kering/</link>
+            <link>http://localhost:1313/posts/2018/12/daun-kering/</link>
             <pubDate>Sat, 15 Dec 2018 17:08:18 +0700</pubDate>
             
-            <guid>https://armanwu.github.io/posts/2018/12/daun-kering/</guid>
+            <guid>http://localhost:1313/posts/2018/12/daun-kering/</guid>
             <description>Daun yang layu tak lama terbuang
 melepas diri dari dahan yang menopang
 terhembus angin dan melayang

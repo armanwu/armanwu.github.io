@@ -2,67 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Arman Wu&#39;s Blog</title>
-    <link>https://armanwu.github.io/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Arman Wu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 22 Sep 2024 16:01:46 +0700</lastBuildDate>
-    <atom:link href="https://armanwu.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Architecture</title>
-      <link>https://armanwu.github.io/categories/architecture/</link>
+      <link>http://localhost:1313/categories/architecture/</link>
       <pubDate>Sun, 22 Sep 2024 16:01:46 +0700</pubDate>
-      <guid>https://armanwu.github.io/categories/architecture/</guid>
+      <guid>http://localhost:1313/categories/architecture/</guid>
       <description></description>
     </item>
     <item>
       <title>Artificial Intelligence</title>
-      <link>https://armanwu.github.io/categories/artificial-intelligence/</link>
+      <link>http://localhost:1313/categories/artificial-intelligence/</link>
       <pubDate>Sun, 22 Sep 2024 16:01:46 +0700</pubDate>
-      <guid>https://armanwu.github.io/categories/artificial-intelligence/</guid>
+      <guid>http://localhost:1313/categories/artificial-intelligence/</guid>
       <description></description>
     </item>
     <item>
       <title>Computational Design</title>
-      <link>https://armanwu.github.io/categories/computational-design/</link>
+      <link>http://localhost:1313/categories/computational-design/</link>
       <pubDate>Sun, 22 Sep 2024 16:01:46 +0700</pubDate>
-      <guid>https://armanwu.github.io/categories/computational-design/</guid>
+      <guid>http://localhost:1313/categories/computational-design/</guid>
       <description></description>
     </item>
     <item>
       <title>Computer</title>
-      <link>https://armanwu.github.io/categories/computer/</link>
+      <link>http://localhost:1313/categories/computer/</link>
       <pubDate>Sun, 22 Sep 2024 16:01:46 +0700</pubDate>
-      <guid>https://armanwu.github.io/categories/computer/</guid>
+      <guid>http://localhost:1313/categories/computer/</guid>
       <description></description>
     </item>
     <item>
       <title>Philosophy</title>
-      <link>https://armanwu.github.io/categories/philosophy/</link>
+      <link>http://localhost:1313/categories/philosophy/</link>
       <pubDate>Sun, 22 Sep 2024 16:01:46 +0700</pubDate>
-      <guid>https://armanwu.github.io/categories/philosophy/</guid>
+      <guid>http://localhost:1313/categories/philosophy/</guid>
       <description></description>
     </item>
     <item>
       <title>Informasi</title>
-      <link>https://armanwu.github.io/categories/informasi/</link>
+      <link>http://localhost:1313/categories/informasi/</link>
       <pubDate>Sun, 09 Jul 2023 21:02:57 +0700</pubDate>
-      <guid>https://armanwu.github.io/categories/informasi/</guid>
+      <guid>http://localhost:1313/categories/informasi/</guid>
       <description></description>
     </item>
     <item>
       <title>Celoteh</title>
-      <link>https://armanwu.github.io/categories/celoteh/</link>
+      <link>http://localhost:1313/categories/celoteh/</link>
       <pubDate>Tue, 11 Aug 2020 22:16:12 +0700</pubDate>
-      <guid>https://armanwu.github.io/categories/celoteh/</guid>
+      <guid>http://localhost:1313/categories/celoteh/</guid>
       <description></description>
     </item>
     <item>
       <title>Puisi</title>
-      <link>https://armanwu.github.io/categories/puisi/</link>
+      <link>http://localhost:1313/categories/puisi/</link>
       <pubDate>Tue, 09 Apr 2019 20:01:15 +0700</pubDate>
-      <guid>https://armanwu.github.io/categories/puisi/</guid>
+      <guid>http://localhost:1313/categories/puisi/</guid>
       <description></description>
     </item>
   </channel>

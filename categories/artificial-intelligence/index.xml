@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Artificial Intelligence on Arman Wu&#39;s Blog</title>
-    <link>https://armanwu.github.io/categories/artificial-intelligence/</link>
+    <link>http://localhost:1313/categories/artificial-intelligence/</link>
     <description>Recent content in Artificial Intelligence on Arman Wu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 22 Sep 2024 16:01:46 +0700</lastBuildDate>
-    <atom:link href="https://armanwu.github.io/categories/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Intuition and Algorithm in Harmony: Architects in the Age of Artificial Intelligence</title>
-      <link>https://armanwu.github.io/posts/2024/09/intuition-and-algorithm-in-harmony-architects-in-the-age-of-artificial-intelligence/</link>
+      <link>http://localhost:1313/posts/2024/09/intuition-and-algorithm-in-harmony-architects-in-the-age-of-artificial-intelligence/</link>
       <pubDate>Sun, 22 Sep 2024 16:01:46 +0700</pubDate>
-      <guid>https://armanwu.github.io/posts/2024/09/intuition-and-algorithm-in-harmony-architects-in-the-age-of-artificial-intelligence/</guid>
+      <guid>http://localhost:1313/posts/2024/09/intuition-and-algorithm-in-harmony-architects-in-the-age-of-artificial-intelligence/</guid>
       <description>As artificial intelligence (AI) continues to influence various industries, including architecture, it raises important questions: How can the intuitive intelligence built over years of experience be combined with algorithmic logic? Both have powerful roles, and when united, they can create a new harmony in the world of architecture. However, to achieve this balance, architects need to understand how to work with AI while maintaining the essence of their intuition.</description>
     </item>
   </channel>

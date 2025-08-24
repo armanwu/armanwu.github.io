@@ -5,76 +5,8 @@
         <description>Recent content in Posts on Arman Wu&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Wed, 05 Mar 2025 18:44:46 +0700</lastBuildDate>
+        <lastBuildDate>Sun, 22 Sep 2024 16:01:46 +0700</lastBuildDate>
         <atom:link href="https://armanwu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-        
-        <item>
-            <title>Melindungi Identitas di Era Tanpa Batas</title>
-            <link>https://armanwu.github.io/posts/2025/03/melindungi-identitas-di-era-tanpa-batas/</link>
-            <pubDate>Wed, 05 Mar 2025 18:44:46 +0700</pubDate>
-            
-            <guid>https://armanwu.github.io/posts/2025/03/melindungi-identitas-di-era-tanpa-batas/</guid>
-            <description>Saat ini, kasus pembajakan akun media sosial semakin marak terjadi. Banyak orang yang tiba-tiba kehilangan akses ke akun mereka, atau bahkan akun mereka digunakan untuk tindakan yang merugikan. Untuk melindungi diri, penting bagi kita untuk memahami bagaimana cara orang jahat mengambil alih akun-akun ini dan bagaimana kita bisa mencegahnya.
-Tahap 1: Pengumpulan Informasi (Reconnaissance) Pada tahap ini, hacker mengumpulkan informasi sebanyak mungkin tentang target, seperti:
-Alamat email dan nomor telepon. Informasi pribadi dari media sosial (tanggal lahir, nama anggota keluarga, tempat tinggal, dll.</description>
-            <content type="html"><![CDATA[<p>Saat ini, kasus pembajakan akun media sosial semakin marak terjadi. Banyak orang yang tiba-tiba kehilangan akses ke akun mereka, atau bahkan akun mereka digunakan untuk tindakan yang merugikan. Untuk melindungi diri, penting bagi kita untuk memahami bagaimana cara orang jahat mengambil alih akun-akun ini dan bagaimana kita bisa mencegahnya.</p>
-<h2 id="tahap-1-pengumpulan-informasi-reconnaissance">Tahap 1: Pengumpulan Informasi (Reconnaissance)</h2>
-<p>Pada tahap ini, hacker mengumpulkan informasi sebanyak mungkin tentang target, seperti:</p>
-<ul>
-<li>Alamat email dan nomor telepon.</li>
-<li>Informasi pribadi dari media sosial (tanggal lahir, nama anggota keluarga, tempat tinggal, dll.).</li>
-<li>Kebiasaan online dan pola penggunaan perangkat.</li>
-</ul>
-<h2 id="tahap-2-pemilihan-metode-serangan">Tahap 2: Pemilihan Metode Serangan</h2>
-<p>Hacker kemudian memilih teknik serangan yang sesuai, misalnya:</p>
-<h3 id="phishing">Phishing</h3>
-<p>Membuat halaman login palsu yang mirip dengan situs asli untuk mencuri kredensial (username dan password).</p>
-<h3 id="social-engineering">Social Engineering</h3>
-<p>Mengelabui target untuk memberikan informasi sensitif secara sukarela, misalnya melalui telepon atau pesan teks.</p>
-<h3 id="brute-force-attack">Brute Force Attack</h3>
-<p>Mencoba semua kombinasi password secara otomatis hingga menemukan yang benar (biasanya jika password lemah).</p>
-<h3 id="man-in-the-middle-mitm">Man-in-the-Middle (MitM)</h3>
-<p>Mencegat komunikasi antara pengguna dan aplikasi, misalnya pada jaringan WiFi publik.</p>
-<h2 id="tahap-3-eksekusi-serangan">Tahap 3: Eksekusi Serangan</h2>
-<p>Berdasarkan metode yang dipilih, hacker menjalankan aksinya:</p>
-<ul>
-<li>Phishing: Mengirim link palsu melalui email atau pesan, lalu korban diarahkan ke halaman palsu dan memasukkan kredensialnya.</li>
-<li>Social Engineering: Mengaku sebagai pihak resmi (misal customer service) dan meminta kode OTP atau data sensitif.</li>
-<li>Menyebar Malware: Melalui lampiran email atau aplikasi palsu, malware ini bisa mencuri data login dari perangkat korban.</li>
-</ul>
-<h2 id="tahap-4-mengambil-alih-akun">Tahap 4: Mengambil Alih Akun</h2>
-<p>Setelah mendapatkan kredensial atau akses ke perangkat:</p>
-<ul>
-<li>Login ke akun media sosial atau WhatsApp korban.</li>
-<li>Mengubah password dan pengaturan keamanan agar pemilik asli tidak bisa mengakses kembali.</li>
-<li>Menonaktifkan otentikasi dua faktor (jika ada) atau mengubah nomor telepon/email pemulihan.</li>
-</ul>
-<h2 id="tahap-5-eksploitasi-akun">Tahap 5: Eksploitasi Akun</h2>
-<p>Setelah akun berhasil diambil alih, hacker bisa:</p>
-<ul>
-<li>Mengirim pesan ke kontak korban untuk melakukan penipuan.</li>
-<li>Mengakses data pribadi atau foto/video di dalam akun.</li>
-<li>Menggunakan akun tersebut untuk menyebarkan malware atau kampanye jahat lainnya.</li>
-</ul>
-<h2 id="tahap-6-menyembunyikan-jejak">Tahap 6: Menyembunyikan Jejak</h2>
-<p>Untuk menghindari deteksi, hacker bisa:</p>
-<ul>
-<li>Menghapus notifikasi atau log aktivitas di akun.</li>
-<li>Menggunakan jaringan VPN atau perangkat lunak anonim agar tidak mudah dilacak.</li>
-</ul>
-<h2 id="cara-melindungi-diri">Cara Melindungi Diri</h2>
-<ul>
-<li>Aktifkan Otentikasi Dua Faktor (2FA) di semua akun penting.</li>
-<li>Waspada terhadap Phishing: Jangan klik link mencurigakan atau berikan kode OTP kepada siapapun.</li>
-<li>Gunakan Password yang Kuat dan berbeda untuk setiap akun.</li>
-<li>Rutin Cek Aktivitas Masuk Akun untuk melihat perangkat yang terhubung.</li>
-<li>Hindari Menggunakan WiFi Publik Tanpa VPN, terutama untuk login ke akun penting.</li>
-</ul>
-<h2 id="kesimpulan">Kesimpulan</h2>
-<p>Memahami cara kerja hacker dalam mengambil alih akun media sosial bisa membantu kita lebih waspada dan mengambil langkah-langkah pencegahan yang tepat. Jangan lupa untuk selalu memperbarui pengaturan keamanan akun dan edukasi diri mengenai keamanan digital!</p>
-]]></content>
-        </item>
         
         <item>
             <title>Intuition and Algorithm in Harmony: Architects in the Age of Artificial Intelligence</title>
@@ -82,8 +14,9 @@ Alamat email dan nomor telepon. Informasi pribadi dari media sosial (tanggal lah
             <pubDate>Sun, 22 Sep 2024 16:01:46 +0700</pubDate>
             
             <guid>https://armanwu.github.io/posts/2024/09/intuition-and-algorithm-in-harmony-architects-in-the-age-of-artificial-intelligence/</guid>
-            <description>As artificial intelligence (AI) continues to influence various industries, including architecture, it raises important questions: How can the intuitive intelligence built over years of experience be combined with algorithmic logic? Both have powerful roles, and when united, they can create a new harmony in the world of architecture. However, to achieve this balance, architects need to understand how to work with AI while maintaining the essence of their intuition.</description>
-            <content type="html"><![CDATA[<p><img src="/architecture/images/very_simple_expressive_fragmented_and_distorted_geometr.jpg" alt="Sketch"></p>
+            <description>&lt;p&gt;&lt;img src=&#34;https://armanwu.github.io/img/very_simple_expressive_fragmented_and_distorted_geometr.jpg&#34; alt=&#34;Sketch&#34;&gt;&lt;/p&gt;
+&lt;p&gt;As artificial intelligence (AI) continues to influence various industries, including architecture, it raises important questions: How can the intuitive intelligence built over years of experience be combined with algorithmic logic? Both have powerful roles, and when united, they can create a new harmony in the world of architecture. However, to achieve this balance, architects need to understand how to work with AI while maintaining the essence of their intuition.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p><img src="/img/very_simple_expressive_fragmented_and_distorted_geometr.jpg" alt="Sketch"></p>
 <p>As artificial intelligence (AI) continues to influence various industries, including architecture, it raises important questions: How can the intuitive intelligence built over years of experience be combined with algorithmic logic? Both have powerful roles, and when united, they can create a new harmony in the world of architecture. However, to achieve this balance, architects need to understand how to work with AI while maintaining the essence of their intuition.</p>
 <h2 id="essential-skills-for-architects-in-the-age-of-ai">Essential Skills for Architects in the Age of AI</h2>
 <p>To effectively leverage AI, architects need to develop a range of skills that support the collaboration between creative intuition and technical capabilities. Here are the key skills that architects should focus on:</p>
@@ -141,8 +74,9 @@ Alamat email dan nomor telepon. Informasi pribadi dari media sosial (tanggal lah
             <pubDate>Mon, 17 Jul 2023 21:01:46 +0700</pubDate>
             
             <guid>https://armanwu.github.io/posts/2023/07/the-importance-of-critiquing-bim-in-the-architecture-world-fostering-open-mindedness-for-advancement/</guid>
-            <description>As an architect and BIM practitioner, I fully recognize the tremendous potential of Building Information Modeling (BIM) in improving the efficiency and quality of architectural projects. However, in order to ensure ongoing progress, it&amp;rsquo;s crucial for BIM practitioners not to turn a blind eye to any weaknesses that may still exist in this technology. In this article, I will explain why criticism of BIM is important and how having an open-minded approach to criticism can drive advancements in this technology within the architecture industry.</description>
-            <content type="html"><![CDATA[<p><img src="/architecture/images/review-g0968a8216_1920.jpg" alt="Review"></p>
+            <description>&lt;p&gt;&lt;img src=&#34;https://armanwu.github.io/img/review-g0968a8216_1920.jpg&#34; alt=&#34;Review&#34;&gt;&lt;/p&gt;
+&lt;p&gt;As an architect and BIM practitioner, I fully recognize the tremendous potential of Building Information Modeling (BIM) in improving the efficiency and quality of architectural projects. However, in order to ensure ongoing progress, it&amp;rsquo;s crucial for BIM practitioners not to turn a blind eye to any weaknesses that may still exist in this technology. In this article, I will explain why criticism of BIM is important and how having an open-minded approach to criticism can drive advancements in this technology within the architecture industry.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p><img src="/img/review-g0968a8216_1920.jpg" alt="Review"></p>
 <p>As an architect and BIM practitioner, I fully recognize the tremendous potential of Building Information Modeling (BIM) in improving the efficiency and quality of architectural projects. However, in order to ensure ongoing progress, it&rsquo;s crucial for BIM practitioners not to turn a blind eye to any weaknesses that may still exist in this technology. In this article, I will explain why criticism of BIM is important and how having an open-minded approach to criticism can drive advancements in this technology within the architecture industry.</p>
 <h2 id="recognizing-the-advantages-of-bim">Recognizing the Advantages of BIM</h2>
 <p>I personally have directly witnessed the benefits offered by BIM in the architecture industry. One of the key advantages of BIM is its ability to enhance collaboration efficiency. By utilizing an integrated digital model, project teams can work synergistically, reducing communication errors and improving coordination across disciplines. Additionally, BIM enables better visualization by providing realistic three-dimensional models, allowing stakeholders to have a clearer understanding of the design and make more timely decisions. This also impacts the quality of projects, as BIM allows for more accurate analysis, such as structural, energy, and sustainability analysis, enabling architects and project teams to make informed decisions based on valid data.</p>
@@ -160,7 +94,7 @@ Alamat email dan nomor telepon. Informasi pribadi dari media sosial (tanggal lah
 <p>In the effort to advance BIM as an increasingly powerful tool, it&rsquo;s crucial to accept criticism with an open mind. Criticizing BIM does not mean rejecting it; rather, it stimulates improvement and innovation. By accepting criticism, we can identify weaknesses and challenges in BIM implementation and adjust the use of this technology to suit the specific context of each project and working environment. Through collaboration and knowledge exchange, we can optimize the potential of BIM and propel the architecture industry towards a more efficient and innovative future.</p>
 <hr>
 <p>Credits:</p>
-<p>Image by <!-- raw HTML omitted -->Gerd Altmann<!-- raw HTML omitted --> from <!-- raw HTML omitted -->Pixabay<!-- raw HTML omitted --></p>
+<p>Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6640064">Gerd Altmann</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6640064">Pixabay</a></p>
 ]]></content>
         </item>
         
@@ -170,19 +104,20 @@ Alamat email dan nomor telepon. Informasi pribadi dari media sosial (tanggal lah
             <pubDate>Fri, 14 Jul 2023 21:54:46 +0700</pubDate>
             
             <guid>https://armanwu.github.io/posts/2023/07/architecture-computer-and-philosophy/</guid>
-            <description>In the ever-evolving world of architecture, the integration of philosophy and computer technology has emerged as a vital component in shaping the future of design. Architects are no longer solely focused on aesthetics and functionality; they are now exploring the profound intersections between architecture, philosophy, and computer science. This article delves into the significance of merging these three fields, highlighting how their interplay contributes to the creation of innovative and socially responsible architectural solutions.</description>
-            <content type="html"><![CDATA[<p><img src="/architecture/images/steve-driscoll-VsBl5PwVZpY-unsplash.jpg" alt="Architecture"></p>
+            <description>&lt;p&gt;&lt;img src=&#34;https://armanwu.github.io/img/steve-driscoll-VsBl5PwVZpY-unsplash.jpg&#34; alt=&#34;Architecture&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In the ever-evolving world of architecture, the integration of philosophy and computer technology has emerged as a vital component in shaping the future of design. Architects are no longer solely focused on aesthetics and functionality; they are now exploring the profound intersections between architecture, philosophy, and computer science. This article delves into the significance of merging these three fields, highlighting how their interplay contributes to the creation of innovative and socially responsible architectural solutions.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p><img src="/img/steve-driscoll-VsBl5PwVZpY-unsplash.jpg" alt="Architecture"></p>
 <p>In the ever-evolving world of architecture, the integration of philosophy and computer technology has emerged as a vital component in shaping the future of design. Architects are no longer solely focused on aesthetics and functionality; they are now exploring the profound intersections between architecture, philosophy, and computer science. This article delves into the significance of merging these three fields, highlighting how their interplay contributes to the creation of innovative and socially responsible architectural solutions.</p>
 <p>Architecture, as an art form and scientific discipline, has always been influenced by philosophical ideas. The incorporation of philosophy into architectural design brings forth a deeper understanding of the human experience, cultural context, and the ethical dimensions of the built environment. Simultaneously, the advancement of computer technology has revolutionized the way architects conceive, visualize, and construct their designs.</p>
 <p>By harnessing the power of computational tools, architects can analyze complex data, simulate environmental impacts, and optimize their designs for efficiency and sustainability. Consequently, the convergence of philosophy and computer science in architecture opens up new avenues for exploration, enabling architects to tackle contemporary challenges while envisioning a future that harmonizes human needs with ethical and technological considerations.</p>
 <h2 id="architecture-as-an-expression-of-philosophy">Architecture as an Expression of Philosophy</h2>
-<p><img src="/architecture/images/evan-karageorgos-t3lY31gF-e0-unsplash.jpg" alt="Architecture as an Expression of Philosophy"></p>
+<p><img src="/img/evan-karageorgos-t3lY31gF-e0-unsplash.jpg" alt="Architecture as an Expression of Philosophy"></p>
 <p>Philosophy plays a crucial role in shaping the perspectives and values of an architect. Architecture is not just about designing buildings but also about reflecting philosophical ideas and concepts. Philosophy provides a profound foundation of thought on humanity, society, and the natural environment.</p>
 <p>Architects who understand philosophy can incorporate these thoughts into their designs, creating buildings that are not only visually appealing but also more connected to human beings and the environment.</p>
 <h2 id="the-role-of-computers-in-architectural-design">The Role of Computers in Architectural Design</h2>
 <p>The development of computer technology has transformed the way architects work. Design software, digital modeling, and simulations have become indispensable tools in the architectural design process. Computers enable architects to produce realistic visualizations, analyze building performance, and integrate complex systems such as renewable energy and energy efficiency. By utilizing computer technology, architects can design buildings more efficiently, precisely, and accurately.</p>
 <h2 id="design-philosophy-and-emphasis-on-human-experience">Design Philosophy and Emphasis on Human Experience</h2>
-<p><img src="/architecture/images/zhouxing-lu-zj5cI6Ei4Lw-unsplash.jpg" alt="Design Philosophy and Emphasis on Human Experience"></p>
+<p><img src="/img/zhouxing-lu-zj5cI6Ei4Lw-unsplash.jpg" alt="Design Philosophy and Emphasis on Human Experience"></p>
 <p>Design philosophy lies at the core of architectural practice, shaping the principles and values that guide the creation of meaningful spaces. By incorporating philosophical perspectives into the design process, architects can go beyond mere aesthetics and functional considerations. Philosophy prompts architects to contemplate the deeper purpose and meaning of their designs, leading to spaces that resonate with human experiences on a profound level.</p>
 <p>Concepts such as aesthetics, ergonomics, and the relationship between humans and their surroundings all find their roots in philosophical inquiry. Architects who embrace design philosophy strive to create environments that inspire and enrich the lives of individuals, fostering a sense of connection, well-being, and harmony with the built environment.</p>
 <p>Moreover, the emphasis on human experience in architectural design is further amplified by the integration of computer technology. Through the use of advanced software and digital modeling tools, architects can more effectively visualize and simulate their designs, taking into account various factors that impact human perception and interaction with spaces. Computer-aided design allows architects to analyze the flow of natural light, test acoustics, and optimize spatial configurations to enhance the overall experience within a building.</p>
@@ -197,13 +132,13 @@ Alamat email dan nomor telepon. Informasi pribadi dari media sosial (tanggal lah
 <p>Credits:</p>
 <ul>
 <li>
-<p>Photo 1 by <!-- raw HTML omitted -->Steve driscoll<!-- raw HTML omitted --> on <!-- raw HTML omitted -->Unsplash<!-- raw HTML omitted --></p>
+<p>Photo 1 by <a href="https://unsplash.com/@ssdriscoll?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Steve driscoll</a> on <a href="https://unsplash.com/photos/VsBl5PwVZpY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 </li>
 <li>
-<p>Photo 2 by <!-- raw HTML omitted -->Evan Karageorgos<!-- raw HTML omitted --> on <!-- raw HTML omitted -->Unsplash<!-- raw HTML omitted --></p>
+<p>Photo 2 by <a href="https://unsplash.com/@evankarageorgos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Evan Karageorgos</a> on <a href="https://unsplash.com/photos/t3lY31gF-e0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 </li>
 <li>
-<p>Photo 3 by <!-- raw HTML omitted -->Zhouxing Lu<!-- raw HTML omitted --> on <!-- raw HTML omitted -->Unsplash<!-- raw HTML omitted --></p>
+<p>Photo 3 by <a href="https://unsplash.com/it/@lorem_ipsuman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Zhouxing Lu</a> on <a href="https://unsplash.com/photos/zj5cI6Ei4Lw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 </li>
 </ul>
 ]]></content>
@@ -215,48 +150,49 @@ Alamat email dan nomor telepon. Informasi pribadi dari media sosial (tanggal lah
             <pubDate>Sun, 09 Jul 2023 21:02:57 +0700</pubDate>
             
             <guid>https://armanwu.github.io/posts/2023/07/gereja-dan-teknologi-digital-membangun-jembatan-antara-tradisi-dan-inovasi/</guid>
-            <description>Dalam era digital yang semakin maju, gereja perlu menyikapi perkembangan teknologi dengan bijaksana. Mari kita menjelajahi pandangan baru tentang peran gereja dalam dunia digital dan bagaimana gereja dapat menjadi sarana komunitas yang adaptif dalam menghadapi perubahan budaya dan teknologi. Gereja memiliki kesempatan untuk memanfaatkan teknologi digital dengan cara yang memperkuat tradisi gereja yang berharga sambil tetap berinovasi. Mari melihat beberapa aspek penting tentang bagaimana gereja dapat menggabungkan tradisi dan inovasi dalam era digital yang maju.</description>
-            <content type="html"><![CDATA[<p><img src="/blog-id/informasi/image/samantha-borges-EeS69TTPQ18-unsplash.jpg" alt="Ibadah Daring"></p>
-<p>Dalam era digital yang semakin maju, gereja perlu menyikapi perkembangan teknologi dengan bijaksana. Mari kita menjelajahi pandangan baru tentang peran gereja dalam dunia digital dan bagaimana gereja dapat menjadi sarana komunitas yang adaptif dalam menghadapi perubahan budaya dan teknologi. Gereja memiliki kesempatan untuk memanfaatkan teknologi digital dengan cara yang memperkuat tradisi gereja yang berharga sambil tetap berinovasi. Mari melihat beberapa aspek penting tentang bagaimana gereja dapat menggabungkan tradisi dan inovasi dalam era digital yang maju.</p>
-<h2 id="memperkuat-komunikasi-dan-keterlibatan-jemaat">Memperkuat Komunikasi dan Keterlibatan Jemaat</h2>
-<p>Dalam era digital, komunikasi yang efektif menjadi kunci untuk menjaga keterlibatan jemaat. Gereja dapat memanfaatkan teknologi digital seperti email, pesan teks, atau aplikasi pesan instan untuk mengirimkan pengumuman gereja, mengingatkan jemaat tentang acara dan kegiatan, serta menyampaikan pesan rohani yang relevan. Media sosial juga menjadi alat yang berguna untuk memperluas jangkauan gereja dan memfasilitasi interaksi antara jemaat.</p>
-<p>Dengan adanya media sosial, gereja dapat membagikan pemikiran, kutipan Alkitab, pengalaman rohani, dan konten inspiratif lainnya yang memperkuat ikatan antara gereja dan jemaat. Melalui platform media sosial, gereja dapat menjalin hubungan yang lebih erat dengan jemaat, memperluas jangkauan pelayanan gereja, dan memfasilitasi interaksi antara jemaat. Gereja dapat mendorong jemaat untuk berpartisipasi aktif dalam diskusi online, menyampaikan doa dan dukungan satu sama lain, serta berbagi pengalaman spiritual mereka. Dengan memperkuat komunikasi dan keterlibatan jemaat melalui teknologi digital, gereja dapat menciptakan ikatan yang lebih erat dan membangun komunitas yang kuat di tengah dunia yang semakin terhubung.</p>
-<p>Media sosial dapat menjadi alat yang kuat untuk berkomunikasi dan berbagi pesan gereja. Namun, gereja perlu mengajarkan jemaat tentang etika penggunaan media sosial, seperti menjaga sikap yang hormat, memeriksa kebenaran informasi sebelum membagikannya, dan melindungi privasi pribadi. Penting bagi gereja untuk memastikan bahwa penggunaan media sosial tetap sejalan dengan nilai-nilai agama dan ajaran gereja.</p>
-<h2 id="pemeliharaan-tradisi-dan-adaptasi-dalam-era-digital">Pemeliharaan Tradisi dan Adaptasi dalam Era Digital</h2>
-<p>Meskipun teknologi digital membawa perubahan, gereja tetap dapat mempertahankan tradisi dan nilai-nilai yang berharga. Gereja dapat memanfaatkan teknologi digital untuk memperkaya pengalaman ibadah jemaat. Penggunaan presentasi multimedia, seperti proyeksi visual dan elemen audio, dapat meningkatkan daya tarik dan keterlibatan dalam ibadah. Musik digital, seperti pujian dan penyembahan yang dikemas dalam format digital, dapat memperkaya pengalaman pemujaan dengan suara yang berkualitas tinggi dan variasi musik yang lebih luas.</p>
-<p>Namun, penting bagi gereja untuk menjaga keseimbangan antara penggunaan teknologi dan pengalaman kehadiran fisik dalam ibadah. Meskipun teknologi dapat menjadi alat yang berguna, pengalaman langsung dan pertemuan tatap muka tetap memiliki nilai yang tak ternilai. Gereja perlu memastikan bahwa penggunaan teknologi tidak menggantikan kedekatan dan interaksi langsung antara jemaat. Oleh karena itu, gereja dapat mengadopsi pendekatan yang bijaksana dengan mengintegrasikan teknologi sebagai sarana untuk memperkaya ibadah tanpa mengorbankan esensi dari pengalaman kehadiran fisik dalam kebersamaan jemaat.</p>
-<p>Dengan mempertahankan tradisi gereja yang berharga dan mengadopsi teknologi secara bijaksana, gereja dapat menciptakan lingkungan ibadah yang relevan dengan zaman dan memperkuat ikatan antara jemaat. Gereja dapat menjadi tempat di mana tradisi gereja disampaikan dengan cara yang inovatif dan menarik bagi jemaat. Dalam menghadapi perubahan budaya dan teknologi, gereja memiliki kesempatan untuk memainkan peran yang signifikan dalam membentuk komunitas yang adaptif dan inklusif, menjaga nilai-nilai rohani, dan membangun ikatan sosial yang kuat di era digital ini.</p>
-<h2 id="kesimpulan">Kesimpulan</h2>
-<p>Perkembangan teknologi digital memberikan tantangan dan peluang bagi gereja dalam menghadapi kemajuan zaman. Dalam mengadopsi teknologi, gereja perlu memanfaatkannya dengan bijaksana dan memperhatikan etika penggunaan. Gereja juga harus tetap mempertahankan tradisi dan nilai-nilai yang berharga sambil mengadaptasinya dalam era digital. Dengan penggunaan yang tepat, gereja dapat menjadi sarana komunitas yang adaptif, inklusif, dan memperkuat ikatan sosial di tengah perkembangan teknologi.</p>
+            <description>&lt;p&gt;&lt;img src=&#34;https://armanwu.github.io/img/samantha-borges-EeS69TTPQ18-unsplash.jpg&#34; alt=&#34;Online Worship&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In today’s rapidly advancing digital era, the church must respond to technological developments wisely. Let us explore a new perspective on the church’s role in the digital world and how it can serve as a community that adapts to cultural and technological change. The church has the opportunity to embrace digital technology in ways that strengthen its treasured traditions while still fostering innovation. Here are some important aspects of how the church can bring together tradition and innovation in this modern digital age.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p><img src="/img/samantha-borges-EeS69TTPQ18-unsplash.jpg" alt="Online Worship"></p>
+<p>In today’s rapidly advancing digital era, the church must respond to technological developments wisely. Let us explore a new perspective on the church’s role in the digital world and how it can serve as a community that adapts to cultural and technological change. The church has the opportunity to embrace digital technology in ways that strengthen its treasured traditions while still fostering innovation. Here are some important aspects of how the church can bring together tradition and innovation in this modern digital age.</p>
+<h2 id="strengthening-communication-and-congregational-engagement">Strengthening Communication and Congregational Engagement</h2>
+<p>In the digital era, effective communication is key to maintaining congregational engagement. Churches can use digital tools such as email, text messages, or instant messaging apps to send announcements, remind members of events and activities, and share relevant spiritual messages. Social media has also become a valuable tool for extending the church’s reach and facilitating interaction among members.</p>
+<p>Through social media, churches can share reflections, Bible verses, spiritual experiences, and other inspirational content that strengthen the bond between the church and its members. Social media platforms allow churches to build closer relationships with their congregations, broaden their ministry, and foster interaction. Members can be encouraged to participate actively in online discussions, share prayers and support, and tell their spiritual stories. By strengthening communication and engagement through digital technology, churches can create stronger ties and build resilient communities in an increasingly connected world.</p>
+<p>At the same time, social media must be used responsibly. Churches should teach their members about digital ethics—such as maintaining respectful behavior, verifying information before sharing, and protecting personal privacy. It is important to ensure that online engagement remains aligned with the church’s values and teachings.</p>
+<h2 id="preserving-tradition-while-adapting-in-the-digital-age">Preserving Tradition While Adapting in the Digital Age</h2>
+<p>Although digital technology brings change, the church can still preserve its valuable traditions and values. Digital tools can enrich the worship experience—for instance, through multimedia presentations, visual projections, and audio elements that increase participation. Digital music, including worship and praise in high-quality formats, can also broaden the worship experience with greater variety and depth.</p>
+<p>Yet it is equally important to balance technology with physical presence. In-person gatherings and face-to-face fellowship remain irreplaceable. Technology should not substitute the intimacy and direct interaction that worship in community provides. Churches can adopt a wise approach by integrating digital tools to enhance worship without diminishing the essence of shared physical presence.</p>
+<p>By maintaining valuable traditions while adopting technology thoughtfully, churches can create worship environments that are both relevant to the times and deeply rooted in faith. Churches can become spaces where traditions are conveyed in innovative and engaging ways. In the midst of cultural and technological change, the church has the opportunity to play a significant role in shaping communities that are adaptive and inclusive, while safeguarding spiritual values and strengthening social bonds.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>The development of digital technology presents both challenges and opportunities for the church. In adopting new tools, churches must use them wisely and with ethical awareness. At the same time, they must preserve their valuable traditions while adapting them to today’s context. When used appropriately, digital technology can enable the church to become a community that is adaptive, inclusive, and capable of strengthening social ties in the midst of technological change.</p>
 <hr>
-<p><em>Gambar ilustrasi oleh <!-- raw HTML omitted -->Samantha Borges<!-- raw HTML omitted --> di <!-- raw HTML omitted -->Unsplash<!-- raw HTML omitted --></em></p>
+<p><em>Gambar ilustrasi oleh <a href="https://unsplash.com/@samich_18?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Samantha Borges</a> di <a href="https://unsplash.com/photos/EeS69TTPQ18?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></em></p>
 ]]></content>
         </item>
         
         <item>
-            <title>Mengenal Game Age Rating: Melindungi Anak dari Konten yang Tidak Sesuai</title>
-            <link>https://armanwu.github.io/posts/2023/07/mengenal-game-age-rating-melindungi-anak-dari-konten-yang-tidak-sesuai/</link>
+            <title>Understanding Game Age Ratings: Protecting Children from Inappropriate Content</title>
+            <link>https://armanwu.github.io/posts/2023/07/understanding-game-age-ratings-protecting-children-from-inappropriate-content/</link>
             <pubDate>Thu, 06 Jul 2023 19:28:58 +0700</pubDate>
             
-            <guid>https://armanwu.github.io/posts/2023/07/mengenal-game-age-rating-melindungi-anak-dari-konten-yang-tidak-sesuai/</guid>
-            <description>Banyak orang tua merasa khawatir tentang jenis game yang dimainkan oleh anak-anak mereka. Mereka merasa bahwa beberapa game mungkin tidak cocok untuk usia anak-anak mereka. Namun, seringkali mereka tidak menyadari bahwa setiap game sebenarnya telah dilengkapi dengan age rating yang ditentukan oleh developer dan publisher-nya. Age rating ini dirancang untuk memberikan panduan kepada orang tua tentang apakah sebuah game sesuai atau tidak untuk anak-anak mereka.
-Setiap developer dan publisher game memiliki target market yang dituju, dan mereka sangat memperhatikan hal ini ketika menentukan age rating untuk game mereka.</description>
-            <content type="html"><![CDATA[<p>Banyak orang tua merasa khawatir tentang jenis <em>game</em> yang dimainkan oleh anak-anak mereka. Mereka merasa bahwa beberapa <em>game</em> mungkin tidak cocok untuk usia anak-anak mereka. Namun, seringkali mereka tidak menyadari bahwa setiap <em>game</em> sebenarnya telah dilengkapi dengan <em>age rating</em> yang ditentukan oleh <em>developer</em> dan <em>publisher</em>-nya. <em>Age rating</em> ini dirancang untuk memberikan panduan kepada orang tua tentang apakah sebuah <em>game</em> sesuai atau tidak untuk anak-anak mereka.</p>
-<p>Setiap <em>developer</em> dan <em>publisher</em> <em>game</em> memiliki target market yang dituju, dan mereka sangat memperhatikan hal ini ketika menentukan <em>age rating</em> untuk <em>game</em> mereka. <em>Age rating</em> ini didasarkan pada konten yang terdapat dalam <em>game</em>, seperti kekerasan, bahasa kasar, atau konten seksual. Misalnya, jika sebuah <em>game</em> mengandung kekerasan intens, itu akan diberi rating yang lebih tinggi daripada <em>game</em> yang lebih ramah keluarga. Orang tua perlu menyadari bahwa rating ini bukan semata-mata saran, melainkan pedoman yang penting untuk memilih <em>game</em> yang tepat untuk anak-anak mereka.</p>
+            <guid>https://armanwu.github.io/posts/2023/07/understanding-game-age-ratings-protecting-children-from-inappropriate-content/</guid>
+            <description>&lt;p&gt;Many parents are concerned about the types of games their children play. They worry that some games may not be suitable for their child’s age. However, what they often don’t realize is that every game actually comes with an age rating determined by the developer and publisher. These ratings are designed to guide parents in deciding whether a game is appropriate for their children.&lt;/p&gt;
+&lt;p&gt;Every game developer and publisher has a target market in mind, and they pay close attention to this when setting an age rating. The rating is based on the game’s content—such as violence, strong language, or sexual themes. For example, a game that contains intense violence will be given a higher age rating than one that is more family-friendly. Parents should understand that these ratings are not just suggestions, but important guidelines to help them choose the right games for their children.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>Many parents are concerned about the types of games their children play. They worry that some games may not be suitable for their child’s age. However, what they often don’t realize is that every game actually comes with an age rating determined by the developer and publisher. These ratings are designed to guide parents in deciding whether a game is appropriate for their children.</p>
+<p>Every game developer and publisher has a target market in mind, and they pay close attention to this when setting an age rating. The rating is based on the game’s content—such as violence, strong language, or sexual themes. For example, a game that contains intense violence will be given a higher age rating than one that is more family-friendly. Parents should understand that these ratings are not just suggestions, but important guidelines to help them choose the right games for their children.</p>
 <h2 id="international-age-rating-coalition-iarc">International Age Rating Coalition (IARC)</h2>
-<p>International Age Rating Coalition (IARC) adalah badan yang mengkoordinasikan berbagai sistem <em>age rating</em> di seluruh dunia. IARC menyatukan sistem-sistem rating yang digunakan oleh negara-negara seperti Amerika Serikat, Eropa, Australia, dan sebagainya. Tujuannya adalah untuk menyediakan panduan yang konsisten dan terstandarisasi bagi orang tua dan pengguna <em>game</em> dalam memilih <em>game</em> yang sesuai dengan usia.</p>
-<p>Salah satu sistem <em>age rating</em> yang cukup populer adalah Pan European Game Information (PEGI). PEGI digunakan di sebagian besar negara Eropa dan memberikan rating berdasarkan konten yang terdapat dalam <em>game</em>, seperti kekerasan, bahasa kasar, atau konten seksual. Rating PEGI terdiri dari kategori usia, mulai dari 3 tahun (PEGI 3) hingga 18 tahun (PEGI 18), dengan penjelasan tentang alasan <em>rating</em> tersebut.</p>
-<p><img src="/blog-id/informasi/image/PEGI.png" alt="Kategori game menurut PEGI" title="Kategori game menurut PEGI"></p>
-<p>Sistem <em>age rating</em> lain yang dikenal secara internasional adalah Entertainment Software Rating Board (ESRB), yang digunakan di Amerika Utara. ESRB memberikan rating yang mirip dengan PEGI, dengan kategori usia seperti Everyone (E), Teen (T), Mature (M), dan lain-lain. ESRB juga memberikan informasi tentang konten yang mungkin menjadi perhatian.</p>
-<p><img src="/blog-id/informasi/image/ESRB.png" alt="Kategori game menurut ESRB" title="Kategori game menurut ESRB"></p>
+<p>The International Age Rating Coalition (IARC) is an organization that coordinates various age-rating systems worldwide. IARC brings together systems used in regions such as the United States, Europe, and Australia. Its goal is to provide consistent and standardized guidance for parents and players when choosing age-appropriate games.</p>
+<p>One widely used system is the Pan European Game Information (PEGI). PEGI is applied in most European countries and assigns ratings based on game content such as violence, coarse language, or sexual material. PEGI ratings cover age categories ranging from 3 years (PEGI 3) to 18 years (PEGI 18), with explanations for the assigned rating.</p>
+<p><img src="/img/PEGI.png" alt="Game categories according to PEGI" title="Kategori game menurut PEGI"></p>
+<p>Another well-known system is the Entertainment Software Rating Board (ESRB), used in North America. The ESRB provides ratings similar to PEGI, with categories such as Everyone (E), Teen (T), and Mature (M). ESRB also includes content descriptors to highlight areas of concern.</p>
+<p><img src="/img/ESRB.png" alt="Game categories according to ESRB" title="Kategori game menurut ESRB"></p>
 <h2 id="indonesia-game-rating-system-igrs">Indonesia Game Rating System (IGRS)</h2>
-<p>Selain sistem <em>age rating</em> yang sudah dikenal secara internasional, ada juga Indonesia Game Rating System (IGRS). IGRS adalah sistem <em>age rating</em> yang diperkenalkan di Indonesia untuk memberikan panduan kepada orang tua dan pengguna <em>game</em> lainnya mengenai konten dan usia yang sesuai untuk <em>game</em>.</p>
-<p><img src="/blog-id/informasi/image/IGRS.png" alt="Kategori game menurut IGRS" title="Kategori game menurut IGRS"></p>
-<p>Lingkup IGRS saat ini masih terbatas pada <em>game-game</em> lokal di Indonesia. Hal ini berarti bahwa <em>game-game</em> populer internasional yang diproduksi oleh <em>developer</em> di luar Indonesia kemungkinan tidak memiliki <em>rating</em> IGRS. Sebagai contoh, <em>game-game</em> populer seperti Fortnite, Call of Duty, atau FIFA mungkin tidak memiliki rating IGRS yang dapat membantu orang tua dalam memilih <em>game</em> untuk anak-anak mereka.</p>
-<p>Kelemahan ini menunjukkan bahwa masih ada kebutuhan untuk meningkatkan cakupan dan ketersediaan IGRS agar dapat mencakup <em>game-game</em> internasional yang populer di Indonesia. Hal ini akan memungkinkan orang tua untuk memperoleh informasi yang lebih komprehensif tentang konten dan usia yang sesuai untuk <em>game-game</em> yang dimainkan oleh anak-anak mereka.</p>
-<p>Meskipun demikian, IGRS masih merupakan langkah positif dalam meningkatkan kesadaran tentang <em>age rating</em> di Indonesia dan memberikan panduan kepada orang tua. Orang tua tetap dapat memanfaatkan sistem ini untuk mendapatkan informasi mengenai <em>game-game</em> lokal yang ada di pasaran Indonesia. Namun, disarankan agar orang tua juga menggabungkan pemahaman tentang sistem <em>age rating</em> internasional yang sudah teruji dan diterima secara global, seperti PEGI atau ESRB, untuk memperoleh pandangan yang lebih lengkap dalam memilih <em>game</em> yang sesuai untuk anak-anak mereka.</p>
-<h2 id="kesimpulan">Kesimpulan</h2>
-<p>Dalam dunia digital yang semakin maju, pemahaman tentang <em>age rating</em> <em>game</em> menjadi kunci penting dalam melindungi anak-anak dari konten yang tidak sesuai dengan usia mereka. Orang tua perlu menyadari bahwa setiap <em>game</em> memiliki <em>age rating</em> yang ditetapkan oleh <em>developer</em> dan <em>publisher</em>-nya, dan rating ini memberikan panduan yang berharga dalam memilih <em>game</em> yang sesuai untuk anak-anak. Dengan memanfaatkan informasi dari sistem <em>age rating</em> internasional seperti PEGI dan ESRB, serta mempertimbangkan IGRS di Indonesia, orang tua dapat menjadi pendamping yang bijak dan melindungi anak-anak dalam dunia <em>gaming</em>, memastikan mereka dapat menikmati <em>game</em> dengan aman dan sesuai dengan usia mereka.</p>
+<p>In addition to international systems, Indonesia has its own rating framework called the Indonesia Game Rating System (IGRS). IGRS was introduced to give parents and players in Indonesia guidance about game content and age suitability.</p>
+<p><img src="/img/IGRS.png" alt="Game categories according to IGRS" title="Kategori game menurut IGRS"></p>
+<p>At present, IGRS mainly covers locally developed games. This means that popular international titles created by foreign developers may not carry IGRS ratings. For example, popular games such as Fortnite, Call of Duty, or FIFA may not have an IGRS rating to help parents decide on suitability for their children.</p>
+<p>This limitation highlights the need to expand IGRS coverage to include international titles widely played in Indonesia. Doing so would allow parents to access more comprehensive information about game content and appropriate age levels.</p>
+<p>Nevertheless, IGRS remains a positive step in raising awareness of age ratings in Indonesia and providing useful guidance for local games. Parents can certainly benefit from IGRS when considering Indonesian titles. However, it is recommended that they also consult established international systems like PEGI or ESRB for a more complete perspective when selecting games for their children.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>In today’s digital world, understanding game age ratings is key to protecting children from inappropriate content. Parents should recognize that every game comes with a rating provided by its developer or publisher, and that this serves as an important guideline in choosing suitable titles. By relying on international rating systems such as PEGI and ESRB, alongside Indonesia’s IGRS, parents can act as wise guides—ensuring their children enjoy games safely and in ways appropriate for their age.</p>
 ]]></content>
         </item>
         
@@ -266,8 +202,9 @@ Setiap developer dan publisher game memiliki target market yang dituju, dan mere
             <pubDate>Tue, 04 Jul 2023 20:04:46 +0700</pubDate>
             
             <guid>https://armanwu.github.io/posts/2023/07/striking-a-balance-the-pitfalls-of-excessive-social-media-usage-in-churches/</guid>
-            <description>In the ever-evolving digital era, social media has transformed the way we communicate, interact, and acquire information. Platforms like Facebook, Instagram, Twitter, and YouTube have become powerful tools for spreading messages and connecting with people worldwide. It&amp;rsquo;s not surprising that religious organizations, including churches, have embraced social media to disseminate their religious messages to a broader audience.
-Benefits of Social Media Usage Utilizing social media can provide significant benefits for churches.</description>
+            <description>&lt;p&gt;In the ever-evolving digital era, social media has transformed the way we communicate, interact, and acquire information. Platforms like Facebook, Instagram, Twitter, and YouTube have become powerful tools for spreading messages and connecting with people worldwide. It&amp;rsquo;s not surprising that religious organizations, including churches, have embraced social media to disseminate their religious messages to a broader audience.&lt;/p&gt;
+&lt;h2 id=&#34;benefits-of-social-media-usage&#34;&gt;Benefits of Social Media Usage&lt;/h2&gt;
+&lt;p&gt;Utilizing social media can provide significant benefits for churches. They can announce worship schedules, share spiritual reflections, upload religious lectures, and spread messages of love and hope to congregations and the general public. Moreover, social media enables churches to build online communities, facilitate discussions and interactions among the congregation, and provide easier accessibility for individuals who cannot physically attend church.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>In the ever-evolving digital era, social media has transformed the way we communicate, interact, and acquire information. Platforms like Facebook, Instagram, Twitter, and YouTube have become powerful tools for spreading messages and connecting with people worldwide. It&rsquo;s not surprising that religious organizations, including churches, have embraced social media to disseminate their religious messages to a broader audience.</p>
 <h2 id="benefits-of-social-media-usage">Benefits of Social Media Usage</h2>
 <p>Utilizing social media can provide significant benefits for churches. They can announce worship schedules, share spiritual reflections, upload religious lectures, and spread messages of love and hope to congregations and the general public. Moreover, social media enables churches to build online communities, facilitate discussions and interactions among the congregation, and provide easier accessibility for individuals who cannot physically attend church.</p>
@@ -292,8 +229,8 @@ Benefits of Social Media Usage Utilizing social media can provide significant be
             <pubDate>Sun, 02 Jul 2023 20:04:46 +0700</pubDate>
             
             <guid>https://armanwu.github.io/posts/2023/07/church-and-virtual-reality-exploring-the-intersection/</guid>
-            <description>Have you ever felt that our lives are constantly moving at a rapid pace? Every day, we&amp;rsquo;re confronted with technological advancements that change the way we interact, learn, and even worship. Just think about it – in just a few short years, we have witnessed developments like smartphones that unite the world at our fingertips and streaming technology that brings entertainment directly to our screens.
-But what does all of this mean for our religious lives?</description>
+            <description>&lt;p&gt;Have you ever felt that our lives are constantly moving at a rapid pace? Every day, we&amp;rsquo;re confronted with technological advancements that change the way we interact, learn, and even worship. Just think about it – in just a few short years, we have witnessed developments like smartphones that unite the world at our fingertips and streaming technology that brings entertainment directly to our screens.&lt;/p&gt;
+&lt;p&gt;But what does all of this mean for our religious lives? Is there room for technologies like virtual reality (VR) within our churches? We&amp;rsquo;ll delve into the fascinating topic of &amp;ldquo;Church and Virtual Reality.&amp;rdquo; We&amp;rsquo;ll examine how these technological advancements can impact the way we worship, interact with fellow congregants, and experience the presence of God in an increasingly digitally connected world.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>Have you ever felt that our lives are constantly moving at a rapid pace? Every day, we&rsquo;re confronted with technological advancements that change the way we interact, learn, and even worship. Just think about it – in just a few short years, we have witnessed developments like smartphones that unite the world at our fingertips and streaming technology that brings entertainment directly to our screens.</p>
 <p>But what does all of this mean for our religious lives? Is there room for technologies like virtual reality (VR) within our churches? We&rsquo;ll delve into the fascinating topic of &ldquo;Church and Virtual Reality.&rdquo; We&rsquo;ll examine how these technological advancements can impact the way we worship, interact with fellow congregants, and experience the presence of God in an increasingly digitally connected world.</p>
 <p>I invite you all to approach this topic with open minds, to listen, and to think critically about how virtual reality can become a part of our churches. Let us explore this subject together with a sense of curiosity, as technological advancements are a reality we must confront in building a relevant and meaningful religious life.</p>
@@ -324,8 +261,8 @@ But what does all of this mean for our religious lives?</description>
             <pubDate>Fri, 23 Jun 2023 22:01:46 +0700</pubDate>
             
             <guid>https://armanwu.github.io/posts/2023/06/exploring-the-techniques-of-generative-design/</guid>
-            <description>Generative design, as a powerful approach in architecture, encompasses a range of techniques that push the boundaries of creativity and innovation. By leveraging computational algorithms, generative design unlocks new possibilities and opens up uncharted territories in the realm of architectural exploration. Among the many techniques used in generative design, several prominent ones stand out, including cellular automata, genetic algorithms, shape grammar, and more.
-Cellular automata, first introduced by mathematician John von Neumann and popularized by scientist Stephen Wolfram, provide a fascinating tool for generative design.</description>
+            <description>&lt;p&gt;Generative design, as a powerful approach in architecture, encompasses a range of techniques that push the boundaries of creativity and innovation. By leveraging computational algorithms, generative design unlocks new possibilities and opens up uncharted territories in the realm of architectural exploration. Among the many techniques used in generative design, several prominent ones stand out, including cellular automata, genetic algorithms, shape grammar, and more.&lt;/p&gt;
+&lt;p&gt;Cellular automata, first introduced by mathematician John von Neumann and popularized by scientist Stephen Wolfram, provide a fascinating tool for generative design. Cellular automata involve a grid of cells, each governed by a set of rules and influenced by its neighboring cells. Through iterative computations, these rules determine the evolution and transformation of the cells, resulting in intricate and emergent patterns. In architecture, cellular automata can be applied to generate complex spatial configurations or dynamic façade designs that adapt to varying environmental conditions.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>Generative design, as a powerful approach in architecture, encompasses a range of techniques that push the boundaries of creativity and innovation. By leveraging computational algorithms, generative design unlocks new possibilities and opens up uncharted territories in the realm of architectural exploration. Among the many techniques used in generative design, several prominent ones stand out, including cellular automata, genetic algorithms, shape grammar, and more.</p>
 <p>Cellular automata, first introduced by mathematician John von Neumann and popularized by scientist Stephen Wolfram, provide a fascinating tool for generative design. Cellular automata involve a grid of cells, each governed by a set of rules and influenced by its neighboring cells. Through iterative computations, these rules determine the evolution and transformation of the cells, resulting in intricate and emergent patterns. In architecture, cellular automata can be applied to generate complex spatial configurations or dynamic façade designs that adapt to varying environmental conditions.</p>
 <p>Genetic algorithms, inspired by the process of natural selection, offer another powerful tool for generative design. By simulating evolution through the principles of mutation, selection, and crossover, genetic algorithms generate diverse design solutions and iteratively refine them over time. Architects can define a set of parameters and constraints, allowing the algorithm to explore and optimize designs based on desired outcomes. This technique enables the discovery of novel and efficient solutions that often transcend human intuition.</p>
@@ -341,8 +278,8 @@ Cellular automata, first introduced by mathematician John von Neumann and popula
             <pubDate>Thu, 22 Jun 2023 20:44:46 +0700</pubDate>
             
             <guid>https://armanwu.github.io/posts/2023/06/discovering-harmony-in-architecture-with-generative-design/</guid>
-            <description>In the complex world of architecture, generative design has emerged, opening doors to thousands of possibilities for harmonious and aesthetic designs. The collaboration between humans and computers gives rise to surprising solutions, unearthing new ideas with unlimited freedom.
-Generative design involves the consideration of complex factors, including spatial layout, lighting, and energy efficiency. In this remarkable process, algorithms can be programmed to optimize designs based on specific criteria, creating unexpected harmony in the combination of variables.</description>
+            <description>&lt;p&gt;In the complex world of architecture, generative design has emerged, opening doors to thousands of possibilities for harmonious and aesthetic designs. The collaboration between humans and computers gives rise to surprising solutions, unearthing new ideas with unlimited freedom.&lt;/p&gt;
+&lt;p&gt;Generative design involves the consideration of complex factors, including spatial layout, lighting, and energy efficiency. In this remarkable process, algorithms can be programmed to optimize designs based on specific criteria, creating unexpected harmony in the combination of variables. A symbiosis occurs between human intelligence and computational power, where architects provide insights and intuition, while generative design translates those ideas into reality.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>In the complex world of architecture, generative design has emerged, opening doors to thousands of possibilities for harmonious and aesthetic designs. The collaboration between humans and computers gives rise to surprising solutions, unearthing new ideas with unlimited freedom.</p>
 <p>Generative design involves the consideration of complex factors, including spatial layout, lighting, and energy efficiency. In this remarkable process, algorithms can be programmed to optimize designs based on specific criteria, creating unexpected harmony in the combination of variables. A symbiosis occurs between human intelligence and computational power, where architects provide insights and intuition, while generative design translates those ideas into reality.</p>
 <p>The result is the ability to discover unexpected harmony in architecture. Generative design liberates architects from conventional constraints, allowing them to explore previously unimaginable ideas. Through a harmonious interaction between humans and computers, architects can uncover astonishing combinations of elements, resulting in beautiful, aesthetic designs that effectively meet the needs of their users.</p>
@@ -356,7 +293,7 @@ Generative design involves the consideration of complex factors, including spati
             <pubDate>Thu, 06 Jan 2022 21:44:46 +0700</pubDate>
             
             <guid>https://armanwu.github.io/posts/2022/01/computational-thinking-in-architectural-design-process/</guid>
-            <description>The use of computers in the field of architectural design initially only involved digitizing tasks that were traditionally done manually. Computer-based modeling or drawing still relied on additive logic, which involved adding overlapped information without associative relationships, heavily relying on the designer&amp;rsquo;s consistency. This additive logic persisted for a long time as it was considered stable for exploring and refining variations through traditional image media. However, this logic had limitations as it lacked connections between depicted elements and couldn&amp;rsquo;t incorporate physically relevant aspects that shape the generation of real-world forms.</description>
+            <description>&lt;p&gt;The use of computers in the field of architectural design initially only involved digitizing tasks that were traditionally done manually. Computer-based modeling or drawing still relied on additive logic, which involved adding overlapped information without associative relationships, heavily relying on the designer&amp;rsquo;s consistency. This additive logic persisted for a long time as it was considered stable for exploring and refining variations through traditional image media. However, this logic had limitations as it lacked connections between depicted elements and couldn&amp;rsquo;t incorporate physically relevant aspects that shape the generation of real-world forms. These limitations prompted architects to develop their design mindset.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>The use of computers in the field of architectural design initially only involved digitizing tasks that were traditionally done manually. Computer-based modeling or drawing still relied on additive logic, which involved adding overlapped information without associative relationships, heavily relying on the designer&rsquo;s consistency. This additive logic persisted for a long time as it was considered stable for exploring and refining variations through traditional image media. However, this logic had limitations as it lacked connections between depicted elements and couldn&rsquo;t incorporate physically relevant aspects that shape the generation of real-world forms. These limitations prompted architects to develop their design mindset.</p>
 <p>In 1963, a computer expert named Ivan Sutherland discovered a tool called the Sketchpad, which is considered the first CAD tool and served as a precursor to popular CAD computer applications in subsequent years. This marked the transition from additive logic to associative logic. Associative logic became the foundation for the use of computing in design, supported by the advancements in information technology and computer science.</p>
 <p>In associative logic, the manipulation of shapes is performed directly, similar to how we draw a line on paper by moving our hand according to the desired line. However, when using associative logic in computer-based design, shape manipulation is achieved indirectly through algorithms. A line is not formed by the movement of our hand, but rather by calculating the distance between two points.</p>
@@ -386,322 +323,6 @@ a set of procedures to solve problems.</p>
 <p>Caetano, I., Santos, L., and Leitão, A. (2020): <strong>Computational design in architecture: Defining parametric, generative, and algorithmic design</strong>, Frontiers of Architectural Research, 9(2), 287–300.</p>
 <p>Indraprastha, A. (2021): <strong>Dasar-dasar Desain Parametrik: Pendekatan Algoritmik dalam Perancangan dan Konstruksi Purwa Rupa</strong>, ITB Press, Bandung.</p>
 <p>Tedeschi, A. (2014): <strong>AAD Algorithms-Aided Design: Parametric Strategies using Grasshopper</strong>, Le Penseur, Napoli, 498.</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Ketika TUHAN Mendengar</title>
-            <link>https://armanwu.github.io/posts/2020/08/ketika-tuhan-mendengar/</link>
-            <pubDate>Tue, 11 Aug 2020 22:16:12 +0700</pubDate>
-            
-            <guid>https://armanwu.github.io/posts/2020/08/ketika-tuhan-mendengar/</guid>
-            <description>“Bila kamu ingin mengenal seseorang dengan baik, maka datanglah padanya dan diamlah berada dekat dengannya..“
-Pernahkah kita dihadapkan pada situasi ketika ada dua orang yang berbicara dengan waktu bersamaan kepada kita? Bagaimana kita meresponnya? Apakah kita dapat memahami keduanya? Apakah kita dapat memahami yang satu namun tidak dengan yang lainnya? Atau malah kita tidak dapat memahami keduanya?
-Berikan waktu sejenak terhadap pertanyaan-pertanyaan di atas sebelum membaca tulisan-tulisan di bawah ini.</description>
-            <content type="html"><![CDATA[<blockquote>
-<p><em>“Bila kamu ingin mengenal seseorang dengan baik, maka datanglah padanya dan diamlah berada dekat dengannya..“</em></p>
-</blockquote>
-<p>Pernahkah kita dihadapkan pada situasi ketika ada dua orang yang berbicara dengan waktu bersamaan kepada kita? Bagaimana kita meresponnya? Apakah kita dapat memahami keduanya? Apakah kita dapat memahami yang satu namun tidak dengan yang lainnya? Atau malah kita tidak dapat memahami keduanya?</p>
-<p>Berikan waktu sejenak terhadap pertanyaan-pertanyaan di atas sebelum membaca tulisan-tulisan di bawah ini..</p>
-<p>&hellip;</p>
-<p>Seringkali saya mempertanyakan bagaimana TUHAN mendengarkan permohonan orang di dunia ini yang sedemikian banyaknya. Ketika seseorang berbicara di depan saya dan telinga saya mendengar suara lain yang berada jauh saja kadang terganggu.</p>
-<p>Baiklah. Kembali saya memintamu untuk merenungkan pernyataan (atau pertanyaan?) di atas sebelum lanjut membaca tulisan saya selanjutnya.</p>
-<p>&hellip;</p>
-<p>Pernah saya membayangkan bahwa pesan yang kita sampaikan itu memerlukan waktu untuk sampai kepada TUHAN. Saya membayangkan ketika kita berdoa maka kata-kata itu akan terbang terlebih dahulu ke atas langit. Kata-kata tersebut akan ditangkap oleh satu dari jutaan malaikat yang memang bertugas menerima semua pesan manusia layaknya petugas penerima telepon. Para malaikat itu kemudian akan antre berbaris dan menyampaikannya kepada Sang Pencipta.</p>
-<p>Bagaimana dengan kamu? Apakah kamu memiliki bayangan yang lain tentang hal ini?</p>
-<p>Hingga saat ini saya tidak dapat menciptakan pemahaman logis yang lain dalam pikiran saya ketika saya kembali mempertanyakan bagaimana TUHAN mendengar doa saya. Bisa saja saya membayangkan bahwa TUHAN memiliki telinga yang luar biasa banyak sehingga dapat mendengar banyak suara dari para manusia di bumi ini. Tapi pikiran saya terlalu cepat menolak hal tersebut untuk diwujudkan dalam imajinasi saya tentang hal tersebut.</p>
-<p>Hal ini tidak pernah saya pertanyakan secara langsung kepada siapapun. Mengapa? Entahlah. Saya hanya merasa tidak akan pernah mendapatkan jawaban logis dari siapapun tentang hal ini.Saya yakin mereka yang ada di bumi ini sama dengan saya, berada di dunia dan tidak bisa keluar masuk Sorga sesuka hati.</p>
-<p>Bila kemudian hal tersebut tidak dapat memberikan penjelasan logis kepada pikiran saya, apakah saya akan tetap percaya bahwa Sang Pencipta mendengar doa saya?</p>
-<p>Hanya saya yang mengetahui jawaban ini. Bila saya berkata iya ataupun tidak, maukah kamu percaya?</p>
-<p>&hellip;</p>
-<p><em>Tidak selamanya apa yang kamu yakini itu harus berasal dari pikiranmu. Percaya akan sesuatu atau tidak percaya itu tidak semata menjadi hak logikamu. Banyak hal yang bisa kamu yakini melalui rangkaian cerita yang terjadi dalam hidupmu, tanpa perlu memikirkannya terlalu jauh.</em></p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Dengar dan Berkata</title>
-            <link>https://armanwu.github.io/posts/2020/08/dengar-dan-berkata/</link>
-            <pubDate>Tue, 11 Aug 2020 22:16:00 +0700</pubDate>
-            
-            <guid>https://armanwu.github.io/posts/2020/08/dengar-dan-berkata/</guid>
-            <description>“When people talk, listen completely. Most people never listen.” -Ernest Hemingway-
-Apakah mendengar? Apakah berkata?
-Apa yang dapat didengar dan apa yang dapat dikatakan?
-Bisakah kita berkata tanpa pernah mendengar? Atau bisakah kita mendengar tanpa pernah berkata?
-Haruskah kita hanya berkata apa yang kita pernah dengar? Atau haruskah kita hanya mendengar apa yang ingin kita katakan?
-Kapan kita memutuskan untuk mendengar? Apakah kita dapat memilah apa yang ingin kita dengar?</description>
-            <content type="html"><![CDATA[<blockquote>
-<p><em>“When people talk, listen completely. Most people never listen.” -Ernest Hemingway-</em></p>
-</blockquote>
-<p>Apakah mendengar? Apakah berkata?</p>
-<p>Apa yang dapat didengar dan apa yang dapat dikatakan?</p>
-<p>Bisakah kita berkata tanpa pernah mendengar? Atau bisakah kita mendengar tanpa pernah berkata?</p>
-<p>Haruskah kita hanya berkata apa yang kita pernah dengar? Atau haruskah kita hanya mendengar apa yang ingin kita katakan?</p>
-<p>Kapan kita memutuskan untuk mendengar? Apakah kita dapat memilah apa yang ingin kita dengar?</p>
-<p>Kapan kita memutuskan untuk berkata? Apakah kita dapat memilah apa yang ingin kita katakan?</p>
-<p>Mana yang lebih dapat kita kendalikan? Mendengar atau berkata?</p>
-<p>Mana yang lebih kita sukai? Mendengar atau berkata?</p>
-<p>Dapatkah kita menghentikan diri kita dari mendengar? Dan dapatkah kita menghentikan diri kita dari berkata?</p>
-<p>Dapatkah kita mendengar sambil berkata?</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Menjaga Kata</title>
-            <link>https://armanwu.github.io/posts/2020/05/menjaga-kata/</link>
-            <pubDate>Sat, 23 May 2020 22:15:52 +0700</pubDate>
-            
-            <guid>https://armanwu.github.io/posts/2020/05/menjaga-kata/</guid>
-            <description>Beberapa orang memang dilahirkan untuk senang bercerita. Kesukaan mereka tersebut seringkali menjadi kelebihan mereka. Cerita yang biasa akan menjadi luar biasa bila diceritakan kembali oleh mereka. Sebaliknya bagi sebagian orang, bercerita adalah sesuatu hal yang sangat sulit. Apalagi bila hal tersebut dilakukan di sebuah forum yang akan dibaca atau didengar orang banyak. Seringkali bukan karena isi cerita yang menarik, namun karena bagaimana si pencerita menceritakannya.
-Berita apakah yang sedang “asik” dibicarakan saat ini?</description>
-            <content type="html"><![CDATA[<p>Beberapa orang memang dilahirkan untuk senang bercerita. Kesukaan mereka tersebut seringkali menjadi kelebihan mereka. Cerita yang biasa akan menjadi luar biasa bila diceritakan kembali oleh mereka. Sebaliknya bagi sebagian orang, bercerita adalah sesuatu hal yang sangat sulit. Apalagi bila hal tersebut dilakukan di sebuah forum yang akan dibaca atau didengar orang banyak. Seringkali bukan karena isi cerita yang menarik, namun karena bagaimana si pencerita menceritakannya.</p>
-<p>Berita apakah yang sedang “asik” dibicarakan saat ini? Yup! Virus Covid-19, si virus yang membuat kita pusing tujuh keliling selama beberapa bulan ini. Yang menjebak kita untuk merubah berbagai kebiasaan dan gaya hidup. Virus yang membuat saya lebih sering menatap layar HP dan komputer dari pada biasanya. Mengapa? Karena sulit bertatap muka dengan orang lain, sehingga harus tetap menjaga komunikasi via <em>chat messenger</em> atau media sosial.</p>
-<p>Hal menarik yang dapat dilihat saat ini adalah bagaimana beberapa grup yang saya ikuti mulai “ganas” menyebarkan berita-berita terkait Covid-19. Bahkan mereka yang saya pandang sebagai pribadi dengan tingkat kecerdasan dan pendidikan jauh di atas saya seringkali sudah tidak dapat lagi memilah-milah berita yang tersebar. Dengan mudahnya dibagikan di grup dengan berbagai opini pribadi yang seringkali tanpa dasar.</p>
-<p>Siapakah yang paling membahayakan dalam hal ini? Salah satunya adalah mereka yang saya sebutkan pertama di atas. Kelebihan mereka dalam bercerita kemudian menjadi “senjata mematikan”. sebuah berita NEGATIF yang mungkin tidak akan dihiraukan oleh sebagian orang (dalam situasi normal) menjadi “konsumsi” yang menarik. Tentu saja hal tersebut dengan cepat mendapatkan respon yang luar biasa.</p>
-<p>Apakah berita yang dibagikan itu salah? Apakah berita yang diceritakan kembali itu melenceng dari fakta? Tidak juga. Apa yang disampaikan seringkali tidak salah. Disertai data, analisis, dsb. Namun, mengapa saya katakan NEGATIF? Positif atau negatif sebuah berita atau cerita tidak hanya didasarkan pada konten, namun didasarkan juga pada waktu, tempat, situasi, dan kondisi. Sebuah berita dengan sisi analisis tajam ditemani oleh data yang akurat belum tentu menjadi konsumsi yang positif bila disampaikan di waktu, tempat, situasi, dan kondisi yang tidak tepat. Bahkan sebaliknya, hal tersebut dapat menjadi “senjata pembunuh”.</p>
-<p>Dalam situasi seperti ini ada baiknya kita lebih banyak membagikan hal-hal yang positif, membangun, menyemangati, dan memberi harapan. Pernahkah kita berpikir bahwa sebuah kata yang kita sampaikan di dalam forum itu berdampak seperti apa bagi setiap pribadi yang ada di dalam forum tersebut?</p>
-<p>Bisakah kita menjaga kata? Satu kata kebaikan yang kita lontarkan di pagi hari, mungkin akan tersebar dan beranak cucu di waktu malam hari. Bahkan hingga keesokan harinya..</p>
-<p><em>NB: Tulisan ini tidak dimaksudkan untuk menyinggung, mengejek atau menghina pihak manapun. Semoga menjadi perenungan kita bersama.</em></p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Apakah Kita Lupa?</title>
-            <link>https://armanwu.github.io/posts/2019/09/apakah-kita-lupa/</link>
-            <pubDate>Sun, 22 Sep 2019 22:15:45 +0700</pubDate>
-            
-            <guid>https://armanwu.github.io/posts/2019/09/apakah-kita-lupa/</guid>
-            <description>Perkembangan jaman (terutama teknologi) seringkali mengubah pola kehidupan kita, termasuk dalam hal beribadah. Salahkah? Saya rasa tidak. Kebetulan tema khotbah di gereja minggu ini cukup menegur saya. Ya, saya adalah pencinta teknologi. Saya menyukai perkembangan teknologi. Saya menyukai gawai-gawai modern. Saya tergila-gila pada hal berbau digital. Pekerjaan saya pun berhubungan dengan hal tersebut.
-Jadi tidak ada salahnya bila liturgi sebuah ibadah berubah-ubah pakemnya sesuai dengan perkembangan jaman dan teknologi. Namun, seringkali kita lupa.</description>
-            <content type="html"><![CDATA[<p>Perkembangan jaman (terutama teknologi) seringkali mengubah pola kehidupan kita, termasuk dalam hal beribadah. Salahkah? Saya rasa tidak. Kebetulan tema khotbah di gereja minggu ini cukup menegur saya. Ya, saya adalah pencinta teknologi. Saya menyukai perkembangan teknologi. Saya menyukai gawai-gawai modern. Saya tergila-gila pada hal berbau digital. Pekerjaan saya pun berhubungan dengan hal tersebut.</p>
-<p>Jadi tidak ada salahnya bila liturgi sebuah ibadah berubah-ubah pakemnya sesuai dengan perkembangan jaman dan teknologi. Namun, seringkali kita lupa..</p>
-<p>Apa yang Tuhan inginkan?</p>
-<p>Gegap gempita ruang ibadah sempat mengusik pikiran saya. Kemeriahan ruang ibadah disambut dengan semangat bertepuk tangan, seringkali membuat saya berpikir, &ldquo;Apakah itu salah?&rdquo;. Saya rasa sih tidak, tapi..</p>
-<p>Apakah Tuhan meminta itu semua?</p>
-<p>Apakah menangis di ruang ibadah menjadi keharusan dan menjadi simbol kedekatan kita dengan-Nya? Apakah tepuk tangan dengan teriakan kita di ruang ibadah dapat memberikan kemuliaan kepada-Nya? Siapakah kita sehingga dapat memberikan kemuliaan kepada Sang Khalik?</p>
-<p>Kita adalah ciptaan dan DIA adalah sang pencipta.</p>
-<p>Apakah kita lupa?</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Mereka</title>
-            <link>https://armanwu.github.io/posts/2019/04/mereka/</link>
-            <pubDate>Tue, 09 Apr 2019 20:01:15 +0700</pubDate>
-            
-            <guid>https://armanwu.github.io/posts/2019/04/mereka/</guid>
-            <description>Yang seringkali tak terlihat namun bergaung
-mereka berpentas tanpa mendapat panggung
-bersinar dalam kegelapan yang terbendung
-Dengan raga yang seringkali tersamar
-tertutup para bulan yang gagah bersinar
-tanpa pamor dan tiada tenar
-Mereka ada
-mereka hadir</description>
-            <content type="html"><![CDATA[<p>Yang seringkali tak terlihat namun bergaung<br>
-mereka berpentas tanpa mendapat panggung<br>
-bersinar dalam kegelapan yang terbendung</p>
-<p>Dengan raga yang seringkali tersamar<br>
-tertutup para bulan yang gagah bersinar<br>
-tanpa pamor dan tiada tenar</p>
-<p>Mereka ada<br>
-mereka hadir</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Ketulusan dalam Ibadah</title>
-            <link>https://armanwu.github.io/posts/2019/04/ketulusan-dalam-ibadah/</link>
-            <pubDate>Mon, 08 Apr 2019 22:15:34 +0700</pubDate>
-            
-            <guid>https://armanwu.github.io/posts/2019/04/ketulusan-dalam-ibadah/</guid>
-            <description>Sebetulnya ini tuh tema khotbah hari minggu sore kemarin di gereja. Sebuah perenungan yang cukup dalam. Sejujurnya hal tersebut sedikit banyak mengetuk hati saya yang sedari kecil sudah beribadah dan pelayanan di gereja. Bahkan dulu mah ampe semua kunci ruangan gereja pun saya punya. Mau minta kunci gerbang juga ada :p. Dikatakan bahwa ibadah itu memberi, melayani. Yup! Ibadah itu pelayanan. Kembali kepada isu klise dan klasik yang terus berputar-berputar di seputaran gereja.</description>
-            <content type="html"><![CDATA[<p>Sebetulnya ini tuh tema khotbah hari minggu sore kemarin di gereja. Sebuah perenungan yang cukup dalam. Sejujurnya hal tersebut sedikit banyak mengetuk hati saya yang sedari kecil sudah beribadah dan pelayanan di gereja. Bahkan dulu mah ampe semua kunci ruangan gereja pun saya punya. Mau minta kunci gerbang juga ada :p. Dikatakan bahwa ibadah itu memberi, melayani. Yup! Ibadah itu pelayanan. Kembali kepada isu klise dan klasik yang terus berputar-berputar di seputaran gereja. Apa sih makna PELAYANAN?</p>
-<p>Saat ini saya juga gak bisa jawab dan bukan kapasitas saya untuk menjawab. Satu hal yang pasti dan seringkali saya rasakan sekarang ini adalah PAKSAAN dan TUNTUTAN yang kemudian seringkali menjadi BEBAN untuk saya datang beribadah. Ada masa-masa ketika saya betul-betul bersemangat untuk melakukan apapun di gereja. Ceritanya mah itu TOTALITAS PELAYANAN :p Betulkah? gak tau. TUHAN yang berhak menilai 🙂</p>
-<p>Namun ada masa-masa ketika pelayanan kemudian menjadi beban. Siapakah yang salah? Adanya tuntutan eksternal dari para internal gereja? Atau diri saya yang memang tidak memiliki ketulusan dalam pelayanan dan ibadah? Saya pun belum bisa menjawab. Teguran singkat.. sebelum menyalahkan orang lain, ada baiknya cek kepada diri sendiri terlebih dahulu.</p>
-<p>Di dalam Rumah Ibadah.. apakah yang kita cari?</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Saya dan Toilet Umum</title>
-            <link>https://armanwu.github.io/posts/2019/04/saya-dan-toilet-umum/</link>
-            <pubDate>Fri, 05 Apr 2019 22:10:58 +0700</pubDate>
-            
-            <guid>https://armanwu.github.io/posts/2019/04/saya-dan-toilet-umum/</guid>
-            <description>Seringkali saya masuk ke sebuah toko atau mal hanya untuk numpang ke toilet. Yup tujuan saya jelas, cuma numpang menyalurkan beban dan memberi kelegaan batin dan jasmani kepada tubuh ini. Setelahnya ya udah keluar lagi aja.
-Salah satu rintangan berat biasanya ketika berhadapan dengan Mbak dari mini market ternama yang ada hampir di setiap sudut wilayah Bandung dan sekitarnya. Ada 2 tuh yang biasanya sebelah-sebelahan atau saling berhadapan dengan nuansa warna yang hampir sama, merah biru kuning.</description>
-            <content type="html"><![CDATA[<p>Seringkali saya masuk ke sebuah toko atau mal hanya untuk numpang ke toilet. Yup tujuan saya jelas, cuma numpang menyalurkan beban dan memberi kelegaan batin dan jasmani kepada tubuh ini. Setelahnya ya udah keluar lagi aja.</p>
-<p>Salah satu rintangan berat biasanya ketika berhadapan dengan Mbak dari mini market ternama yang ada hampir di setiap sudut wilayah Bandung dan sekitarnya. Ada 2 tuh yang biasanya sebelah-sebelahan atau saling berhadapan dengan nuansa warna yang hampir sama, merah biru kuning. Untuk mini market yang lain gak tau, belum pernah coba. Nanti deh diupdate kalo udah nyoba. Nah biasanya klo numpang ke toilet ke mini market berdua itu tuh, si Mbak kasir suka jawab “maaf, Pak.. gak ada air..”. Dalam hati sih pengen nanya, “Ai si mbak mau pipis gimana?”, tapi ya sudahlah. Masih banyak toko-toko lain yang mau menerima diri yang kebelet ini.</p>
-<p>Paling sue lagi klo udah mah gak dikasih ijin pake toiletnya. Begitu keluar tiba-tiba muncul tukang parkir. Melayang deh Rp 2.000,00. Maklum seribuan sekarang langka, susah banget nyarinya. Biasa yang tersedia di dompet cuma Rp 2.000,00. Ya sudah lah. Ya klo ada pom bensin sih mending di pom bensin. Dua ribu rupiahnya jelas terpakai buat apa.</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Memilih</title>
-            <link>https://armanwu.github.io/posts/2019/04/memilih/</link>
-            <pubDate>Mon, 01 Apr 2019 20:01:05 +0700</pubDate>
-            
-            <guid>https://armanwu.github.io/posts/2019/04/memilih/</guid>
-            <description>Yang tulus dan peduli
-relasi yang abadi
-damai dalam sunyi
-Yang mencari panggung
-akan selalu bergaung
-duka bagai berkabung</description>
-            <content type="html"><![CDATA[<p>Yang tulus dan peduli<br>
-relasi yang abadi<br>
-damai dalam sunyi</p>
-<p>Yang mencari panggung<br>
-akan selalu bergaung<br>
-duka bagai berkabung</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Berbeda</title>
-            <link>https://armanwu.github.io/posts/2019/03/berbeda/</link>
-            <pubDate>Sat, 30 Mar 2019 20:00:57 +0700</pubDate>
-            
-            <guid>https://armanwu.github.io/posts/2019/03/berbeda/</guid>
-            <description>Tidak ada yang benar hitam
-dan tidak ada yang benar putih
-akui saja keberadaan masing-masing
-Siapakah yang berhak menilai?
-perlukah kita menilai?
-ataukah cukup untuk mengakui?</description>
-            <content type="html"><![CDATA[<p>Tidak ada yang benar hitam<br>
-dan tidak ada yang benar putih<br>
-akui saja keberadaan masing-masing</p>
-<p>Siapakah yang berhak menilai?<br>
-perlukah kita menilai?<br>
-ataukah cukup untuk mengakui?</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Satu Hari di Bulan Desember</title>
-            <link>https://armanwu.github.io/posts/2018/12/satu-hari-di-bulan-desember/</link>
-            <pubDate>Fri, 28 Dec 2018 19:55:58 +0700</pubDate>
-            
-            <guid>https://armanwu.github.io/posts/2018/12/satu-hari-di-bulan-desember/</guid>
-            <description>Desember telah tiba
-waktunya menghias pohon
-membungkus kado
-berbelanja pakaian-pakaian baru
-merangkai kata-kata indah sebagai ucapan
-menyiapkan makanan-makanan lezat
-berpakaian ala Sinterklas
-dengan bulu-bulu putih pada sebuah topi merah
-Semua demi menyambut satu hari di bulan Desember
-yang tidak pernah dilupakan
-yang setiap tahun selalu dirayakan
-yang selalu menjadi bagian dalam hidup
-yang selalu menemani kita melewati pergantian tahun
-sebagai hari yang dikatakan penuh sukacita
-sebagai hari yang dikatakan penuh harapan</description>
-            <content type="html"><![CDATA[<p>Desember telah tiba<br>
-waktunya menghias pohon<br>
-membungkus kado<br>
-berbelanja pakaian-pakaian baru<br>
-merangkai kata-kata indah sebagai ucapan<br>
-menyiapkan makanan-makanan lezat<br>
-berpakaian ala Sinterklas<br>
-dengan bulu-bulu putih pada sebuah topi merah</p>
-<p>Semua demi menyambut satu hari di bulan Desember<br>
-yang tidak pernah dilupakan<br>
-yang setiap tahun selalu dirayakan<br>
-yang selalu menjadi bagian dalam hidup<br>
-yang selalu menemani kita melewati pergantian tahun<br>
-sebagai hari yang dikatakan penuh sukacita<br>
-sebagai hari yang dikatakan penuh harapan<br>
-sebagai hari yang sering kita lewati<br>
-tanpa menyadari maknanya<br>
-tanpa peduli mengapa kita merayakannya</p>
-<p>hari kelahiran Sang Juru Selamat<br>
-hari kelahiran Sang Raja Damai</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Menebar Damai</title>
-            <link>https://armanwu.github.io/posts/2018/12/menebar-damai/</link>
-            <pubDate>Mon, 17 Dec 2018 19:51:54 +0700</pubDate>
-            
-            <guid>https://armanwu.github.io/posts/2018/12/menebar-damai/</guid>
-            <description>Matahari terang memancar
-tampaklah cerah alam sekitar
-tiada elok bila hati bermuram
-mari sapa saling bersalam
-hari berlalu takkan berulang
-hingga petang datang menjelang
-Bulan bintang lalu bersinar
-tampaklah cerah tiada pudar
-benderang di hari malam
-tampak kemilau di antara kelam
-menghias alam di malam panjang
-gemerlap hingga pagi kembali datang
-Waktu akanlah terus berputar
-hingga akhir kita abadi terpejam
-apa yang lalu tiada pernah terulang
-Sejuk bila kebaikan lepas tersebar</description>
-            <content type="html"><![CDATA[<p>Matahari terang memancar<br>
-tampaklah cerah alam sekitar<br>
-tiada elok bila hati bermuram<br>
-mari sapa saling bersalam<br>
-hari berlalu takkan berulang<br>
-hingga petang datang menjelang</p>
-<p>Bulan bintang lalu bersinar<br>
-tampaklah cerah tiada pudar<br>
-benderang di hari malam<br>
-tampak kemilau di antara kelam<br>
-menghias alam di malam panjang<br>
-gemerlap hingga pagi kembali datang</p>
-<p>Waktu akanlah terus berputar<br>
-hingga akhir kita abadi terpejam<br>
-apa yang lalu tiada pernah terulang</p>
-<p>Sejuk bila kebaikan lepas tersebar<br>
-tepancar senyum sang pencipta alam<br>
-tanpa lelah senandung damai berdendang</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Daun Kering</title>
-            <link>https://armanwu.github.io/posts/2018/12/daun-kering/</link>
-            <pubDate>Sat, 15 Dec 2018 17:08:18 +0700</pubDate>
-            
-            <guid>https://armanwu.github.io/posts/2018/12/daun-kering/</guid>
-            <description>Daun yang layu tak lama terbuang
-melepas diri dari dahan yang menopang
-terhembus angin dan melayang
-jatuh takkan jauh dari asal batang
-tak lama pun terinjak orang
-rapuh dan kering tak berbayang
-akankah kembali berkembang?
-Ada kalanya diri ini menang
-ada waktunya terhilang
-mungkin tidak tapi mungkin terulang
-hingga saatnya tiba untuk berpulang
-siapakah dapat menerawang?
-Itu sebab kesombongan tak perlu datang
-adalah mustahil menambal kayu berlubang
-kata maaf pun seringkali tak dipandang</description>
-            <content type="html"><![CDATA[<p>Daun yang layu tak lama terbuang<br>
-melepas diri dari dahan yang menopang<br>
-terhembus angin dan melayang<br>
-jatuh takkan jauh dari asal batang<br>
-tak lama pun terinjak orang<br>
-rapuh dan kering tak berbayang<br>
-akankah kembali berkembang?</p>
-<p>Ada kalanya diri ini menang<br>
-ada waktunya terhilang<br>
-mungkin tidak tapi mungkin terulang<br>
-hingga saatnya tiba untuk berpulang<br>
-siapakah dapat menerawang?</p>
-<p>Itu sebab kesombongan tak perlu datang<br>
-adalah mustahil menambal kayu berlubang<br>
-kata maaf pun seringkali tak dipandang</p>
 ]]></content>
         </item>
         

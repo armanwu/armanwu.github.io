@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flux Pavilion | Arman Wu</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="/images/logo.png">
+</head>
+
+<body>
+
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/" class="nav-logo">
+            <img src="/img/logo.png" alt="Logo">
+
+            <span></span>
+        </a>
+
+        <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+            
+            <li class="nav-item">
+                <a href="/posts" class="nav-link">Essays</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/projects" class="nav-link">Projects</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/publications" class="nav-link">Publications</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/about" class="nav-link">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+
+<script>
+    const hamburger = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+</script>
+
+    <main class="container">
+        
+<article class="full-article">
+    <header class="article-header">
+        <h1>Flux Pavilion</h1>
+    </header>
+
+    <div class="article-content">
+        <figure><img src="/img/projects/flux-pavilion/flux-pavilion-1.png">
+</figure>
+
+<p><strong>Flux Pavilion</strong> is an exploration of continuity and flow. In architecture, we often deal with rigid lines and static forms, but nature operates on curves and rhythms. This project attempts to capture the essence of movement—like a sound wave or a rolling ocean—frozen in a structural shell.</p>
+<p>It reimagines the concept of a public shelter not just as a roof, but as a landscape that rises and falls to create pockets of space.</p>
+<h2 id="the-logic-trigonometry-as-architecture">The Logic: Trigonometry as Architecture</h2>
+<p>While the form looks organic, its origin is purely mathematical. Written in <strong>Julia</strong>, the generative script relies heavily on trigonometric functions (specifically sine and cosine waves).</p>
+<figure><img src="/img/projects/flux-pavilion/flux-pavilion-2.png">
+</figure>
+
+<p>Instead of manually modeling each curve, the script modulates a series of arches along a path. The parameters allow for precise control over the &ldquo;amplitude&rdquo; (height) and &ldquo;frequency&rdquo; (width) of the waves. The wireframe above reveals the underlying tessellation—a clean, logical grid that makes the complex curvature constructible.</p>
+<figure><img src="/img/projects/flux-pavilion/flux-pavilion-3.png">
+</figure>
+
+<h2 id="the-experience-inside-the-wave">The Experience: Inside the Wave</h2>
+<p>The goal of this parametric geometry is to influence human behavior. The &ldquo;peaks&rdquo; of the wave create grand, open entryways that invite people in, while the &ldquo;valleys&rdquo; dip down to create more intimate, enclosed areas.</p>
+<figure><img src="/img/projects/flux-pavilion/flux-pavilion-5.png">
+</figure>
+
+<h2 id="visualization">Visualization</h2>
+<p>Rendered with <strong>Nano Banana</strong>, the visualization emphasizes lightness. The white, rib-like cladding contrasts with the large glazed openings, allowing sunlight to flood the interior. It transforms abstract math into a welcoming, breathable public space.</p>
+<figure><img src="/img/projects/flux-pavilion/flux-pavilion-4.png">
+</figure>
+
+
+    </div>
+</article>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Arman Arisman</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        if (hamburger) {
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            });
+        }
+    </script>
+
+</body>
+
+</html>

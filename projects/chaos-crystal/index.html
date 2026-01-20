@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaos Crystal | Arman Wu</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="/images/logo.png">
+</head>
+
+<body>
+
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/" class="nav-logo">
+            <img src="/img/logo.png" alt="Logo">
+
+            <span></span>
+        </a>
+
+        <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+            
+            <li class="nav-item">
+                <a href="/posts" class="nav-link">Essays</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/projects" class="nav-link">Projects</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/publications" class="nav-link">Publications</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/about" class="nav-link">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+
+<script>
+    const hamburger = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+</script>
+
+    <main class="container">
+        
+<article class="full-article">
+    <header class="article-header">
+        <h1>Chaos Crystal</h1>
+    </header>
+
+    <div class="article-content">
+        <figure><img src="/img/projects/chaos-crystal/chaos-crystal-1.png">
+</figure>
+
+<p><strong>Chaos Crystal</strong> stands as a digital geode brought to the urban scale. While traditional architecture often seeks symmetry and smooth lines, this project embraces the beauty of the jagged and the irregular. It mimics the way raw minerals form in nature—sharp, unpredictable, yet possessing an inherent geometric logic.</p>
+<h2 id="the-logic-controlled-randomness">The Logic: Controlled Randomness</h2>
+<p>The form was generated using a custom script in <strong>Julia</strong>. The core concept was &ldquo;spherical perturbation.&rdquo;</p>
+<figure><img src="/img/projects/chaos-crystal/chaos-crystal-3.png">
+</figure>
+
+<p>Imagine a perfect sphere. The code takes every vertex of that sphere and pushes or pulls it by a random amount. As seen in the wireframe process above, this transforms a smooth ball into a chaotic, spiked mesh. The challenge was finding the &ldquo;sweet spot&rdquo; in the code—too much randomness creates a mess, too little looks like a boring polygon.</p>
+<h2 id="materiality-industrial-warmth">Materiality: Industrial Warmth</h2>
+<p>Once the geometry was frozen, the visualization process in <strong>Nano Banana</strong> focused on grounding this alien form in reality.</p>
+<p>Instead of futuristic sci-fi materials, we chose <strong>oxidized copper</strong> and <strong>rusted metal</strong> panels. This gives the building a sense of age and permanence, contrasting the high-tech generative process with low-tech, tactile materials. The heavy, opaque panels are sliced open by large crystalline glass facades, allowing light to penetrate the &ldquo;rock.&rdquo;</p>
+<h2 id="interior-the-cavern">Interior: The Cavern</h2>
+<figure><img src="/img/projects/chaos-crystal/chaos-crystal-2.png">
+</figure>
+
+<p>Stepping inside feels like entering a hollowed-out gemstone. The interior structure reflects the exterior chaos, with angled ceilings and faceted walls. However, the atmosphere is surprisingly warm.</p>
+<p>By combining the industrial copper skin with warm wood flooring and indoor trees, the space acts as a cozy, sheltered cavern for public gathering. It creates a unique spatial experience where the walls themselves seem to fold and crash around the visitors, yet still offer a sense of protection.</p>
+
+    </div>
+</article>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Arman Arisman</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        if (hamburger) {
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            });
+        }
+    </script>
+
+</body>
+
+</html>

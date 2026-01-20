@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenga Village | Arman Wu</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="/images/logo.png">
+</head>
+
+<body>
+
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/" class="nav-logo">
+            <img src="/img/logo.png" alt="Logo">
+
+            <span></span>
+        </a>
+
+        <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+            
+            <li class="nav-item">
+                <a href="/posts" class="nav-link">Essays</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/projects" class="nav-link">Projects</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/publications" class="nav-link">Publications</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/about" class="nav-link">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+
+<script>
+    const hamburger = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+</script>
+
+    <main class="container">
+        
+<article class="full-article">
+    <header class="article-header">
+        <h1>Jenga Village</h1>
+    </header>
+
+    <div class="article-content">
+        <figure><img src="/img/projects/jenga-village/jenga-village-1.jpg">
+</figure>
+
+<p><strong>Jenga Village</strong> is a playful yet serious exploration of modular housing. While modern apartment blocks often feel repetitive and isolating, this project asks: Can we use code to create a &ldquo;vertical village&rdquo; where every unit feels unique?</p>
+<p>Using the metaphor of the game <em>Jenga</em>, the design stacks living units (voxels) in a seemingly random arrangement, creating a rich texture of solids and voids that adapts to the hillside topography.</p>
+<h2 id="the-logic-voxel-aggregation">The Logic: Voxel Aggregation</h2>
+<p>Written in <strong>Julia</strong>, the script for this project operates on a voxel-based grid system. Unlike traditional modeling where we draw walls and floors, here the code treats space as a collection of 3D pixels.</p>
+<figure><img src="/img/projects/jenga-village/jenga-village-3.jpg">
+</figure>
+
+<p>The algorithm generates these stacks with specific rules:</p>
+<ol>
+<li><strong>Adjacency:</strong> Units must connect logically to support one another.</li>
+<li><strong>Variation:</strong> The script introduces random shifts to prevent the façade from becoming flat.</li>
+<li><strong>Subtraction:</strong> Strategic removal of blocks creates pockets for open spaces.</li>
+</ol>
+<h2 id="breathing-room-in-high-density">Breathing Room in High Density</h2>
+<p>The beauty of this algorithmic approach is the accidental quality of space it creates. By shifting the blocks, the roof of one unit becomes the terrace of the neighbor above.</p>
+<p>This transforms a high-density complex into a series of garden homes. The &ldquo;randomness&rdquo; of the code ensures that almost every resident gets a private outdoor area, natural light, and a view—luxuries often lost in standard boxy apartments.</p>
+<h2 id="visualization">Visualization</h2>
+<p>The scene was rendered using <strong>Nano Banana</strong>, focusing on the warmth of the materials to contrast the digital origin of the form.</p>
+<figure><img src="/img/projects/jenga-village/jenga-village-2.jpg">
+</figure>
+
+<p>I combined exposed concrete with timber cladding to give the voxels a tactile, human scale. The extensive greenery placed on the terraces softens the hard edges of the geometry, blending the architecture into the surrounding green hill. It is a vision of how computational design can coexist with nature.</p>
+
+    </div>
+</article>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Arman Arisman</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        if (hamburger) {
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            });
+        }
+    </script>
+
+</body>
+
+</html>

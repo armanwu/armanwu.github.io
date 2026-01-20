@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titanium Clash | Arman Wu</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="/images/logo.png">
+</head>
+
+<body>
+
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/" class="nav-logo">
+            <img src="/img/logo.png" alt="Logo">
+
+            <span></span>
+        </a>
+
+        <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+            
+            <li class="nav-item">
+                <a href="/posts" class="nav-link">Essays</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/projects" class="nav-link">Projects</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/publications" class="nav-link">Publications</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/about" class="nav-link">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+
+<script>
+    const hamburger = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+</script>
+
+    <main class="container">
+        
+<article class="full-article">
+    <header class="article-header">
+        <h1>Titanium Clash</h1>
+    </header>
+
+    <div class="article-content">
+        <figure><img src="/img/projects/titanium-clash/titanium-clash-5.jpg">
+</figure>
+
+<p><strong>Titanium Clash</strong> is an experimental project exploring the boundaries between algorithmic chaos and architectural order. Drawing inspiration from the fragmented style of deconstructivism, this project investigates how code can be used to generate complex spatial collisions that would be hard to model manually.</p>
+<h2 id="the-process-code-as-the-sketchpad">The Process: Code as the Sketchpad</h2>
+<figure><img src="/img/projects/titanium-clash/titanium-clash-1.jpg">
+</figure>
+
+<p>Instead of starting with a sketch or a massing model, this project began with a script written in <strong>Julia</strong>. I chose Julia for its fast computational capabilities, allowing for rapid iteration of complex geometric calculations.</p>
+<p>The core of the script was designed to generate &ldquo;randomized collisions.&rdquo; I set up algorithms to spawn multiple prismatic forms with varying vectors, scales, and rotation angles. The goal was to create a sense of dynamic tension—where forms don&rsquo;t just touch, but aggressively intersect and pierce through one another.</p>
+<h2 id="the-role-of-the-architect-curation">The Role of the Architect: Curation</h2>
+<p>While the computer generated the geometry, the role of the architect shifted from <em>creator</em> to <em>curator</em>. The script produced hundreds of variations—some were too messy, some too simple.</p>
+<figure><img src="/img/projects/titanium-clash/titanium-clash-2.jpg">
+</figure>
+
+<p>The final form selected for &ldquo;Titanium Clash&rdquo; stood out because of its balanced composition. It captured a frozen moment of impact, where sharp, aggressive shards of geometry create a dramatic silhouette against the sky. This stage highlights a crucial philosophy in AI and generative design: the machine provides the options, but human intuition provides the meaning.</p>
+<h2 id="visualization">Visualization</h2>
+<p>To bring these raw mathematical geometries to life, the model was rendered using <strong>Nano Banana</strong>. The focus was on materiality—specifically, the contrast between the cold, brushed titanium cladding and the transparency of the glass shards.</p>
+<p>The result is a structure that feels alien yet grounded, a &ldquo;clash&rdquo; of materials and forms that serves as a proof of the potential of scripting in architectural form-finding.</p>
+<figure><img src="/img/projects/titanium-clash/titanium-clash-3.jpg">
+</figure>
+
+<figure><img src="/img/projects/titanium-clash/titanium-clash-4.jpg">
+</figure>
+
+
+    </div>
+</article>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Arman Arisman</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        if (hamburger) {
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            });
+        }
+    </script>
+
+</body>
+
+</html>

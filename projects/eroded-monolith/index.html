@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eroded Monolith | Arman Wu</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="/images/logo.png">
+</head>
+
+<body>
+
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/" class="nav-logo">
+            <img src="/img/logo.png" alt="Logo">
+
+            <span></span>
+        </a>
+
+        <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+            
+            <li class="nav-item">
+                <a href="/posts" class="nav-link">Essays</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/projects" class="nav-link">Projects</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/publications" class="nav-link">Publications</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/about" class="nav-link">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+
+<script>
+    const hamburger = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+</script>
+
+    <main class="container">
+        
+<article class="full-article">
+    <header class="article-header">
+        <h1>Eroded Monolith</h1>
+    </header>
+
+    <div class="article-content">
+        <figure><img src="/img/projects/eroded-monolith/eroded-monolith-1.png">
+</figure>
+
+<p><strong>Eroded Monolith</strong> challenges the traditional typology of the skyscraper. Usually, high-rise buildings are sealed, air-conditioned glass boxes that isolate people from the elements. This project asks: What happens if we &ldquo;break&rdquo; the box to let nature in?</p>
+<p>The concept creates a dialogue between two opposing forces: the perfection of the modernist grid versus the imperfection of organic erosion.</p>
+<h2 id="the-logic-algorithmic-subtraction">The Logic: Algorithmic Subtraction</h2>
+<p>The form-finding process was driven by a script written in <strong>Julia</strong>. Unlike the additive process used in <em>Jenga Village</em> (stacking blocks), this project uses a <strong>subtractive</strong> method.</p>
+<figure><img src="/img/projects/eroded-monolith/eroded-monolith-2.png">
+</figure>
+
+<p>I started with a solid, massive volume—a &ldquo;monolith.&rdquo; Then, using a customized noise algorithm, the script identified specific voxels to be removed. Think of it like a digital termite colony carving out a nest, or water eroding a canyon over centuries. The code allowed me to control the intensity of the erosion, ensuring the structural core remained intact while opening up deep cavernous spaces on the façade.</p>
+<h2 id="visualization-the-warmth-within">Visualization: The Warmth Within</h2>
+<p>Rendered with <strong>Nano Banana</strong>, the visualization highlights the stark contrast in materiality.</p>
+<ul>
+<li><strong>The Shell:</strong> The exterior is sleek, reflective glass—representative of the corporate world.</li>
+<li><strong>The Core:</strong> The eroded interior is clad in warm timber and filled with hanging gardens.</li>
+</ul>
+<figure><img src="/img/projects/eroded-monolith/eroded-monolith-3.png">
+</figure>
+
+<p>This &ldquo;erosion&rdquo; functions as a communal lung for the building. It creates shaded terraces, breakout spaces, and vertical parks that connect different floors. It proves that even in a massive tower, we can use code to carve out spaces that feel intimate and human.</p>
+
+    </div>
+</article>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Arman Arisman</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        if (hamburger) {
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            });
+        }
+    </script>
+
+</body>
+
+</html>

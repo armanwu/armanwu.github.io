@@ -1,0 +1,497 @@
+/* ==========================================================================
+   THEME: CITY LIGHTS (Light Adaptation)
+   --------------------------------------------------------------------------
+   Colors:
+   - Text (Deep Gunmetal): #1D252C
+   - Links (Vibrant Blue): #2979ff
+   - Hover (Teal Accent):  #00bfa5
+   - Borders/Lines:        #f0f4f8 / #dce3e8
+   ========================================================================== */
+
+/* =========================================
+   1. GLOBAL RESET & TYPOGRAPHY
+   ========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #fff;
+    color: #1D252C;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #2979ff;
+}
+
+/* --- Headings --- */
+h1,
+h2,
+h3,
+p {
+    text-align: left;
+    /* Default Rata Kiri */
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    color: #0d1117;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #1D252C;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1D252C;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+/* =========================================
+   2. MAIN LAYOUT
+   ========================================= */
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* =========================================
+   3. NAVIGATION BAR
+   ========================================= */
+.navbar {
+    background: #fff;
+    border-bottom: 1px solid #f0f4f8;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 50px;
+}
+
+.nav-container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo & Brand */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #1D252C;
+}
+
+.nav-logo img {
+    height: 32px;
+    width: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+/* Desktop Menu */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 25px;
+}
+
+.nav-link {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #5b6c7f;
+}
+
+.nav-link:hover {
+    color: #2979ff;
+}
+
+/* Hamburger Icon (Mobile) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #1D252C;
+}
+
+/* =========================================
+   4. HOMEPAGE (INTRO)
+   ========================================= */
+.intro {
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+/* Avatar/Logo Style */
+.profile-container {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #e1e8ed;
+    box-shadow: 0 5px 15px rgba(29, 37, 44, 0.15);
+    transition: transform 0.3s ease, border-color 0.3s;
+}
+
+/* Intro Text */
+.intro p {
+    color: #5b6c7f;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 100%;
+    margin: 0 0 1.5rem 0;
+}
+
+/* Social Icons */
+.social-links {
+    margin-top: 25px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.social-links a {
+    color: #5b6c7f;
+    display: flex;
+    transition: all 0.2s ease;
+}
+
+.social-links svg {
+    width: 22px;
+    height: 22px;
+    stroke: currentColor;
+}
+
+.social-links a:hover {
+    color: #00bfa5;
+    transform: scale(1.1);
+}
+
+/* =========================================
+   5. POST LIST / ESSAYS (LIST VIEW)
+   ========================================= */
+.post-preview {
+    margin-bottom: 50px;
+}
+
+.post-title {
+    font-size: 1.6rem;
+    margin: 5px 0 10px 0;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #1D252C;
+}
+
+.post-meta {
+    font-size: 0.85rem;
+    color: #5b6c7f;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.post-summary {
+    font-family: Georgia, serif;
+    color: #4a5868;
+    font-size: 1rem;
+}
+
+/* FIX: Thumbnail Image in Post List */
+.post-preview img {
+    width: 100%;
+    max-width: 640px;
+    /* Membatasi lebar agar tidak terlalu besar */
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin: 15px 0;
+    border: 1px solid #dce3e8;
+    display: block;
+}
+
+/* =========================================
+   6. SINGLE ARTICLE (READING VIEW)
+   ========================================= */
+.article-header {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.article-header h1 {
+    font-size: 2.5rem;
+    line-height: 1.15;
+    margin-bottom: 15px;
+    color: #0d1117;
+}
+
+.article-content {
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    text-align: left;
+    color: #1D252C;
+}
+
+.article-content p {
+    margin-bottom: 1.8em;
+}
+
+.article-content h2 {
+    margin-top: 2em;
+    font-family: -apple-system, sans-serif;
+    color: #1D252C;
+    border-bottom: 2px solid #2979ff;
+    padding-bottom: 3px;
+    display: inline-block;
+}
+
+.article-content blockquote {
+    border-left: 4px solid #2979ff;
+    padding-left: 20px;
+    font-style: italic;
+    color: #5b6c7f;
+    margin: 30px 0;
+    background: #f5f8fa;
+}
+
+.article-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 30px 0;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.article-content a {
+    color: #2979ff;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    font-weight: 600;
+}
+
+.article-content a:hover {
+    color: #00bfa5;
+    text-decoration: none;
+}
+
+/* FIX: List Indentation (Bullet Points) */
+.article-content ul,
+.article-content ol {
+    margin-left: 18px;
+    /* Indentasi agar rapi */
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.article-content li {
+    margin-bottom: 0.5rem;
+    padding-left: 5px;
+    list-style-position: outside;
+}
+
+/* =========================================
+   7. PROJECT GRID
+   ========================================= */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.project-card {
+    display: block;
+    background: transparent;
+}
+
+.project-card:hover .project-image {
+    opacity: 1;
+    border-color: #2979ff;
+    transform: translateY(-3px);
+}
+
+.project-image {
+    width: 100%;
+    height: 140px;
+    background-color: #f0f4f8;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    border: 1px solid #dce3e8;
+    transition: all 0.2s ease;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.project-info h3 {
+    font-size: 0.95rem;
+    line-height: 1.3;
+    margin: 0;
+    font-weight: 700;
+    color: #1D252C;
+    text-align: left;
+}
+
+.project-info p {
+    display: none;
+}
+
+/* =========================================
+   8. FOOTER
+   ========================================= */
+.footer {
+    margin-top: 80px;
+    padding: 40px 0;
+    border-top: 1px solid #f0f4f8;
+    text-align: center;
+    color: #5b6c7f;
+    font-size: 0.9rem;
+}
+
+/* =========================================
+   9. MEDIA QUERIES (RESPONSIVE)
+   ========================================= */
+
+/* Tablet & Mobile Menu (< 768px) */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: auto;
+        right: -100%;
+        top: 60px;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        padding-bottom: 20px;
+        gap: 0;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-item {
+        margin: 15px 0;
+    }
+}
+
+/* Small Screens / Mobile Typography (< 600px) */
+@media (max-width: 600px) {
+    html {
+        font-size: 15px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem !important;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 1.4rem !important;
+    }
+
+    .intro p {
+        font-size: 1rem !important;
+    }
+
+    .article-header h1 {
+        font-size: 2rem;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .project-image {
+        height: 110px;
+    }
+
+    .project-info h3 {
+        font-size: 0.85rem;
+    }
+}

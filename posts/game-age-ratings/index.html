@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Game Age Ratings: Protecting Children from Inappropriate Content | Arman Wu</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="/images/logo.png">
+</head>
+
+<body>
+
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/" class="nav-logo">
+            <img src="/img/logo.png" alt="Logo">
+
+            <span></span>
+        </a>
+
+        <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+            
+            <li class="nav-item">
+                <a href="/posts" class="nav-link">Essays</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/projects" class="nav-link">Projects</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/publications" class="nav-link">Publications</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/about" class="nav-link">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+
+<script>
+    const hamburger = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+</script>
+
+    <main class="container">
+        
+<article class="full-article">
+    <header class="article-header">
+        <h1>Understanding Game Age Ratings: Protecting Children from Inappropriate Content</h1>
+        <div class="article-meta">
+            <span>Jul 6, 2023</span> •
+            <span>3 min read</span>
+        </div>
+    </header>
+
+    <div class="article-content">
+        <p>A lot of parents worry about the games their children play. They are often afraid that some games might not be suitable for their kid&rsquo;s age. But actually, parents need to know that every game already comes with an age rating set by the developers. These ratings exist to help parents decide if a game is okay for their children or not.</p>
+<p>When making a game, developers and publishers already have a target audience in mind. They set the age rating based on what is inside the game—like violence, bad language, or adult themes. For instance, a game with intense fighting will have a higher age rating than a family-friendly game. Parents should treat these ratings as important guidelines, not just suggestions, to pick the right games.</p>
+<h2 id="international-age-rating-coalition-iarc">International Age Rating Coalition (IARC)</h2>
+<p>There is an organization called the International Age Rating Coalition (IARC) that connects different rating systems from around the world, including the US, Europe, and Australia. Their goal is to make sure parents and players get consistent advice on age-appropriate games.</p>
+<p>One of the most famous systems is PEGI (Pan European Game Information). Used in most of Europe, PEGI rates games based on content like violence or bad words. The ratings go from age 3 (PEGI 3) up to 18 (PEGI 18).</p>
+<p><img src="/img/posts/pegi.png" alt="Game categories according to PEGI" title="Kategori game menurut PEGI"></p>
+<p>Another popular one is the ESRB (Entertainment Software Rating Board), which is used in North America. It is quite similar to PEGI but uses categories like Everyone (E), Teen (T), and Mature (M). ESRB also explains why a game got that rating.</p>
+<p><img src="/img/posts/esrb.png" alt="Game categories according to ESRB" title="Kategori game menurut ESRB"></p>
+<h2 id="indonesia-game-rating-system-igrs">Indonesia Game Rating System (IGRS)</h2>
+<p>Besides the international ones, Indonesia also has its own system called the Indonesia Game Rating System (IGRS). It was made to guide Indonesian parents and players about game content.</p>
+<p><img src="/img/posts/igrs.png" alt="Game categories according to IGRS" title="Kategori game menurut IGRS"></p>
+<p>Right now, IGRS mostly covers games made by local developers. This means many big international games might not have an IGRS label yet. Popular hits like Fortnite, Call of Duty, or FIFA often don&rsquo;t have an Indonesian rating to help parents decide.</p>
+<p>Ideally, IGRS should expand to cover these international games too, since they are very popular here. This would give parents better information.</p>
+<p>Even so, IGRS is a good start for raising awareness about game ratings in Indonesia. Parents can use IGRS for local games, but for now, it is a good idea to also check international ratings like PEGI or ESRB to get a complete picture before buying games for their kids.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Understanding game ratings is the best way to protect children from content they shouldn&rsquo;t see. Parents need to remember that every game has a rating from its creator, and this is a key tool for choosing the right titles. By looking at international systems like PEGI and ESRB, along with our local IGRS, parents can make smarter choices and ensure their kids play safely.</p>
+
+    </div>
+</article>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Arman Arisman</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        if (hamburger) {
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            });
+        }
+    </script>
+
+</body>
+
+</html>

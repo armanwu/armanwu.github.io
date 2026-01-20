@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arman Wu</title>
+    <link>https://example.org/</link>
+    <description>Recent content on Arman Wu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eroded Monolith</title>
+      <link>https://example.org/projects/eroded-monolith/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://example.org/projects/eroded-monolith/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://example.org/img/projects/eroded-monolith/eroded-monolith-1.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;&lt;strong&gt;Eroded Monolith&lt;/strong&gt; challenges the traditional typology of the skyscraper. Usually, high-rise buildings are sealed, air-conditioned glass boxes that isolate people from the elements. This project asks: What happens if we &amp;ldquo;break&amp;rdquo; the box to let nature in?&lt;/p&gt;&#xA;&lt;p&gt;The concept creates a dialogue between two opposing forces: the perfection of the modernist grid versus the imperfection of organic erosion.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-logic-algorithmic-subtraction&#34;&gt;The Logic: Algorithmic Subtraction&lt;/h2&gt;&#xA;&lt;p&gt;The form-finding process was driven by a script written in &lt;strong&gt;Julia&lt;/strong&gt;. Unlike the additive process used in &lt;em&gt;Jenga Village&lt;/em&gt; (stacking blocks), this project uses a &lt;strong&gt;subtractive&lt;/strong&gt; method.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Jenga Village</title>
+      <link>https://example.org/projects/jenga-village/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://example.org/projects/jenga-village/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://example.org/img/projects/jenga-village/jenga-village-1.jpg&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;&lt;strong&gt;Jenga Village&lt;/strong&gt; is a playful yet serious exploration of modular housing. While modern apartment blocks often feel repetitive and isolating, this project asks: Can we use code to create a &amp;ldquo;vertical village&amp;rdquo; where every unit feels unique?&lt;/p&gt;&#xA;&lt;p&gt;Using the metaphor of the game &lt;em&gt;Jenga&lt;/em&gt;, the design stacks living units (voxels) in a seemingly random arrangement, creating a rich texture of solids and voids that adapts to the hillside topography.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Titanium Clash</title>
+      <link>https://example.org/projects/titanium-clash/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://example.org/projects/titanium-clash/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://example.org/img/projects/titanium-clash/titanium-clash-5.jpg&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;&lt;strong&gt;Titanium Clash&lt;/strong&gt; is an experimental project exploring the boundaries between algorithmic chaos and architectural order. Drawing inspiration from the fragmented style of deconstructivism, this project investigates how code can be used to generate complex spatial collisions that would be hard to model manually.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-process-code-as-the-sketchpad&#34;&gt;The Process: Code as the Sketchpad&lt;/h2&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://example.org/img/projects/titanium-clash/titanium-clash-1.jpg&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Instead of starting with a sketch or a massing model, this project began with a script written in &lt;strong&gt;Julia&lt;/strong&gt;. I chose Julia for its fast computational capabilities, allowing for rapid iteration of complex geometric calculations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Intuition and Algorithm in Harmony: Architects in the Age of Artificial Intelligence</title>
+      <link>https://example.org/posts/intuition-algorithm/</link>
+      <pubDate>Sun, 22 Sep 2024 16:01:46 +0700</pubDate>
+      <guid>https://example.org/posts/intuition-algorithm/</guid>
+      <description>&lt;p&gt;The rise of AI in architecture raises a critical question: How do we merge the intuitive intelligence built over years of practice with the logic of algorithms? Both are powerful forces. But for them to work in harmony, architects must learn to wield these tools effectively, rather than being replaced by them.&lt;/p&gt;&#xA;&lt;p&gt;To thrive in this new era, architects need to cultivate specific technical skills that bridge the gap between creative intuition and computational power.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Importance of Critiquing BIM in the Architecture World: Fostering Open-Mindedness for Advancement</title>
+      <link>https://example.org/posts/critiquing-bim/</link>
+      <pubDate>Mon, 17 Jul 2023 21:01:46 +0700</pubDate>
+      <guid>https://example.org/posts/critiquing-bim/</guid>
+      <description>&lt;p&gt;As an architect and daily user of Building Information Modeling (BIM), I am the first to admit its tremendous value. It has undeniably revolutionized how we handle efficiency and quality in architectural projects. But here is the thing: if we want this technology to keep evolving, we cannot afford to turn a blind eye to its flaws.&lt;/p&gt;&#xA;&lt;p&gt;Being a BIM advocate doesn&amp;rsquo;t mean accepting it blindly. In fact, pointing out where BIM falls short is exactly what we need to drive the industry forward.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bridging the Gap: Balancing Tradition and Innovation in the Digital Church</title>
+      <link>https://example.org/posts/church-technology/</link>
+      <pubDate>Sun, 09 Jul 2023 21:02:57 +0700</pubDate>
+      <guid>https://example.org/posts/church-technology/</guid>
+      <description>&lt;p&gt;We live in a world that changes fast. With technology advancing every day, the church faces a unique challenge: how do we respond? Do we resist the tide, or do we learn to surf?&lt;/p&gt;&#xA;&lt;p&gt;Rather than seeing technology as a threat to tradition, I believe we should view it as a bridge. The church has a massive opportunity to embrace the digital world, not to replace our treasured traditions, but to amplify them. It is about becoming a community that adapts to the times while staying deeply rooted in its values.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Understanding Game Age Ratings: Protecting Children from Inappropriate Content</title>
+      <link>https://example.org/posts/game-age-ratings/</link>
+      <pubDate>Thu, 06 Jul 2023 19:28:58 +0700</pubDate>
+      <guid>https://example.org/posts/game-age-ratings/</guid>
+      <description>&lt;p&gt;A lot of parents worry about the games their children play. They are often afraid that some games might not be suitable for their kid&amp;rsquo;s age. But actually, parents need to know that every game already comes with an age rating set by the developers. These ratings exist to help parents decide if a game is okay for their children or not.&lt;/p&gt;&#xA;&lt;p&gt;When making a game, developers and publishers already have a target audience in mind. They set the age rating based on what is inside the game—like violence, bad language, or adult themes. For instance, a game with intense fighting will have a higher age rating than a family-friendly game. Parents should treat these ratings as important guidelines, not just suggestions, to pick the right games.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Church and Virtual Reality: Exploring the Intersection</title>
+      <link>https://example.org/posts/church-and-vr/</link>
+      <pubDate>Sun, 02 Jul 2023 20:04:46 +0700</pubDate>
+      <guid>https://example.org/posts/church-and-vr/</guid>
+      <description>&lt;p&gt;It feels like every time we blink, the world moves a little faster. Technology has fundamentally shifted how we learn, how we work, and how we talk to each other. We have accepted that smartphones keep us connected and streaming services bring entertainment to our living rooms.&lt;/p&gt;&#xA;&lt;p&gt;But when it comes to our spiritual lives, the conversation gets a bit more complicated. Is there meaningful space for cutting-edge tech like Virtual Reality (VR) inside the church? It sounds like science fiction, but it is a reality we are already facing. I want to explore how these digital advancements might change the way we worship, interact with our community, and experience faith in a world that is increasingly glued to screens.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Exploring the Techniques of Generative Design</title>
+      <link>https://example.org/posts/gen-design-techniques/</link>
+      <pubDate>Fri, 23 Jun 2023 22:01:46 +0700</pubDate>
+      <guid>https://example.org/posts/gen-design-techniques/</guid>
+      <description>&lt;p&gt;Generative design is often talked about as a single concept, but in reality, it is a collection of distinct mathematical and computational techniques. For architects, these aren&amp;rsquo;t just abstract formulas; they are tools that allow us to explore design territories that human intuition alone might never reach.&lt;/p&gt;&#xA;&lt;p&gt;By leveraging algorithms, we can push past simple geometry into complex, optimized forms. Here is a look at some of the most prominent techniques that drive this process.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Computational Thinking in Architectural Design Process</title>
+      <link>https://example.org/posts/computational-think/</link>
+      <pubDate>Thu, 06 Jan 2022 21:44:46 +0700</pubDate>
+      <guid>https://example.org/posts/computational-think/</guid>
+      <description>&lt;p&gt;The use of computers in the field of architectural design initially only involved digitizing tasks that were traditionally done manually. Computer-based modeling or drawing still relied on additive logic, which involved adding overlapped information without associative relationships, heavily relying on the designer&amp;rsquo;s consistency. This additive logic persisted for a long time as it was considered stable for exploring and refining variations through traditional image media. However, this logic had limitations as it lacked connections between depicted elements and couldn&amp;rsquo;t incorporate physically relevant aspects that shape the generation of real-world forms. These limitations prompted architects to develop their design mindset.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>https://example.org/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/about/</guid>
+      <description>&lt;p&gt;I am &lt;strong&gt;Dr. Arman Arisman (Arman Wu)&lt;/strong&gt;, an architect and technology manager based in Indonesia. With over 15 years of experience in public planning, I navigate the complex intersection of &lt;strong&gt;architectural form&lt;/strong&gt;, &lt;strong&gt;digital systems&lt;/strong&gt;, and &lt;strong&gt;design cognition&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-intersection-of-logic-and-intuition&#34;&gt;The Intersection of Logic and Intuition&lt;/h3&gt;&#xA;&lt;p&gt;In my practice, I do more than just produce drawings. I design workflows. My interest lies in how algorithmic logic can rationalize geometric complexity and how digital tools influence the human thought process. This curiosity led me to specialize in &lt;strong&gt;Building Information Modeling (BIM)&lt;/strong&gt;, &lt;strong&gt;Computational Design&lt;/strong&gt;, and &lt;strong&gt;Human–Computer Interaction (HCI)&lt;/strong&gt;. I see code not just as a tool, but as a language to explore architectural expression.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Publications and Talks</title>
+      <link>https://example.org/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/publications/</guid>
+      <description>&lt;h2 id=&#34;books&#34;&gt;Books&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Model, Sistem, dan Ruang yang Belum Terhubung: Kajian Reflektif Terbuka terhadap SOP Implementasi BIM 2024 Kementerian PU dari Perspektif Arsitek Perencana&#xA;&lt;a href=&#34;https://github.com/armanwu/kajian-sop-bim&#34;&gt;(link)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;journal-articles&#34;&gt;Journal Articles&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Creativity in Generative Design: The impact of architects’ control over geometric parameters in early-stage form-finding using genetic algorithms&#xA;&lt;a href=&#34;https://journals.sagepub.com/doi/abs/10.1177/14780771251340203&#34;&gt;(link)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;The application of the Delphi method in architectural research&#xA;&lt;a href=&#34;https://journal.unwira.ac.id/index.php/ARTEKS/article/view/2556&#34;&gt;(link)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Hubungan antara Penggunaan Software Pemodelan Arsitektur dengan Kompleksitas Bangunan&#xA;&lt;a href=&#34;https://iplbijournals.id/index.php/jlbi/article/view/156&#34;&gt;(link)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;conference-proceedings&#34;&gt;Conference Proceedings&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Architect&amp;rsquo;s responses to practicing generative design for form finding in the schematic design stage&#xA;&lt;a href=&#34;https://caadria2024.org/wp-content/uploads/2024/04/21-ARCHITECT_S-RESPONSES-TO-PRACTICING-GENERATIVE-DESIGN-FOR-FORM-FINDING-IN-THE-SCHEMATIC-DESIGN-STAGE.pdf&#34;&gt;(link)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;thesis--dissertation&#34;&gt;Thesis &amp;amp; Dissertation&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Pemanfaatan Desain Generatif untuk Mencari Ide Kreatif dalam Eksplorasi Bentuk Arsitektural di Tahap Desain Skematik&#xA;&lt;a href=&#34;https://www.researchgate.net/publication/394886939_Pemanfaatan_Desain_Generatif_untuk_Mencari_Ide_Kreatif_dalam_Eksplorasi_Bentuk_Arsitektural_di_Tahap_Desain_Skematik&#34;&gt;(link)&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

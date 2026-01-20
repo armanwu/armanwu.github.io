@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring the Techniques of Generative Design | Arman Wu</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="/images/logo.png">
+</head>
+
+<body>
+
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/" class="nav-logo">
+            <img src="/img/logo.png" alt="Logo">
+
+            <span></span>
+        </a>
+
+        <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+            
+            <li class="nav-item">
+                <a href="/posts" class="nav-link">Essays</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/projects" class="nav-link">Projects</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/publications" class="nav-link">Publications</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/about" class="nav-link">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+
+<script>
+    const hamburger = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+</script>
+
+    <main class="container">
+        
+<article class="full-article">
+    <header class="article-header">
+        <h1>Exploring the Techniques of Generative Design</h1>
+        <div class="article-meta">
+            <span>Jun 23, 2023</span> •
+            <span>3 min read</span>
+        </div>
+    </header>
+
+    <div class="article-content">
+        <p>Generative design is often talked about as a single concept, but in reality, it is a collection of distinct mathematical and computational techniques. For architects, these aren&rsquo;t just abstract formulas; they are tools that allow us to explore design territories that human intuition alone might never reach.</p>
+<p>By leveraging algorithms, we can push past simple geometry into complex, optimized forms. Here is a look at some of the most prominent techniques that drive this process.</p>
+<h2 id="cellular-automata">Cellular Automata</h2>
+<p>If you have ever heard of John von Neumann or Stephen Wolfram, you might be familiar with this concept. Cellular Automata (CA) operates on a grid of cells. Each cell looks at its neighbors and decides its next state based on a simple set of rules.</p>
+<p>It sounds basic—simple rules governing simple cells—but the result is often surprisingly complex. Through iteration, these basic interactions evolve into intricate, emergent patterns. In architecture, we use CA to simulate how spatial configurations grow or to create dynamic façade patterns that respond to local conditions without needing a master blueprint for every single pixel.</p>
+<h2 id="genetic-algorithms">Genetic Algorithms</h2>
+<p>Inspired by the biological process of natural selection, Genetic Algorithms (GA) are essentially &ldquo;survival of the fittest&rdquo; for design.</p>
+<p>Here is how it works: You define a set of parameters (the DNA) and a goal (fitness). The computer generates a population of designs, tests them against the goal, and &ldquo;breeds&rdquo; the best ones together, introducing random mutations along the way. Over thousands of generations, the design evolves. This is incredibly powerful for optimization—finding the most structurally efficient form or the perfect layout for energy performance that a human designer might take weeks to calculate.</p>
+<h2 id="shape-grammar">Shape Grammar</h2>
+<p>While Genetic Algorithms are about evolution, Shape Grammar is about language. It is a rule-based system where you define a vocabulary of shapes and a set of rules for how they can be combined or transformed.</p>
+<p>Think of it as creating a &ldquo;style guide&rdquo; that the computer can execute. By establishing these geometric rules, architects can generate complex compositions that still adhere to a specific design logic or architectural language. It is particularly useful when you want to explore many variations of a design while keeping a consistent stylistic identity.</p>
+<h2 id="expanding-the-toolkit">Expanding the Toolkit</h2>
+<p>The field doesn&rsquo;t stop there. The toolkit is constantly expanding with methods like <strong>Swarm Intelligence</strong> (based on the behavior of ant colonies or bird flocks) and <strong>Neural Networks</strong> (Deep Learning). Each brings a different strength to the table.</p>
+<p>Generative design is more than just letting the computer &ldquo;do the work.&rdquo; It is about understanding which algorithm fits the problem at hand. Whether it is the biological logic of Genetic Algorithms or the rule-based structure of Shape Grammar, these tools allow us to partner with computation, merging our creative intent with the processing power to uncover unforeseen design possibilities.</p>
+
+    </div>
+</article>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Arman Arisman</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        if (hamburger) {
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            });
+        }
+    </script>
+
+</body>
+
+</html>

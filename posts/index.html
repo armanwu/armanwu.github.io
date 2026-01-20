@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts | Arman Wu</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="/images/logo.png">
+</head>
+
+<body>
+
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/" class="nav-logo">
+            <img src="/img/logo.png" alt="Logo">
+
+            <span></span>
+        </a>
+
+        <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+            
+            <li class="nav-item">
+                <a href="/posts" class="nav-link">Essays</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/projects" class="nav-link">Projects</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/publications" class="nav-link">Publications</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/about" class="nav-link">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+
+<script>
+    const hamburger = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+</script>
+
+    <main class="container">
+        
+<section class="intro">
+    <h1>Essays</h1>
+    <p>Essays, tutorials, and notes on architecture and technology. A repository of practical knowledge and critical
+        thinking for the digital age.</p>
+</section>
+
+<div class="post-feed">
+    
+    <article class="post-preview">
+        <span class="meta-date">Sep 22, 2024</span>
+        <h2><a href="https://example.org/posts/intuition-algorithm/">Intuition and Algorithm in Harmony: Architects in the Age of Artificial Intelligence</a></h2>
+        <p class="summary"><p>The rise of AI in architecture raises a critical question: How do we merge the intuitive intelligence built over years of practice with the logic of algorithms? …</p></p>
+        <a href="https://example.org/posts/intuition-algorithm/" class="read-more">Read more →</a>
+    </article>
+    
+    <article class="post-preview">
+        <span class="meta-date">Jul 17, 2023</span>
+        <h2><a href="https://example.org/posts/critiquing-bim/">The Importance of Critiquing BIM in the Architecture World: Fostering Open-Mindedness for Advancement</a></h2>
+        <p class="summary"><p>As an architect and daily user of Building Information Modeling (BIM), I am the first to admit its tremendous value. It has undeniably revolutionized how we …</p></p>
+        <a href="https://example.org/posts/critiquing-bim/" class="read-more">Read more →</a>
+    </article>
+    
+    <article class="post-preview">
+        <span class="meta-date">Jul 9, 2023</span>
+        <h2><a href="https://example.org/posts/church-technology/">Bridging the Gap: Balancing Tradition and Innovation in the Digital Church</a></h2>
+        <p class="summary"><p>We live in a world that changes fast. With technology advancing every day, the church faces a unique challenge: how do we respond? Do we resist the tide, or do …</p></p>
+        <a href="https://example.org/posts/church-technology/" class="read-more">Read more →</a>
+    </article>
+    
+    <article class="post-preview">
+        <span class="meta-date">Jul 6, 2023</span>
+        <h2><a href="https://example.org/posts/game-age-ratings/">Understanding Game Age Ratings: Protecting Children from Inappropriate Content</a></h2>
+        <p class="summary"><p>A lot of parents worry about the games their children play. They are often afraid that some games might not be suitable for their kid&rsquo;s age. But actually, …</p></p>
+        <a href="https://example.org/posts/game-age-ratings/" class="read-more">Read more →</a>
+    </article>
+    
+    <article class="post-preview">
+        <span class="meta-date">Jul 2, 2023</span>
+        <h2><a href="https://example.org/posts/church-and-vr/">Church and Virtual Reality: Exploring the Intersection</a></h2>
+        <p class="summary"><p>It feels like every time we blink, the world moves a little faster. Technology has fundamentally shifted how we learn, how we work, and how we talk to each …</p></p>
+        <a href="https://example.org/posts/church-and-vr/" class="read-more">Read more →</a>
+    </article>
+    
+    <article class="post-preview">
+        <span class="meta-date">Jun 23, 2023</span>
+        <h2><a href="https://example.org/posts/gen-design-techniques/">Exploring the Techniques of Generative Design</a></h2>
+        <p class="summary"><p>Generative design is often talked about as a single concept, but in reality, it is a collection of distinct mathematical and computational techniques. For …</p></p>
+        <a href="https://example.org/posts/gen-design-techniques/" class="read-more">Read more →</a>
+    </article>
+    
+    <article class="post-preview">
+        <span class="meta-date">Jan 6, 2022</span>
+        <h2><a href="https://example.org/posts/computational-think/">Computational Thinking in Architectural Design Process</a></h2>
+        <p class="summary"><p>The use of computers in the field of architectural design initially only involved digitizing tasks that were traditionally done manually. Computer-based …</p></p>
+        <a href="https://example.org/posts/computational-think/" class="read-more">Read more →</a>
+    </article>
+    
+</div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Arman Arisman</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        if (hamburger) {
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            });
+        }
+    </script>
+
+</body>
+
+</html>

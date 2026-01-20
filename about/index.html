@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Arman Wu</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="/images/logo.png">
+</head>
+
+<body>
+
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/" class="nav-logo">
+            <img src="/img/logo.png" alt="Logo">
+
+            <span></span>
+        </a>
+
+        <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+            
+            <li class="nav-item">
+                <a href="/posts" class="nav-link">Essays</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/projects" class="nav-link">Projects</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/publications" class="nav-link">Publications</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/about" class="nav-link">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+
+<script>
+    const hamburger = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+</script>
+
+    <main class="container">
+        
+<article class="full-article">
+    <header class="article-header">
+        <h1>About Me</h1>
+    </header>
+
+    <div class="article-content">
+        <p>I am <strong>Dr. Arman Arisman (Arman Wu)</strong>, an architect and technology manager based in Indonesia. With over 15 years of experience in public planning, I navigate the complex intersection of <strong>architectural form</strong>, <strong>digital systems</strong>, and <strong>design cognition</strong>.</p>
+<h3 id="the-intersection-of-logic-and-intuition">The Intersection of Logic and Intuition</h3>
+<p>In my practice, I do more than just produce drawings. I design workflows. My interest lies in how algorithmic logic can rationalize geometric complexity and how digital tools influence the human thought process. This curiosity led me to specialize in <strong>Building Information Modeling (BIM)</strong>, <strong>Computational Design</strong>, and <strong>Human–Computer Interaction (HCI)</strong>. I see code not just as a tool, but as a language to explore architectural expression.</p>
+<h3 id="research--cognition">Research &amp; Cognition</h3>
+<p>My academic journey—spanning bachelor’s, master’s, and doctoral studies—has been driven by a specific question: <em>How do designers think when they use digital tools?</em> My research in <strong>Design Cognition</strong> investigates the cognitive load and creative leaps that occur within parametric modeling environments. I aim to bridge the gap between abstract computation and practical design intuition.</p>
+<h3 id="open-source-advocate">Open Source Advocate</h3>
+<p>Beyond the studio and academia, I am a firm believer in open knowledge. I actively contribute to the <strong>Fedora Project</strong> and write for <strong>Fedora Magazine</strong>, sharing tutorials on open-source software and desktop system development. Whether it is optimizing a Linux kernel or scripting in Julia, I enjoy tinkering with the tools that empower creators.</p>
+<hr>
+<h3 id="connect">Connect</h3>
+<p>I am always open to discussing research collaborations, architectural computation, or the latest in open-source tech.</p>
+<ul>
+<li><strong>Email:</strong> <a href="mailto:arman.wu@gmail.com">arman.wu@gmail.com</a></li>
+<li><strong>Professional:</strong> <a href="https://www.linkedin.com/in/arman-arisman-42042b4b">LinkedIn Profile</a></li>
+<li><strong>Code:</strong> <a href="https://github.com/armanwu">GitHub Repositories</a></li>
+</ul>
+
+    </div>
+</article>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Arman Arisman</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        if (hamburger) {
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            });
+        }
+    </script>
+
+</body>
+
+</html>

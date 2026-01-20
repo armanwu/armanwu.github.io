@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Arman Wu</title>
+    <link>https://example.org/projects/</link>
+    <description>Recent content in Projects on Arman Wu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eroded Monolith</title>
+      <link>https://example.org/projects/eroded-monolith/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://example.org/projects/eroded-monolith/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://example.org/img/projects/eroded-monolith/eroded-monolith-1.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;&lt;strong&gt;Eroded Monolith&lt;/strong&gt; challenges the traditional typology of the skyscraper. Usually, high-rise buildings are sealed, air-conditioned glass boxes that isolate people from the elements. This project asks: What happens if we &amp;ldquo;break&amp;rdquo; the box to let nature in?&lt;/p&gt;&#xA;&lt;p&gt;The concept creates a dialogue between two opposing forces: the perfection of the modernist grid versus the imperfection of organic erosion.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-logic-algorithmic-subtraction&#34;&gt;The Logic: Algorithmic Subtraction&lt;/h2&gt;&#xA;&lt;p&gt;The form-finding process was driven by a script written in &lt;strong&gt;Julia&lt;/strong&gt;. Unlike the additive process used in &lt;em&gt;Jenga Village&lt;/em&gt; (stacking blocks), this project uses a &lt;strong&gt;subtractive&lt;/strong&gt; method.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Jenga Village</title>
+      <link>https://example.org/projects/jenga-village/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://example.org/projects/jenga-village/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://example.org/img/projects/jenga-village/jenga-village-1.jpg&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;&lt;strong&gt;Jenga Village&lt;/strong&gt; is a playful yet serious exploration of modular housing. While modern apartment blocks often feel repetitive and isolating, this project asks: Can we use code to create a &amp;ldquo;vertical village&amp;rdquo; where every unit feels unique?&lt;/p&gt;&#xA;&lt;p&gt;Using the metaphor of the game &lt;em&gt;Jenga&lt;/em&gt;, the design stacks living units (voxels) in a seemingly random arrangement, creating a rich texture of solids and voids that adapts to the hillside topography.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Titanium Clash</title>
+      <link>https://example.org/projects/titanium-clash/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://example.org/projects/titanium-clash/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://example.org/img/projects/titanium-clash/titanium-clash-5.jpg&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;&lt;strong&gt;Titanium Clash&lt;/strong&gt; is an experimental project exploring the boundaries between algorithmic chaos and architectural order. Drawing inspiration from the fragmented style of deconstructivism, this project investigates how code can be used to generate complex spatial collisions that would be hard to model manually.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-process-code-as-the-sketchpad&#34;&gt;The Process: Code as the Sketchpad&lt;/h2&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://example.org/img/projects/titanium-clash/titanium-clash-1.jpg&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Instead of starting with a sketch or a massing model, this project began with a script written in &lt;strong&gt;Julia&lt;/strong&gt;. I chose Julia for its fast computational capabilities, allowing for rapid iteration of complex geometric calculations.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

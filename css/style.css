@@ -590,3 +590,79 @@ p {
     color: #1D252C;
     line-height: 1.4;
 }
+
+/* === HOMEPAGE HERO === */
+.hero-top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.hero-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1D252C;
+}
+
+.hero-loc {
+    font-size: 0.82rem;
+    color: #5b6c7f;
+    margin-top: 2px;
+}
+
+.hero-tagline {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.tag-pill {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background: #e6f7f6;
+    color: #148F88;
+    border: 1px solid #b2e8e4;
+}
+
+/* === SECTION DIVIDER === */
+.section-divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 48px 0 32px;
+}
+
+.section-divider-line {
+    flex: 1;
+    height: 1px;
+    background: #f0f4f8;
+}
+
+.section-divider-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #aab4be;
+}
+
+/* === VIEW ALL LINK === */
+.view-all-row {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.view-all-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #20B2AA;
+}
+
+.view-all-link:hover {
+    color: #148F88;
+}

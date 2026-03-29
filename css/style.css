@@ -224,7 +224,7 @@ p {
    5. POST LIST / ESSAYS (LIST VIEW)
    ========================================= */
 .post-preview {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 .post-title {
@@ -669,10 +669,16 @@ p {
 
 /* === ESSAY LIST DIVIDER === */
 .post-feed .post-preview {
-    border-bottom: 1px solid #f0f4f8;
-    padding-bottom: 40px;
+    border-bottom: 1px solid #e0ddd5;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .post-feed .post-preview:last-child {
     border-bottom: none;
+}
+
+.post-feed .post-preview h2 {
+    margin-top: 8px;
+    margin-bottom: 8px;
 }

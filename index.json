@@ -1,0 +1,20 @@
+{
+    {- $.Scratch.Add "index" slice -
+    }
+}
+{
+    {- range .Site.RegularPages -
+    }
+}
+{
+    {- $.Scratch.Add "index" (dict "title" .Title "uri" .Permalink "summary" .Summary "content" .Plain) -
+    }
+}
+{
+    {- end -
+    }
+}
+{
+    {- $.Scratch.Get "index" | jsonify -
+    }
+}

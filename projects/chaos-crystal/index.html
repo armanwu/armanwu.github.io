@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<link rel="apple-touch-icon" href="/images/logo.png">
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><link rel="apple-touch-icon" href="/images/logo.png">
 
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-96RWB4ME5V"></script>
@@ -30,16 +30,13 @@
     <div class="nav-container">
         <a href="/" class="nav-logo">
             <img src="/img/logo.png" alt="Logo">
-
             <span></span>
         </a>
-
         <button class="hamburger" id="hamburger-btn" aria-label="Menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </button>
-
         <ul class="nav-menu" id="nav-menu">
             
             <li class="nav-item">
@@ -59,13 +56,15 @@
             </li>
             
         </ul>
+        <div class="nav-search">
+            <input type="text" id="nav-search-input" placeholder="Search..." autocomplete="off">
+            <div id="nav-search-results"></div>
+        </div>
     </div>
 </nav>
-
 <script>
     const hamburger = document.getElementById('hamburger-btn');
     const navMenu = document.getElementById('nav-menu');
-
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
@@ -108,14 +107,14 @@
 
     <nav class="prev-next">
         
-        <a href="https://armanwu.github.io/projects/eroded-monolith/" class="prev-next-card">
+        <a href="http://localhost:1313/projects/eroded-monolith/" class="prev-next-card">
             <div class="prev-next-label">← Previous</div>
             <div class="prev-next-title">Eroded Monolith</div>
         </a>
         
 
         
-        <a href="https://armanwu.github.io/projects/shard-museum/" class="prev-next-card next">
+        <a href="http://localhost:1313/projects/shard-museum/" class="prev-next-card next">
             <div class="prev-next-label">Next →</div>
             <div class="prev-next-title">Shard Museum</div>
         </a>

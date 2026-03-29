@@ -16,7 +16,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categories | Arman Wu</title>
+    <title>Search | Arman Wu</title>
 
     <link rel="stylesheet" href="/css/style.css">
 
@@ -58,6 +58,10 @@
                 <a href="/about" class="nav-link">About</a>
             </li>
             
+            <li class="nav-item">
+                <a href="/search" class="nav-link">Search</a>
+            </li>
+            
         </ul>
     </div>
 </nav>
@@ -75,14 +79,47 @@
     <main class="container">
         
 <section class="intro">
-    <h1>Essays</h1>
-    <p>Essays, tutorials, and notes on architecture and technology. A repository of practical knowledge and critical
-        thinking for the digital age.</p>
+    <h1>Search</h1>
 </section>
-
-<div class="post-feed">
-    
+<div class="search-wrap">
+    <input type="text" id="search-input" placeholder="Search essays, projects..." autofocus>
+    <div id="search-results"></div>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/7.0.0/fuse.min.js"></script>
+<script>
+    fetch('/index.json')
+        .then(res => res.json())
+        .then(data => {
+            const fuse = new Fuse(data, {
+                keys: ['title', 'summary', 'content'],
+                threshold: 0.4,
+                minMatchCharLength: 2
+            });
+
+            const input = document.getElementById('search-input');
+            const results = document.getElementById('search-results');
+
+            input.addEventListener('input', () => {
+                const query = input.value.trim();
+                if (query.length < 2) {
+                    results.innerHTML = '';
+                    return;
+                }
+                const hits = fuse.search(query).slice(0, 10);
+                if (hits.length === 0) {
+                    results.innerHTML = '<p class="search-empty">No results found.</p>';
+                    return;
+                }
+                results.innerHTML = hits.map(({ item }) => `
+                    <a href="${item.uri}" class="search-result-item">
+                        <div class="search-result-title">${item.title}</div>
+                        <div class="search-result-summary">${item.summary}</div>
+                    </a>
+                `).join('');
+            });
+        });
+</script>
 
     </main>
 

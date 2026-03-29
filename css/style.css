@@ -3,8 +3,8 @@
    --------------------------------------------------------------------------
    Colors:
    - Text (Deep Gunmetal): #1D252C
-   - Links (Vibrant Blue): #2979ff
-   - Hover (Teal Accent):  #00bfa5
+   - Links (Vibrant Blue): #20B2AA
+   - Hover (Teal Accent):  #148F88
    - Borders/Lines:        #f0f4f8 / #dce3e8
    ========================================================================== */
 
@@ -35,7 +35,7 @@ a {
 }
 
 a:hover {
-    color: #2979ff;
+    color: #20B2AA;
 }
 
 /* --- Headings --- */
@@ -139,7 +139,7 @@ p {
 }
 
 .nav-link:hover {
-    color: #2979ff;
+    color: #20B2AA;
 }
 
 /* Hamburger Icon (Mobile) */
@@ -216,7 +216,7 @@ p {
 }
 
 .social-links a:hover {
-    color: #00bfa5;
+    color: #148F88;
     transform: scale(1.1);
 }
 
@@ -294,13 +294,13 @@ p {
     margin-top: 2em;
     font-family: -apple-system, sans-serif;
     color: #1D252C;
-    border-bottom: 2px solid #2979ff;
+    border-bottom: 2px solid #20B2AA;
     padding-bottom: 3px;
     display: inline-block;
 }
 
 .article-content blockquote {
-    border-left: 4px solid #2979ff;
+    border-left: 4px solid #20B2AA;
     padding-left: 20px;
     font-style: italic;
     color: #5b6c7f;
@@ -318,7 +318,7 @@ p {
 }
 
 .article-content a {
-    color: #2979ff;
+    color: #20B2AA;
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 3px;
@@ -326,7 +326,7 @@ p {
 }
 
 .article-content a:hover {
-    color: #00bfa5;
+    color: #148F88;
     text-decoration: none;
 }
 
@@ -362,7 +362,7 @@ p {
 
 .project-card:hover .project-image {
     opacity: 1;
-    border-color: #2979ff;
+    border-color: #20B2AA;
     transform: translateY(-3px);
 }
 

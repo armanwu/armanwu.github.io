@@ -666,3 +666,13 @@ p {
 .view-all-link:hover {
     color: #148F88;
 }
+
+/* === ESSAY LIST DIVIDER === */
+.post-feed .post-preview {
+    border-bottom: 1px solid #f0f4f8;
+    padding-bottom: 40px;
+}
+
+.post-feed .post-preview:last-child {
+    border-bottom: none;
+}

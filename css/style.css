@@ -495,3 +495,98 @@ p {
         font-size: 0.85rem;
     }
 }
+
+/* === ARTICLE PAGE === */
+.article-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #148F88;
+    background: #e6f7f6;
+    border: 1px solid #b2e8e4;
+    border-radius: 20px;
+    padding: 3px 10px;
+    margin-bottom: 20px;
+}
+
+.article-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #f0f4f8;
+    margin-bottom: 36px;
+    margin-top: 16px;
+}
+
+.article-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.article-author {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1D252C;
+}
+
+.article-date,
+.article-readtime {
+    font-size: 0.82rem;
+    color: #aab4be;
+}
+
+.meta-dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #d0d7de;
+    display: inline-block;
+}
+
+/* === PREV/NEXT NAVIGATION === */
+.prev-next {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 56px;
+    padding-top: 32px;
+    border-top: 1px solid #f0f4f8;
+}
+
+.prev-next-card {
+    display: block;
+    padding: 16px 20px;
+    border: 1px solid #e8edf2;
+    border-radius: 8px;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.prev-next-card:hover {
+    border-color: #20B2AA;
+}
+
+.prev-next-card.next {
+    text-align: right;
+}
+
+.prev-next-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #aab4be;
+    margin-bottom: 6px;
+}
+
+.prev-next-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1D252C;
+    line-height: 1.4;
+}

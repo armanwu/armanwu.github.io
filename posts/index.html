@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><link rel="apple-touch-icon" href="/images/logo.png">
+<link rel="apple-touch-icon" href="/images/logo.png">
 
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-96RWB4ME5V"></script>
@@ -24,75 +24,22 @@
     <link rel="apple-touch-icon" href="/images/logo.png">
 </head>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/7.0.0/fuse.min.js"></script>
-<script>
-    let fuse;
-    fetch('/index.json')
-        .then(res => res.json())
-        .then(data => {
-            fuse = new Fuse(data, {
-                keys: ['title', 'summary', 'content'],
-                threshold: 0.4,
-                minMatchCharLength: 2
-            });
-        });
-
-    const searchToggle = document.getElementById('search-toggle');
-    const searchDropdown = document.getElementById('search-dropdown');
-    const searchInput = document.getElementById('nav-search-input');
-    const searchResults = document.getElementById('nav-search-results');
-
-    searchToggle.addEventListener('click', () => {
-        searchDropdown.classList.toggle('active');
-        if (searchDropdown.classList.contains('active')) {
-            searchInput.focus();
-        } else {
-            searchInput.value = '';
-            searchResults.innerHTML = '';
-        }
-    });
-
-    searchInput.addEventListener('input', () => {
-        const query = searchInput.value.trim();
-        if (!fuse || query.length < 2) {
-            searchResults.innerHTML = '';
-            return;
-        }
-        const hits = fuse.search(query).slice(0, 6);
-        if (hits.length === 0) {
-            searchResults.innerHTML = '<div class="search-no-result">No results found.</div>';
-        } else {
-            searchResults.innerHTML = hits.map(({ item }) => `
-                    <a href="${item.uri}" class="search-item">
-                        <div class="search-item-title">${item.title}</div>
-                        <div class="search-item-summary">${item.summary.substring(0, 80)}...</div>
-                    </a>
-                `).join('');
-        }
-    });
-
-    document.addEventListener('click', (e) => {
-        if (!e.target.closest('.nav-search')) {
-            searchDropdown.classList.remove('active');
-            searchInput.value = '';
-            searchResults.innerHTML = '';
-        }
-    });
-</script>
-
 <body>
 
     <nav class="navbar">
     <div class="nav-container">
         <a href="/" class="nav-logo">
             <img src="/img/logo.png" alt="Logo">
+
             <span></span>
         </a>
+
         <button class="hamburger" id="hamburger-btn" aria-label="Menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </button>
+
         <ul class="nav-menu" id="nav-menu">
             
             <li class="nav-item">
@@ -112,24 +59,13 @@
             </li>
             
         </ul>
-        <div class="nav-search">
-            <button class="search-icon-btn" id="search-toggle" aria-label="Search">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                </svg>
-            </button>
-            <div class="search-dropdown" id="search-dropdown">
-                <input type="text" id="nav-search-input" placeholder="Search..." autocomplete="off">
-                <div id="nav-search-results"></div>
-            </div>
-        </div>
     </div>
 </nav>
+
 <script>
     const hamburger = document.getElementById('hamburger-btn');
     const navMenu = document.getElementById('nav-menu');
+
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
@@ -147,43 +83,43 @@
     
     <article class="post-preview">
         <span class="meta-date">Sep 22, 2024 · 3 min read</span>
-        <h2><a href="http://localhost:1313/posts/intuition-algorithm/">Intuition and Algorithm in Harmony: Architects in the Age of Artificial Intelligence</a></h2>
+        <h2><a href="https://armanwu.github.io/posts/intuition-algorithm/">Intuition and Algorithm in Harmony: Architects in the Age of Artificial Intelligence</a></h2>
         <p class="summary"><p>The rise of AI in architecture raises a critical question: How do we merge the intuitive intelligence built over years of practice with the logic of algorithms? …</p></p>
     </article>
     
     <article class="post-preview">
         <span class="meta-date">Jul 17, 2023 · 3 min read</span>
-        <h2><a href="http://localhost:1313/posts/critiquing-bim/">The Importance of Critiquing BIM in the Architecture World: Fostering Open-Mindedness for Advancement</a></h2>
+        <h2><a href="https://armanwu.github.io/posts/critiquing-bim/">The Importance of Critiquing BIM in the Architecture World: Fostering Open-Mindedness for Advancement</a></h2>
         <p class="summary"><p>As an architect and daily user of Building Information Modeling (BIM), I am the first to admit its tremendous value. It has undeniably revolutionized how we …</p></p>
     </article>
     
     <article class="post-preview">
         <span class="meta-date">Jul 9, 2023 · 2 min read</span>
-        <h2><a href="http://localhost:1313/posts/church-technology/">Bridging the Gap: Balancing Tradition and Innovation in the Digital Church</a></h2>
+        <h2><a href="https://armanwu.github.io/posts/church-technology/">Bridging the Gap: Balancing Tradition and Innovation in the Digital Church</a></h2>
         <p class="summary"><p>We live in a world that changes fast. With technology advancing every day, the church faces a unique challenge: how do we respond? Do we resist the tide, or do …</p></p>
     </article>
     
     <article class="post-preview">
         <span class="meta-date">Jul 6, 2023 · 3 min read</span>
-        <h2><a href="http://localhost:1313/posts/game-age-ratings/">Understanding Game Age Ratings: Protecting Children from Inappropriate Content</a></h2>
+        <h2><a href="https://armanwu.github.io/posts/game-age-ratings/">Understanding Game Age Ratings: Protecting Children from Inappropriate Content</a></h2>
         <p class="summary"><p>A lot of parents worry about the games their children play. They are often afraid that some games might not be suitable for their kid&rsquo;s age. But actually, …</p></p>
     </article>
     
     <article class="post-preview">
         <span class="meta-date">Jul 2, 2023 · 3 min read</span>
-        <h2><a href="http://localhost:1313/posts/church-and-vr/">Church and Virtual Reality: Exploring the Intersection</a></h2>
+        <h2><a href="https://armanwu.github.io/posts/church-and-vr/">Church and Virtual Reality: Exploring the Intersection</a></h2>
         <p class="summary"><p>It feels like every time we blink, the world moves a little faster. Technology has fundamentally shifted how we learn, how we work, and how we talk to each …</p></p>
     </article>
     
     <article class="post-preview">
         <span class="meta-date">Jun 23, 2023 · 3 min read</span>
-        <h2><a href="http://localhost:1313/posts/gen-design-techniques/">Exploring the Techniques of Generative Design</a></h2>
+        <h2><a href="https://armanwu.github.io/posts/gen-design-techniques/">Exploring the Techniques of Generative Design</a></h2>
         <p class="summary"><p>Generative design is often talked about as a single concept, but in reality, it is a collection of distinct mathematical and computational techniques. For …</p></p>
     </article>
     
     <article class="post-preview">
         <span class="meta-date">Jan 6, 2022 · 3 min read</span>
-        <h2><a href="http://localhost:1313/posts/computational-think/">Computational Thinking in Architectural Design Process</a></h2>
+        <h2><a href="https://armanwu.github.io/posts/computational-think/">Computational Thinking in Architectural Design Process</a></h2>
         <p class="summary"><p>The use of computers in the field of architectural design initially only involved digitizing tasks that were traditionally done manually. Computer-based …</p></p>
     </article>
     

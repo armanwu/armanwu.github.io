@@ -93,7 +93,7 @@ p {
     position: sticky;
     top: 0;
     z-index: 1000;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .nav-container {
@@ -191,12 +191,12 @@ p {
     line-height: 1.6;
     text-align: left;
     max-width: 100%;
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 1rem 0;
 }
 
 /* Social Icons */
 .social-links {
-    margin-top: 25px;
+    margin-top: 14px;
     display: flex;
     gap: 25px;
     align-items: center;
@@ -287,11 +287,12 @@ p {
 }
 
 .article-content p {
-    margin-bottom: 1.8em;
+    margin-bottom: 1.2em;
 }
 
 .article-content h2 {
-    margin-top: 2em;
+    margin-top: 2.2rem;
+    margin-bottom: 1rem;
     font-family: -apple-system, sans-serif;
     color: #1D252C;
     border-bottom: 2px solid #20B2AA;
@@ -596,7 +597,7 @@ p {
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-bottom: 28px;
+    margin-bottom: 18px;
 }
 
 .hero-name {
@@ -612,11 +613,11 @@ p {
 }
 
 .hero-tagline {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: #5b6c7f;
 }
 
 .tag-pill {

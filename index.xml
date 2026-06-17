@@ -6,8 +6,15 @@
     <description>Recent content on Arman Wu</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Jun 2026 08:04:46 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2026 08:04:46 +0700</lastBuildDate>
     <atom:link href="https://armanwu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Building Can Perform Well and Still Feel Wrong</title>
+      <link>https://armanwu.github.io/posts/building-perform-well/</link>
+      <pubDate>Wed, 17 Jun 2026 08:04:46 +0700</pubDate>
+      <guid>https://armanwu.github.io/posts/building-perform-well/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://armanwu.github.io/img/posts/building-perform-well.png&#34; alt=&#34;A Building Can Perform Well and Still Feel Wrong&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Today, architects can measure buildings in more detail than ever before. We can calculate energy use, daylight, temperature, structure, cost, circulation, and many other factors. Digital tools help us compare different options and find solutions that perform better. This is important progress because buildings should be safe, efficient, comfortable, and responsible toward the environment.&lt;/p&gt;&#xA;&lt;p&gt;But good performance does not always create good architecture. A building can meet every technical target and still feel cold, confusing, or out of place. It may work well on paper but fail to create a meaningful experience for the people who use it.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>BIM Represents Buildings Better Than It Represents Design Intent</title>
       <link>https://armanwu.github.io/posts/bim-represents-building/</link>

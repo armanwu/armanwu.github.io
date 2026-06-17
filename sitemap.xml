@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://armanwu.github.io/</loc>
-    <lastmod>2026-06-16T08:04:46+07:00</lastmod>
+    <loc>https://armanwu.github.io/posts/building-perform-well/</loc>
+    <lastmod>2026-06-17T08:04:46+07:00</lastmod>
   </url><url>
-    <loc>https://armanwu.github.io/posts/bim-represents-building/</loc>
-    <lastmod>2026-06-16T08:04:46+07:00</lastmod>
+    <loc>https://armanwu.github.io/</loc>
+    <lastmod>2026-06-17T08:04:46+07:00</lastmod>
   </url><url>
     <loc>https://armanwu.github.io/posts/</loc>
+    <lastmod>2026-06-17T08:04:46+07:00</lastmod>
+  </url><url>
+    <loc>https://armanwu.github.io/posts/bim-represents-building/</loc>
     <lastmod>2026-06-16T08:04:46+07:00</lastmod>
   </url><url>
     <loc>https://armanwu.github.io/projects/</loc>

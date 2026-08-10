@@ -531,19 +531,63 @@ p {
     }
 }
 
-/* === ARTICLE PAGE === */
-.article-tag {
+/* === CATEGORY / TAG PILL ===
+   Base pill shape shared by every category. Color comes from a
+   .tag-{accent} modifier so each essay's category maps to one of
+   the 6 brand accents (see data/categories.yaml). */
+.category-pill {
     display: inline-block;
     font-size: 0.72rem;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--color-accent-hover);
-    background: var(--color-accent-tint);
-    border: 1px solid var(--color-accent-tint-border);
     border-radius: 20px;
     padding: 3px 10px;
+    border: 1px solid transparent;
+}
+
+.article-header .category-pill {
     margin-bottom: 20px;
+}
+
+.post-preview .category-pill {
+    margin-bottom: 8px;
+}
+
+.tag-teal {
+    color: #17997B;
+    background: #E4F5F1;
+    border-color: #BFE6DA;
+}
+
+.tag-aqua {
+    color: #0F7A87;
+    background: #E3F6F8;
+    border-color: #B8E5EA;
+}
+
+.tag-sky {
+    color: #1D6FA3;
+    background: #E5F3FC;
+    border-color: #BFE0F5;
+}
+
+.tag-blue {
+    color: #3358B8;
+    background: #EAEFFD;
+    border-color: #C7D3F8;
+}
+
+.tag-violet {
+    color: #4A50B8;
+    background: #EEEEFC;
+    border-color: #D3D4F5;
+}
+
+.tag-purple {
+    color: #6650AF;
+    background: #F1EDFC;
+    border-color: #DCD1F5;
 }
 
 .article-meta-row {
@@ -554,13 +598,6 @@ p {
     border-bottom: 1px solid var(--color-border-soft);
     margin-bottom: 36px;
     margin-top: 16px;
-}
-
-.article-avatar {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    object-fit: cover;
 }
 
 .article-author {
@@ -666,13 +703,10 @@ p {
     border: 1px solid var(--color-accent-tint-border);
 }
 
-/* === SECTION DIVIDER ===
-   Brand motif: a row of dots in the 6 accents, replacing the plain
-   line + plain underline treatments used before. */
+/* === SECTION DIVIDER === */
 .section-divider {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     gap: 16px;
     margin: 48px 0 32px;
 }

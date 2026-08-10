@@ -1,12 +1,38 @@
 /* ==========================================================================
-   THEME: CITY LIGHTS (Light Adaptation)
+   ARMAN WU — VISUAL IDENTITY SYSTEM
    --------------------------------------------------------------------------
-   Colors:
-   - Text (Deep Gunmetal): #1D252C
-   - Links (Vibrant Blue): #20B2AA
-   - Hover (Teal Accent):  #148F88
-   - Borders/Lines:        #f0f4f8 / #dce3e8
+   Base:    White #FFFFFF / Light gray #F4F5F5 / Navy #12213A (headings, text)
+   Accents: Teal #1EAE8C · Aqua #22B4C4 · Sky #2E9FDB · Blue #4C7EE8 ·
+            Blue-violet #6B72E0 · Purple #8A6FDA  (used sparingly, not fills)
+   Type:    Outfit (headings/UI) · IBM Plex Sans (body/long-form)
+   Motif:   Row of dots in the 6 accents — never stripes or underlines
    ========================================================================== */
+
+:root {
+    --color-bg: #FFFFFF;
+    --color-surface: #F4F5F5;
+    --color-navy: #12213A;
+    --color-navy-muted: #5B6B85;
+    /* softened navy for secondary text, replaces old #5b6c7f */
+    --color-border: #E3E6EA;
+    --color-border-soft: #EEF0F2;
+
+    --color-teal: #1EAE8C;
+    --color-aqua: #22B4C4;
+    --color-sky: #2E9FDB;
+    --color-blue: #4C7EE8;
+    --color-violet: #6B72E0;
+    --color-purple: #8A6FDA;
+
+    /* Primary interactive accent (links, hovers) */
+    --color-accent: var(--color-teal);
+    --color-accent-hover: #17997B;
+    --color-accent-tint: #E4F5F1;
+    --color-accent-tint-border: #BFE6DA;
+
+    --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
 
 /* =========================================
    1. GLOBAL RESET & TYPOGRAPHY
@@ -22,9 +48,10 @@ html {
 }
 
 body {
-    background-color: #fff;
-    color: #1D252C;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-navy);
+    font-family: var(--font-body);
+    font-weight: 400;
     line-height: 1.6;
 }
 
@@ -35,7 +62,7 @@ a {
 }
 
 a:hover {
-    color: #20B2AA;
+    color: var(--color-accent);
 }
 
 /* --- Headings --- */
@@ -47,27 +74,32 @@ p {
     /* Default Rata Kiri */
 }
 
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+    font-weight: 500;
+}
+
 h1 {
     font-size: 2.2rem;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 1rem;
     letter-spacing: -0.5px;
     line-height: 1.2;
-    color: #0d1117;
+    color: var(--color-navy);
 }
 
 h2 {
     font-size: 1.5rem;
-    font-weight: 600;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    color: #1D252C;
+    color: var(--color-navy);
 }
 
 h3 {
     font-size: 1.2rem;
-    font-weight: 600;
-    color: #1D252C;
+    color: var(--color-navy);
 }
 
 p {
@@ -87,8 +119,8 @@ p {
    3. NAVIGATION BAR
    ========================================= */
 .navbar {
-    background: #fff;
-    border-bottom: 1px solid #f0f4f8;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border-soft);
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -110,10 +142,11 @@ p {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-weight: 700;
+    font-family: var(--font-heading);
+    font-weight: 600;
     font-size: 1.3rem;
     text-decoration: none;
-    color: #1D252C;
+    color: var(--color-navy);
 }
 
 .nav-logo img {
@@ -133,13 +166,14 @@ p {
 }
 
 .nav-link {
+    font-family: var(--font-body);
     font-size: 0.95rem;
     font-weight: 600;
-    color: #5b6c7f;
+    color: var(--color-navy-muted);
 }
 
 .nav-link:hover {
-    color: #20B2AA;
+    color: var(--color-accent);
 }
 
 /* Hamburger Icon (Mobile) */
@@ -156,7 +190,7 @@ p {
     height: 3px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
-    background-color: #1D252C;
+    background-color: var(--color-navy);
 }
 
 /* =========================================
@@ -179,14 +213,14 @@ p {
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #e1e8ed;
-    box-shadow: 0 5px 15px rgba(29, 37, 44, 0.15);
+    border: 3px solid var(--color-surface);
+    box-shadow: 0 5px 15px rgba(18, 33, 58, 0.12);
     transition: transform 0.3s ease, border-color 0.3s;
 }
 
 /* Intro Text */
 .intro p {
-    color: #5b6c7f;
+    color: var(--color-navy-muted);
     font-size: 1.1rem;
     line-height: 1.6;
     text-align: left;
@@ -204,7 +238,7 @@ p {
 }
 
 .social-links a {
-    color: #5b6c7f;
+    color: var(--color-navy-muted);
     display: flex;
     transition: all 0.2s ease;
 }
@@ -216,7 +250,7 @@ p {
 }
 
 .social-links a:hover {
-    color: #148F88;
+    color: var(--color-accent-hover);
     transform: scale(1.1);
 }
 
@@ -228,16 +262,17 @@ p {
 }
 
 .post-title {
+    font-family: var(--font-heading);
     font-size: 1.6rem;
     margin: 5px 0 10px 0;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.25;
-    color: #1D252C;
+    color: var(--color-navy);
 }
 
 .post-meta {
     font-size: 0.85rem;
-    color: #5b6c7f;
+    color: var(--color-navy-muted);
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 8px;
@@ -245,8 +280,8 @@ p {
 }
 
 .post-summary {
-    font-family: Georgia, serif;
-    color: #4a5868;
+    font-family: var(--font-body);
+    color: var(--color-navy-muted);
     font-size: 1rem;
 }
 
@@ -259,7 +294,7 @@ p {
     object-fit: cover;
     border-radius: 4px;
     margin: 15px 0;
-    border: 1px solid #dce3e8;
+    border: 1px solid var(--color-border);
     display: block;
 }
 
@@ -275,15 +310,15 @@ p {
     font-size: 2.5rem;
     line-height: 1.15;
     margin-bottom: 15px;
-    color: #0d1117;
+    color: var(--color-navy);
 }
 
 .article-content {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: var(--font-body);
     font-size: 1.15rem;
     line-height: 1.7;
     text-align: left;
-    color: #1D252C;
+    color: var(--color-navy);
 }
 
 .article-content p {
@@ -293,20 +328,18 @@ p {
 .article-content h2 {
     margin-top: 2.2rem;
     margin-bottom: 1rem;
-    font-family: -apple-system, sans-serif;
-    color: #1D252C;
-    border-bottom: 2px solid #20B2AA;
-    padding-bottom: 3px;
-    display: inline-block;
+    font-family: var(--font-heading);
+    color: var(--color-navy);
 }
 
 .article-content blockquote {
-    border-left: 4px solid #20B2AA;
-    padding-left: 20px;
+    border-left: 3px solid var(--color-navy);
+    opacity: 0.9;
+    padding: 12px 20px;
     font-style: italic;
-    color: #5b6c7f;
+    color: var(--color-navy-muted);
     margin: 30px 0;
-    background: #f5f8fa;
+    background: var(--color-surface);
 }
 
 .article-content img {
@@ -315,11 +348,11 @@ p {
     margin: 30px 0;
     display: block;
     border-radius: 4px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(18, 33, 58, 0.1);
 }
 
 .article-content a {
-    color: #20B2AA;
+    color: var(--color-accent);
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 3px;
@@ -327,7 +360,7 @@ p {
 }
 
 .article-content a:hover {
-    color: #148F88;
+    color: var(--color-accent-hover);
     text-decoration: none;
 }
 
@@ -363,18 +396,18 @@ p {
 
 .project-card:hover .project-image {
     opacity: 1;
-    border-color: #20B2AA;
+    border-color: var(--color-accent);
     transform: translateY(-3px);
 }
 
 .project-image {
     width: 100%;
     height: 140px;
-    background-color: #f0f4f8;
+    background-color: var(--color-surface);
     border-radius: 4px;
     overflow: hidden;
     margin-bottom: 8px;
-    border: 1px solid #dce3e8;
+    border: 1px solid var(--color-border);
     transition: all 0.2s ease;
 }
 
@@ -386,11 +419,12 @@ p {
 }
 
 .project-info h3 {
+    font-family: var(--font-heading);
     font-size: 0.95rem;
     line-height: 1.3;
     margin: 0;
-    font-weight: 700;
-    color: #1D252C;
+    font-weight: 600;
+    color: var(--color-navy);
     text-align: left;
 }
 
@@ -404,9 +438,9 @@ p {
 .footer {
     margin-top: 80px;
     padding: 40px 0;
-    border-top: 1px solid #f0f4f8;
+    border-top: 1px solid var(--color-border-soft);
     text-align: center;
-    color: #5b6c7f;
+    color: var(--color-navy-muted);
     font-size: 0.9rem;
 }
 
@@ -438,11 +472,11 @@ p {
         right: -100%;
         top: 60px;
         flex-direction: column;
-        background-color: #fff;
+        background-color: var(--color-bg);
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 20px rgba(18, 33, 58, 0.1);
         padding-bottom: 20px;
         gap: 0;
     }
@@ -504,9 +538,9 @@ p {
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #148F88;
-    background: #e6f7f6;
-    border: 1px solid #b2e8e4;
+    color: var(--color-accent-hover);
+    background: var(--color-accent-tint);
+    border: 1px solid var(--color-accent-tint-border);
     border-radius: 20px;
     padding: 3px 10px;
     margin-bottom: 20px;
@@ -517,7 +551,7 @@ p {
     align-items: center;
     gap: 10px;
     padding-bottom: 24px;
-    border-bottom: 1px solid #f0f4f8;
+    border-bottom: 1px solid var(--color-border-soft);
     margin-bottom: 36px;
     margin-top: 16px;
 }
@@ -532,20 +566,20 @@ p {
 .article-author {
     font-size: 0.85rem;
     font-weight: 600;
-    color: #1D252C;
+    color: var(--color-navy);
 }
 
 .article-date,
 .article-readtime {
     font-size: 0.82rem;
-    color: #aab4be;
+    color: #9099A8;
 }
 
 .meta-dot {
     width: 3px;
     height: 3px;
     border-radius: 50%;
-    background: #d0d7de;
+    background: #C7CCD4;
     display: inline-block;
 }
 
@@ -556,20 +590,20 @@ p {
     gap: 16px;
     margin-top: 56px;
     padding-top: 32px;
-    border-top: 1px solid #f0f4f8;
+    border-top: 1px solid var(--color-border-soft);
 }
 
 .prev-next-card {
     display: block;
     padding: 16px 20px;
-    border: 1px solid #e8edf2;
+    border: 1px solid var(--color-border);
     border-radius: 8px;
     transition: all 0.2s;
     text-decoration: none;
 }
 
 .prev-next-card:hover {
-    border-color: #20B2AA;
+    border-color: var(--color-accent);
 }
 
 .prev-next-card.next {
@@ -581,14 +615,15 @@ p {
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #aab4be;
+    color: #9099A8;
     margin-bottom: 6px;
 }
 
 .prev-next-title {
+    font-family: var(--font-heading);
     font-size: 0.9rem;
     font-weight: 600;
-    color: #1D252C;
+    color: var(--color-navy);
     line-height: 1.4;
 }
 
@@ -601,14 +636,15 @@ p {
 }
 
 .hero-name {
+    font-family: var(--font-heading);
     font-size: 1rem;
-    font-weight: 700;
-    color: #1D252C;
+    font-weight: 600;
+    color: var(--color-navy);
 }
 
 .hero-loc {
     font-size: 0.82rem;
-    color: #5b6c7f;
+    color: var(--color-navy-muted);
     margin-top: 2px;
 }
 
@@ -617,7 +653,7 @@ p {
     font-size: 0.88rem;
     font-weight: 600;
     letter-spacing: 0.03em;
-    color: #5b6c7f;
+    color: var(--color-navy-muted);
 }
 
 .tag-pill {
@@ -625,15 +661,18 @@ p {
     font-weight: 600;
     padding: 3px 10px;
     border-radius: 20px;
-    background: #e6f7f6;
-    color: #148F88;
-    border: 1px solid #b2e8e4;
+    background: var(--color-accent-tint);
+    color: var(--color-accent-hover);
+    border: 1px solid var(--color-accent-tint-border);
 }
 
-/* === SECTION DIVIDER === */
+/* === SECTION DIVIDER ===
+   Brand motif: a row of dots in the 6 accents, replacing the plain
+   line + plain underline treatments used before. */
 .section-divider {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 16px;
     margin: 48px 0 32px;
 }
@@ -641,7 +680,7 @@ p {
 .section-divider-line {
     flex: 1;
     height: 1px;
-    background: #f0f4f8;
+    background: var(--color-border-soft);
 }
 
 .section-divider-label {
@@ -649,7 +688,7 @@ p {
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: #aab4be;
+    color: var(--color-navy-muted);
 }
 
 /* === VIEW ALL LINK === */
@@ -661,16 +700,16 @@ p {
 .view-all-link {
     font-size: 0.9rem;
     font-weight: 600;
-    color: #20B2AA;
+    color: var(--color-accent);
 }
 
 .view-all-link:hover {
-    color: #148F88;
+    color: var(--color-accent-hover);
 }
 
 /* === ESSAY LIST DIVIDER === */
 .post-feed .post-preview {
-    border-bottom: 1px solid #e0ddd5;
+    border-bottom: 1px solid var(--color-border-soft);
     padding-bottom: 20px;
     margin-bottom: 20px;
 }

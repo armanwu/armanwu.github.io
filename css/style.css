@@ -307,9 +307,11 @@ p {
 }
 
 .article-header h1 {
-    font-size: 2.5rem;
-    line-height: 1.15;
-    margin-bottom: 15px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    margin-bottom: 1rem;
     color: var(--color-navy);
 }
 
@@ -514,7 +516,7 @@ p {
     }
 
     .article-header h1 {
-        font-size: 2rem;
+        font-size: 1.8rem !important;
     }
 
     .project-grid {

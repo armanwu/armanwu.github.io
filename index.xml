@@ -121,6 +121,13 @@
       <description>&lt;p&gt;I am Arman Arisman (also known as Arman Wu), an architect, researcher, and design technologist based in Indonesia. For over 15 years in building and planning consulting—most notably at Penta Architecture—I have led and integrated architectural computing (AI, BIM, and computational workflows) into real-world project delivery.&lt;/p&gt;&#xA;&lt;p&gt;I hold a doctorate from Institut Teknologi Bandung (ITB), where my research focused on Generative Design using Genetic Algorithms, examining the intersection of Human-Computer Interaction (HCI) and Design Cognition &amp;amp; Creativity. Rather than treating algorithms as black-box optimizers, my work investigates how computational systems and emerging AI can genuinely collaborate with human designers without compromising design intent or critical intuition.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Code &amp; Repositories</title>
+      <link>https://armanwu.github.io/code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://armanwu.github.io/code/</guid>
+      <description>&lt;p&gt;All of my open-source code, computational design scripts, BIM tools, and research repositories are hosted open-access on &lt;strong&gt;GitHub&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;div style=&#34;margin: 30px 0 40px 0; padding: 28px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 6px;&#34;&gt;&#xA;  &lt;h3 style=&#34;margin-top: 0; margin-bottom: 10px; font-size: 1.25rem;&#34;&gt;GitHub Repositories&lt;/h3&gt;&#xA;  &lt;p style=&#34;color: var(--color-navy-muted); margin-bottom: 22px; font-size: 1.05rem; line-height: 1.6;&#34;&gt;&#xA;    Explore my open-source projects including Revit API add-ins, Model Context Protocol (MCP) integrations, Julia form-finding scripts, OpenBIM tools, and architectural research data.&#xA;  &lt;/p&gt;&#xA;  &lt;a href=&#34;https://github.com/armanwu&#34; target=&#34;_blank&#34; style=&#34;display: inline-block; padding: 12px 22px; background: var(--color-navy); color: #ffffff; border-radius: 4px; font-weight: 600; font-family: var(--font-heading); text-decoration: none; transition: background 0.25s ease;&#34;&gt;&#xA;    View GitHub Profile (github.com/armanwu) ↗&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
       <title>Publications and Talks</title>
       <link>https://armanwu.github.io/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

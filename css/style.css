@@ -590,6 +590,18 @@ p {
     border-color: #DCD1F5;
 }
 
+.tag-amber {
+    color: #B45309;
+    background: #FEF3C7;
+    border-color: #FDE68A;
+}
+
+.tag-rose {
+    color: #9D174D;
+    background: #FCE7F3;
+    border-color: #FBCFE8;
+}
+
 .article-meta-row {
     display: flex;
     align-items: center;

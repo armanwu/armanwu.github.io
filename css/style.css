@@ -45,6 +45,22 @@
 
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main.container {
+    animation: fadeInUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 body {
@@ -170,10 +186,13 @@ p {
     font-size: 0.95rem;
     font-weight: 600;
     color: var(--color-navy-muted);
+    transition: color 0.25s ease, transform 0.25s ease;
+    display: inline-block;
 }
 
 .nav-link:hover {
     color: var(--color-accent);
+    transform: translateY(-1px);
 }
 
 /* Hamburger Icon (Mobile) */
@@ -215,7 +234,13 @@ p {
     border-radius: 50%;
     border: 3px solid var(--color-surface);
     box-shadow: 0 5px 15px rgba(18, 33, 58, 0.12);
-    transition: transform 0.3s ease, border-color 0.3s;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+    border-color: var(--color-accent-tint-border);
+    box-shadow: 0 8px 24px rgba(23, 153, 123, 0.22);
 }
 
 /* Intro Text */
@@ -240,7 +265,7 @@ p {
 .social-links a {
     color: var(--color-navy-muted);
     display: flex;
-    transition: all 0.2s ease;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), color 0.25s ease;
 }
 
 .social-links svg {
@@ -251,7 +276,7 @@ p {
 
 .social-links a:hover {
     color: var(--color-accent-hover);
-    transform: scale(1.1);
+    transform: translateY(-3px) scale(1.08);
 }
 
 /* =========================================
@@ -394,12 +419,11 @@ p {
 .project-card {
     display: block;
     background: transparent;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.project-card:hover .project-image {
-    opacity: 1;
-    border-color: var(--color-accent);
-    transform: translateY(-3px);
+.project-card:hover {
+    transform: translateY(-4px);
 }
 
 .project-image {
@@ -410,7 +434,7 @@ p {
     overflow: hidden;
     margin-bottom: 8px;
     border: 1px solid var(--color-border);
-    transition: all 0.2s ease;
+    transition: border-color 0.35s ease, box-shadow 0.35s ease;
 }
 
 .project-image img {
@@ -418,6 +442,16 @@ p {
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.06);
+}
+
+.project-card:hover .project-image {
+    border-color: var(--color-accent);
+    box-shadow: 0 10px 24px rgba(18, 33, 58, 0.12);
 }
 
 .project-info h3 {
@@ -434,8 +468,10 @@ p {
     display: none;
 }
 
+
+
 /* =========================================
-   8. FOOTER
+   9. FOOTER
    ========================================= */
 .footer {
     margin-top: 80px;
@@ -546,6 +582,12 @@ p {
     border-radius: 20px;
     padding: 3px 10px;
     border: 1px solid transparent;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+}
+
+.category-pill:hover {
+    transform: translateY(-1px) scale(1.03);
+    box-shadow: 0 3px 8px rgba(18, 33, 58, 0.08);
 }
 
 .article-header .category-pill {

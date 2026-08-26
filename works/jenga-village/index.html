@@ -31,20 +31,29 @@ Using the metaphor of the game Jenga, the design stacks living units (voxels) in
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/css/style.css">
+    
+    <link rel="stylesheet" href="/css/style.min.e4c07069e50013013cfe8d397e3637bcc3e97963267707042e3e0062cbfce58e.css" integrity="sha256-5MBwaeUAEwE8/o05fjY3vMPpeWMmdwcELj4AYsv85Y4=">
 
     <link rel="icon" href="/img/logo.png" type="image/png">
     <link rel="apple-touch-icon" href="/img/logo.png">
 
     
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-96RWB4ME5V"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-96RWB4ME5V');
-    </script>
-
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-96RWB4ME5V"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-96RWB4ME5V');
+        }
+      </script>
+    
 </head>
 
 <body>
@@ -52,8 +61,7 @@ Using the metaphor of the game Jenga, the design stacks living units (voxels) in
     <nav class="navbar">
     <div class="nav-container">
         <a href="/" class="nav-logo">
-            <img src="/img/logo.png" alt="Logo">
-
+            <img src="/img/logo.webp" alt="Logo" width="32" height="32">
             <span></span>
         </a>
 
@@ -89,16 +97,6 @@ Using the metaphor of the game Jenga, the design stacks living units (voxels) in
     </div>
 </nav>
 
-<script>
-    const hamburger = document.getElementById('hamburger-btn');
-    const navMenu = document.getElementById('nav-menu');
-
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
-</script>
-
     <main class="container">
         
 <article class="full-article">
@@ -111,14 +109,14 @@ Using the metaphor of the game Jenga, the design stacks living units (voxels) in
     </header>
 
     <div class="article-content">
-        <figure><img src="/img/projects/jenga-village/jenga-village-1.jpg">
+        <figure><img src="/img/projects/jenga-village/jenga-village-1.webp">
 </figure>
 
 <p><strong>Jenga Village</strong> is a playful yet serious exploration of modular housing. While modern apartment blocks often feel repetitive and isolating, this project asks: Can we use code to create a &ldquo;vertical village&rdquo; where every unit feels unique?</p>
 <p>Using the metaphor of the game <em>Jenga</em>, the design stacks living units (voxels) in a seemingly random arrangement, creating a rich texture of solids and voids that adapts to the hillside topography.</p>
 <h2 id="the-logic-voxel-aggregation">The Logic: Voxel Aggregation</h2>
 <p>Written in <strong>Julia</strong>, the script for this project operates on a voxel-based grid system. Unlike traditional modeling where we draw walls and floors, here the code treats space as a collection of 3D pixels.</p>
-<figure><img src="/img/projects/jenga-village/jenga-village-3.jpg">
+<figure><img src="/img/projects/jenga-village/jenga-village-3.webp">
 </figure>
 
 <p>The algorithm generates these stacks with specific rules:</p>
@@ -132,7 +130,7 @@ Using the metaphor of the game Jenga, the design stacks living units (voxels) in
 <p>This transforms a high-density complex into a series of garden homes. The &ldquo;randomness&rdquo; of the code ensures that almost every resident gets a private outdoor area, natural light, and a view—luxuries often lost in standard boxy apartments.</p>
 <h2 id="visualization">Visualization</h2>
 <p>The scene was rendered using <strong>Nano Banana</strong>, focusing on the warmth of the materials to contrast the digital origin of the form.</p>
-<figure><img src="/img/projects/jenga-village/jenga-village-2.jpg">
+<figure><img src="/img/projects/jenga-village/jenga-village-2.webp">
 </figure>
 
 <p>I combined exposed concrete with timber cladding to give the voxels a tactile, human scale. The extensive greenery placed on the terraces softens the hard edges of the geometry, blending the architecture into the surrounding green hill. It is a vision of how computational design can coexist with nature.</p>

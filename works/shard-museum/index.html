@@ -31,20 +31,29 @@ However, to prevent the building from feeling hostile, the sharp geometry is wra
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/css/style.css">
+    
+    <link rel="stylesheet" href="/css/style.min.e4c07069e50013013cfe8d397e3637bcc3e97963267707042e3e0062cbfce58e.css" integrity="sha256-5MBwaeUAEwE8/o05fjY3vMPpeWMmdwcELj4AYsv85Y4=">
 
     <link rel="icon" href="/img/logo.png" type="image/png">
     <link rel="apple-touch-icon" href="/img/logo.png">
 
     
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-96RWB4ME5V"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-96RWB4ME5V');
-    </script>
-
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-96RWB4ME5V"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-96RWB4ME5V');
+        }
+      </script>
+    
 </head>
 
 <body>
@@ -52,8 +61,7 @@ However, to prevent the building from feeling hostile, the sharp geometry is wra
     <nav class="navbar">
     <div class="nav-container">
         <a href="/" class="nav-logo">
-            <img src="/img/logo.png" alt="Logo">
-
+            <img src="/img/logo.webp" alt="Logo" width="32" height="32">
             <span></span>
         </a>
 
@@ -89,16 +97,6 @@ However, to prevent the building from feeling hostile, the sharp geometry is wra
     </div>
 </nav>
 
-<script>
-    const hamburger = document.getElementById('hamburger-btn');
-    const navMenu = document.getElementById('nav-menu');
-
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
-</script>
-
     <main class="container">
         
 <article class="full-article">
@@ -111,25 +109,25 @@ However, to prevent the building from feeling hostile, the sharp geometry is wra
     </header>
 
     <div class="article-content">
-        <figure><img src="/img/projects/shard-museum/shard-museum-1.png">
+        <figure><img src="/img/projects/shard-museum/shard-museum-1.webp">
 </figure>
 
 <p><strong>Shard Museum</strong> explores the aesthetic of fragmentation. Museums are often monolithic containers of history, but this project envisions a building that looks like history exploding outward. The form is composed of aggressive, jutting shards that pierce the sky, creating a dynamic silhouette that changes from every angle.</p>
 <p>However, to prevent the building from feeling hostile, the sharp geometry is wrapped in warm, vertical timber slats. It is a &ldquo;soft explosion&rdquo;—a balance between digital precision and natural materiality.</p>
-<figure><img src="/img/projects/shard-museum/shard-museum-2.png">
+<figure><img src="/img/projects/shard-museum/shard-museum-2.webp">
 </figure>
 
 <h2 id="the-logic-procedural-prisms">The Logic: Procedural Prisms</h2>
 <p>The geometry was generated using a custom function in <strong>Julia</strong> called <code>bikin prisma tajam</code> (create sharp prism).</p>
-<figure><img src="/img/projects/shard-museum/shard-museum-5.png">
+<figure><img src="/img/projects/shard-museum/shard-museum-5.webp">
 </figure>
 
 <p>As seen in the computational study above, the script does not model a single building. Instead, it generates a cluster of prisms. The code randomizes the <code>lebar_alas</code> (base width) and the <code>offset</code> of the roof vertices to create extreme tilts. The challenge was to create a cluster that felt chaotic yet cohesive—like a crystal formation growing out of the ground.</p>
-<figure><img src="/img/projects/shard-museum/shard-museum-4.png">
+<figure><img src="/img/projects/shard-museum/shard-museum-4.webp">
 </figure>
 
 <h2 id="interior-the-cavern-of-light">Interior: The Cavern of Light</h2>
-<figure><img src="/img/projects/shard-museum/shard-museum-3.png">
+<figure><img src="/img/projects/shard-museum/shard-museum-3.webp">
 </figure>
 
 <p>Inside, the aggression of the exterior shards translates into a dramatic, cathedral-like atrium. The angled walls create unexpected intersecting planes, while the large glass facets allow natural light to slice through the space.</p>

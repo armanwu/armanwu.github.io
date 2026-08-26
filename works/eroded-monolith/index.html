@@ -33,20 +33,29 @@ The Logic: Algorithmic Subtraction The form-finding process was driven by a scri
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/css/style.css">
+    
+    <link rel="stylesheet" href="/css/style.min.e4c07069e50013013cfe8d397e3637bcc3e97963267707042e3e0062cbfce58e.css" integrity="sha256-5MBwaeUAEwE8/o05fjY3vMPpeWMmdwcELj4AYsv85Y4=">
 
     <link rel="icon" href="/img/logo.png" type="image/png">
     <link rel="apple-touch-icon" href="/img/logo.png">
 
     
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-96RWB4ME5V"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-96RWB4ME5V');
-    </script>
-
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-96RWB4ME5V"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-96RWB4ME5V');
+        }
+      </script>
+    
 </head>
 
 <body>
@@ -54,8 +63,7 @@ The Logic: Algorithmic Subtraction The form-finding process was driven by a scri
     <nav class="navbar">
     <div class="nav-container">
         <a href="/" class="nav-logo">
-            <img src="/img/logo.png" alt="Logo">
-
+            <img src="/img/logo.webp" alt="Logo" width="32" height="32">
             <span></span>
         </a>
 
@@ -91,16 +99,6 @@ The Logic: Algorithmic Subtraction The form-finding process was driven by a scri
     </div>
 </nav>
 
-<script>
-    const hamburger = document.getElementById('hamburger-btn');
-    const navMenu = document.getElementById('nav-menu');
-
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
-</script>
-
     <main class="container">
         
 <article class="full-article">
@@ -113,14 +111,14 @@ The Logic: Algorithmic Subtraction The form-finding process was driven by a scri
     </header>
 
     <div class="article-content">
-        <figure><img src="/img/projects/eroded-monolith/eroded-monolith-1.jpg">
+        <figure><img src="/img/projects/eroded-monolith/eroded-monolith-1.webp">
 </figure>
 
 <p><strong>Eroded Monolith</strong> challenges the traditional typology of the skyscraper. Usually, high-rise buildings are sealed, air-conditioned glass boxes that isolate people from the elements. This project asks: What happens if we &ldquo;break&rdquo; the box to let nature in?</p>
 <p>The concept creates a dialogue between two opposing forces: the perfection of the modernist grid versus the imperfection of organic erosion.</p>
 <h2 id="the-logic-algorithmic-subtraction">The Logic: Algorithmic Subtraction</h2>
 <p>The form-finding process was driven by a script written in <strong>Julia</strong>. Unlike the additive process used in <em>Jenga Village</em> (stacking blocks), this project uses a <strong>subtractive</strong> method.</p>
-<figure><img src="/img/projects/eroded-monolith/eroded-monolith-2.png">
+<figure><img src="/img/projects/eroded-monolith/eroded-monolith-2.webp">
 </figure>
 
 <p>I started with a solid, massive volume—a &ldquo;monolith.&rdquo; Then, using a customized noise algorithm, the script identified specific voxels to be removed. Think of it like a digital termite colony carving out a nest, or water eroding a canyon over centuries. The code allowed me to control the intensity of the erosion, ensuring the structural core remained intact while opening up deep cavernous spaces on the façade.</p>
@@ -130,7 +128,7 @@ The Logic: Algorithmic Subtraction The form-finding process was driven by a scri
 <li><strong>The Shell:</strong> The exterior is sleek, reflective glass—representative of the corporate world.</li>
 <li><strong>The Core:</strong> The eroded interior is clad in warm timber and filled with hanging gardens.</li>
 </ul>
-<figure><img src="/img/projects/eroded-monolith/eroded-monolith-3.jpg">
+<figure><img src="/img/projects/eroded-monolith/eroded-monolith-3.webp">
 </figure>
 
 <p>This &ldquo;erosion&rdquo; functions as a communal lung for the building. It creates shaded terraces, breakout spaces, and vertical parks that connect different floors. It proves that even in a massive tower, we can use code to carve out spaces that feel intimate and human.</p>

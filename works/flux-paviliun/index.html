@@ -31,20 +31,29 @@ It reimagines the concept of a public shelter not just as a roof, but as a lands
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/css/style.css">
+    
+    <link rel="stylesheet" href="/css/style.min.e4c07069e50013013cfe8d397e3637bcc3e97963267707042e3e0062cbfce58e.css" integrity="sha256-5MBwaeUAEwE8/o05fjY3vMPpeWMmdwcELj4AYsv85Y4=">
 
     <link rel="icon" href="/img/logo.png" type="image/png">
     <link rel="apple-touch-icon" href="/img/logo.png">
 
     
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-96RWB4ME5V"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-96RWB4ME5V');
-    </script>
-
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-96RWB4ME5V"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-96RWB4ME5V');
+        }
+      </script>
+    
 </head>
 
 <body>
@@ -52,8 +61,7 @@ It reimagines the concept of a public shelter not just as a roof, but as a lands
     <nav class="navbar">
     <div class="nav-container">
         <a href="/" class="nav-logo">
-            <img src="/img/logo.png" alt="Logo">
-
+            <img src="/img/logo.webp" alt="Logo" width="32" height="32">
             <span></span>
         </a>
 
@@ -89,16 +97,6 @@ It reimagines the concept of a public shelter not just as a roof, but as a lands
     </div>
 </nav>
 
-<script>
-    const hamburger = document.getElementById('hamburger-btn');
-    const navMenu = document.getElementById('nav-menu');
-
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
-</script>
-
     <main class="container">
         
 <article class="full-article">
@@ -111,28 +109,28 @@ It reimagines the concept of a public shelter not just as a roof, but as a lands
     </header>
 
     <div class="article-content">
-        <figure><img src="/img/projects/flux-pavilion/flux-pavilion-1.jpg">
+        <figure><img src="/img/projects/flux-pavilion/flux-pavilion-1.webp">
 </figure>
 
 <p><strong>Flux Pavilion</strong> is an exploration of continuity and flow. In architecture, we often deal with rigid lines and static forms, but nature operates on curves and rhythms. This project attempts to capture the essence of movement—like a sound wave or a rolling ocean—frozen in a structural shell.</p>
 <p>It reimagines the concept of a public shelter not just as a roof, but as a landscape that rises and falls to create pockets of space.</p>
 <h2 id="the-logic-trigonometry-as-architecture">The Logic: Trigonometry as Architecture</h2>
 <p>While the form looks organic, its origin is purely mathematical. Written in <strong>Julia</strong>, the generative script relies heavily on trigonometric functions (specifically sine and cosine waves).</p>
-<figure><img src="/img/projects/flux-pavilion/flux-pavilion-2.png">
+<figure><img src="/img/projects/flux-pavilion/flux-pavilion-2.webp">
 </figure>
 
 <p>Instead of manually modeling each curve, the script modulates a series of arches along a path. The parameters allow for precise control over the &ldquo;amplitude&rdquo; (height) and &ldquo;frequency&rdquo; (width) of the waves. The wireframe above reveals the underlying tessellation—a clean, logical grid that makes the complex curvature constructible.</p>
-<figure><img src="/img/projects/flux-pavilion/flux-pavilion-3.png">
+<figure><img src="/img/projects/flux-pavilion/flux-pavilion-3.webp">
 </figure>
 
 <h2 id="the-experience-inside-the-wave">The Experience: Inside the Wave</h2>
 <p>The goal of this parametric geometry is to influence human behavior. The &ldquo;peaks&rdquo; of the wave create grand, open entryways that invite people in, while the &ldquo;valleys&rdquo; dip down to create more intimate, enclosed areas.</p>
-<figure><img src="/img/projects/flux-pavilion/flux-pavilion-5.jpg">
+<figure><img src="/img/projects/flux-pavilion/flux-pavilion-5.webp">
 </figure>
 
 <h2 id="visualization">Visualization</h2>
 <p>Rendered with <strong>Nano Banana</strong>, the visualization emphasizes lightness. The white, rib-like cladding contrasts with the large glazed openings, allowing sunlight to flood the interior. It transforms abstract math into a welcoming, breathable public space.</p>
-<figure><img src="/img/projects/flux-pavilion/flux-pavilion-4.jpg">
+<figure><img src="/img/projects/flux-pavilion/flux-pavilion-4.webp">
 </figure>
 
 

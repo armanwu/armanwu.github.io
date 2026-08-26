@@ -29,20 +29,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/css/style.css">
+    
+    <link rel="stylesheet" href="/css/style.min.e4c07069e50013013cfe8d397e3637bcc3e97963267707042e3e0062cbfce58e.css" integrity="sha256-5MBwaeUAEwE8/o05fjY3vMPpeWMmdwcELj4AYsv85Y4=">
 
     <link rel="icon" href="/img/logo.png" type="image/png">
     <link rel="apple-touch-icon" href="/img/logo.png">
 
     
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-96RWB4ME5V"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-96RWB4ME5V');
-    </script>
-
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-96RWB4ME5V"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-96RWB4ME5V');
+        }
+      </script>
+    
 </head>
 
 <body>
@@ -50,8 +59,7 @@
     <nav class="navbar">
     <div class="nav-container">
         <a href="/" class="nav-logo">
-            <img src="/img/logo.png" alt="Logo">
-
+            <img src="/img/logo.webp" alt="Logo" width="32" height="32">
             <span></span>
         </a>
 
@@ -87,16 +95,6 @@
     </div>
 </nav>
 
-<script>
-    const hamburger = document.getElementById('hamburger-btn');
-    const navMenu = document.getElementById('nav-menu');
-
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
-</script>
-
     <main class="container">
         
 <article class="full-article">
@@ -117,7 +115,8 @@
     </header>
 
     <div class="article-content">
-        <p><img src="/img/posts/bim-represent-building.png" alt="BIM Represents Buildings Better Than It Represents Design Intent"></p>
+        <p><img src="/img/posts/bim-represent-building.webp" alt="BIM Represents Buildings Better Than It Represents Design Intent" loading="lazy" decoding="async">
+</p>
 <p>BIM is very good at describing buildings. A BIM model can store dimensions, materials, quantities, systems, and technical data. It can also help architects coordinate drawings, find clashes, and manage project information.</p>
 <p>However, BIM is less effective at representing one important thing: <strong>design intent</strong>.</p>
 <p>A model can show where a wall is located. It can store its thickness, material, fire rating, and other properties. But it usually does not explain why the architect placed the wall there, which options were considered, or what design value the decision was meant to protect.</p>

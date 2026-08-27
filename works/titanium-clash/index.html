@@ -9,6 +9,8 @@
     <meta name="description" content=" Titanium Clash is an experimental project exploring the boundaries between algorithmic chaos and architectural order. Drawing inspiration from the fragmented …">
     <link rel="canonical" href="https://armanwu.com/works/titanium-clash/">
 
+    
+
     <meta property="og:url" content="https://armanwu.com/works/titanium-clash/">
   <meta property="og:site_name" content="Arman Wu">
   <meta property="og:title" content="Titanium Clash">
@@ -19,9 +21,11 @@ The Process: Code as the Sketchpad Instead of starting with a sketch or a massin
     <meta property="article:section" content="works">
     <meta property="article:published_time" content="2026-01-20T00:00:00+00:00">
     <meta property="article:modified_time" content="2026-01-20T00:00:00+00:00">
+    <meta property="og:image" content="https://armanwu.com/img/logo.png">
 
     
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://armanwu.com/img/logo.png">
   <meta name="twitter:title" content="Titanium Clash">
   <meta name="twitter:description" content="Titanium Clash is an experimental project exploring the boundaries between algorithmic chaos and architectural order. Drawing inspiration from the fragmented style of deconstructivism, this project investigates how code can be used to generate complex spatial collisions that would be hard to model manually.
 The Process: Code as the Sketchpad Instead of starting with a sketch or a massing model, this project began with a script written in Julia. I chose Julia for its fast computational capabilities, allowing for rapid iteration of complex geometric calculations.">
@@ -32,7 +36,7 @@ The Process: Code as the Sketchpad Instead of starting with a sketch or a massin
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
     
-    <link rel="stylesheet" href="/css/style.min.e4c07069e50013013cfe8d397e3637bcc3e97963267707042e3e0062cbfce58e.css" integrity="sha256-5MBwaeUAEwE8/o05fjY3vMPpeWMmdwcELj4AYsv85Y4=">
+    <link rel="stylesheet" href="/css/style.min.038fe8276305412b3c51326d90585b2c6470fb10878b2943e91867b04f60a838.css" integrity="sha256-A4/oJ2MFQSs8UTJtkFhbLGRw&#43;xCHiylD6RhnsE9gqDg=">
 
     <link rel="icon" href="/img/logo.png" type="image/png">
     <link rel="apple-touch-icon" href="/img/logo.png">
@@ -57,6 +61,8 @@ The Process: Code as the Sketchpad Instead of starting with a sketch or a massin
 </head>
 
 <body>
+
+    <div id="reading-progress" class="reading-progress"></div>
 
     <nav class="navbar">
     <div class="nav-container">
@@ -143,7 +149,7 @@ The Process: Code as the Sketchpad Instead of starting with a sketch or a massin
         
 
         
-        <a href="https://armanwu.com/works/jenga-village/" class="prev-next-card next">
+        <a href="/works/jenga-village/" class="prev-next-card next">
             <div class="prev-next-label">Next →</div>
             <div class="prev-next-title">Jenga Village</div>
         </a>
@@ -160,6 +166,12 @@ The Process: Code as the Sketchpad Instead of starting with a sketch or a massin
         </div>
     </footer>
 
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
     <script>
         const hamburger = document.querySelector(".hamburger");
         const navMenu = document.querySelector(".nav-menu");
@@ -168,6 +180,63 @@ The Process: Code as the Sketchpad Instead of starting with a sketch or a massin
             hamburger.addEventListener("click", () => {
                 hamburger.classList.toggle("active");
                 navMenu.classList.toggle("active");
+            });
+        }
+
+        
+        const progressBar = document.getElementById("reading-progress");
+        const article = document.querySelector(".article-content");
+        if (progressBar && article) {
+            window.addEventListener("scroll", () => {
+                const rect = article.getBoundingClientRect();
+                const totalHeight = article.offsetHeight;
+                const windowHeight = window.innerHeight;
+                const scrollOffset = -rect.top;
+                const maxScroll = totalHeight - windowHeight + 100;
+                const progress = Math.min(100, Math.max(0, (scrollOffset / maxScroll) * 100));
+                progressBar.style.width = progress + "%";
+            }, { passive: true });
+        }
+
+        
+        document.querySelectorAll("pre").forEach((pre) => {
+            const btn = document.createElement("button");
+            btn.className = "copy-code-btn";
+            btn.setAttribute("aria-label", "Copy code");
+            btn.textContent = "Copy";
+            btn.addEventListener("click", async () => {
+                const code = pre.querySelector("code") || pre;
+                try {
+                    await navigator.clipboard.writeText(code.innerText);
+                    btn.textContent = "Copied!";
+                    btn.classList.add("copied");
+                    setTimeout(() => {
+                        btn.textContent = "Copy";
+                        btn.classList.remove("copied");
+                    }, 2000);
+                } catch (err) {
+                    btn.textContent = "Failed";
+                }
+            });
+            pre.appendChild(btn);
+        });
+
+        
+        const backToTopBtn = document.getElementById("back-to-top");
+        if (backToTopBtn) {
+            const toggleBackToTop = () => {
+                const scrollY = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+                if (scrollY > 180) {
+                    backToTopBtn.classList.add("visible");
+                } else {
+                    backToTopBtn.classList.remove("visible");
+                }
+            };
+            window.addEventListener("scroll", toggleBackToTop, { passive: true });
+            toggleBackToTop();
+
+            backToTopBtn.addEventListener("click", () => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
             });
         }
     </script>

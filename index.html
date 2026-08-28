@@ -136,7 +136,7 @@
                 <polyline points="22,6 12,13 2,6"></polyline>
             </svg>
         </a>
-        <a href="https://scholar.google.com/citations?user=kPidohUAAAAJ&hl=en&oi=sra" target="_blank"
+        <a href="https://scholar.google.com/citations?user=kPidohUAAAAJ&hl=en&oi=sra" target="_blank" rel="noopener noreferrer"
             aria-label="Google Scholar">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -144,7 +144,7 @@
                 <path d="M6 12v5c3 0 6 1 6 1s3-1 6-1v-5" />
             </svg>
         </a>
-        <a href="https://github.com/armanwu" target="_blank" aria-label="GitHub">
+        <a href="https://github.com/armanwu" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path
@@ -152,7 +152,7 @@
                 </path>
             </svg>
         </a>
-        <a href="https://www.linkedin.com/in/arman-arisman-42042b4b" target="_blank" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/arman-arisman-42042b4b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -160,7 +160,7 @@
                 <circle cx="4" cy="4" r="2"></circle>
             </svg>
         </a>
-        <a href="https://www.youtube.com/c/armanwu" target="_blank" aria-label="YouTube">
+        <a href="https://www.youtube.com/c/armanwu" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path
@@ -169,7 +169,7 @@
                 <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon>
             </svg>
         </a>
-        <a href="https://www.instagram.com/arman_wu/" target="_blank" aria-label="Instagram">
+        <a href="https://www.instagram.com/arman_wu/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -377,6 +377,14 @@
                 window.scrollTo({ top: 0, behavior: "smooth" });
             });
         }
+
+        
+        document.querySelectorAll('a[href^="http://"], a[href^="https://"]').forEach(link => {
+            if (link.hostname && link.hostname !== window.location.hostname) {
+                link.setAttribute('target', '_blank');
+                link.setAttribute('rel', 'noopener noreferrer');
+            }
+        });
     </script>
 
 </body>

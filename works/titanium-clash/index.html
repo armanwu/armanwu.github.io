@@ -243,6 +243,14 @@ The Process: Code as the Sketchpad Instead of starting with a sketch or a massin
                 window.scrollTo({ top: 0, behavior: "smooth" });
             });
         }
+
+        
+        document.querySelectorAll('a[href^="http://"], a[href^="https://"]').forEach(link => {
+            if (link.hostname && link.hostname !== window.location.hostname) {
+                link.setAttribute('target', '_blank');
+                link.setAttribute('rel', 'noopener noreferrer');
+            }
+        });
     </script>
 
 </body>

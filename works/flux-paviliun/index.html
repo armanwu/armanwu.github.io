@@ -245,6 +245,14 @@ It reimagines the concept of a public shelter not just as a roof, but as a lands
                 window.scrollTo({ top: 0, behavior: "smooth" });
             });
         }
+
+        
+        document.querySelectorAll('a[href^="http://"], a[href^="https://"]').forEach(link => {
+            if (link.hostname && link.hostname !== window.location.hostname) {
+                link.setAttribute('target', '_blank');
+                link.setAttribute('rel', 'noopener noreferrer');
+            }
+        });
     </script>
 
 </body>

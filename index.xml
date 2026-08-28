@@ -6,8 +6,15 @@
     <description>Recent content on Arman Wu</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Jun 2026 08:04:46 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2026 12:00:00 +0700</lastBuildDate>
     <atom:link href="https://armanwu.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a Better Bridge: A Revit-SketchUp Story</title>
+      <link>https://armanwu.com/posts/revit-to-sketchup-bridge/</link>
+      <pubDate>Fri, 28 Aug 2026 12:00:00 +0700</pubDate>
+      <guid>https://armanwu.com/posts/revit-to-sketchup-bridge/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://armanwu.com/img/posts/building-a-better-bridge.webp&#34; alt=&#34;Building a Better Bridge: A Revit-SketchUp Story&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;That was the feedback from our 3D artists. They had just received a SketchUp model that was exported from Revit—the standard workflow for our government building project. The geometry was a disaster: broken faces, missing materials, random layers, and no logical structure. Hours of cleanup work lay ahead. And this wasn&amp;rsquo;t the first time.&lt;/p&gt;&#xA;&lt;p&gt;Every project, the same story. A Revit model needs to move to SketchUp for visualization, rendering, or further design development. And every time, the transfer damages the model so badly that it almost feels like starting over.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>A Building Can Perform Well and Still Feel Wrong</title>
       <link>https://armanwu.com/posts/building-perform-well/</link>

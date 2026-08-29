@@ -146,9 +146,9 @@
 
 
 <div class="post-filter-toolbar" id="post-filter-toolbar">
-    <button class="filter-btn active" data-filter="all">All <span class="filter-count" id="count-all">0</span></button>
-    <button class="filter-btn" data-filter="en">English <span class="filter-count" id="count-en">0</span></button>
+    <button class="filter-btn active" data-filter="en">English <span class="filter-count" id="count-en">0</span></button>
     <button class="filter-btn" data-filter="id">Bahasa Indonesia <span class="filter-count" id="count-id">0</span></button>
+    <button class="filter-btn" data-filter="all">All <span class="filter-count" id="count-all">0</span></button>
 </div>
 
 <div class="post-feed" id="post-feed">
@@ -212,7 +212,7 @@
         filterBtns.forEach(btn => {
             btn.addEventListener("click", () => {
                 const filter = btn.getAttribute("data-filter");
-                if (filter === "all") {
+                if (filter === "en") {
                     history.replaceState(null, "", window.location.pathname);
                 } else {
                     window.location.hash = filter;
@@ -225,11 +225,9 @@
         const hash = window.location.hash.replace("#", "").toLowerCase();
         const urlParams = new URLSearchParams(window.location.search);
         const langParam = urlParams.get("lang");
-        const initialFilter = ["id", "en"].includes(hash) ? hash : (["id", "en"].includes(langParam) ? langParam : "all");
+        const initialFilter = ["id", "en", "all"].includes(hash) ? hash : (["id", "en", "all"].includes(langParam) ? langParam : "en");
 
-        if (initialFilter !== "all") {
-            applyFilter(initialFilter);
-        }
+        applyFilter(initialFilter);
     });
 </script>
 

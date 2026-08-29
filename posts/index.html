@@ -146,12 +146,34 @@
 
 
 <div class="post-filter-toolbar" id="post-filter-toolbar">
-    <button class="filter-btn active" data-filter="all">All <span class="filter-count" id="count-all">0</span></button>
-    <button class="filter-btn" data-filter="en">English <span class="filter-count" id="count-en">0</span></button>
+    <button class="filter-btn active" data-filter="en">English <span class="filter-count" id="count-en">0</span></button>
     <button class="filter-btn" data-filter="id">Bahasa Indonesia <span class="filter-count" id="count-id">0</span></button>
+    <button class="filter-btn" data-filter="all">All <span class="filter-count" id="count-all">0</span></button>
 </div>
 
 <div class="post-feed" id="post-feed">
+    
+    
+    
+    <article class="post-preview is-hidden" data-lang="id">
+        <div class="post-meta-tags">
+            <span class="post-meta">Aug 29, 2026 • 4 min read</span>
+            
+            <span class="lang-badge lang-id" title="Bahasa Indonesia">ID</span>
+            
+            
+            
+            
+            <span class="category-pill tag-sky">Computation &amp; Generative AI</span>
+            
+            
+        </div>
+        <h2 class="post-title"><a href="/posts/navigasi-ruang-laten/">Navigasi Ruang Laten</a></h2>
+        <p class="post-summary"><p><img src="/img/posts/navigasi-ruang-laten.webp" alt="Navigasi Ruang Laten" loading="lazy" decoding="async">
+</p>
+<p>Kekecewaan arsitek terhadap kecerdasan buatan (artificial intelligence) sering kali berpangkal pada kekeliruan ekspektasi: memperlakukan sistem generatif …</p></p>
+    </article>
+    
     
     
     <article class="post-preview" data-lang="en">
@@ -174,6 +196,7 @@
     </article>
     
     
+    
     <article class="post-preview" data-lang="en">
         <div class="post-meta-tags">
             <span class="post-meta">Jun 17, 2026 • 5 min read</span>
@@ -192,6 +215,7 @@
 </p>
 <p>Today, architects can measure buildings in more detail than ever before. We can calculate energy use, daylight, temperature, structure, cost, circulation, and …</p></p>
     </article>
+    
     
     
     <article class="post-preview" data-lang="en">
@@ -214,6 +238,7 @@
     </article>
     
     
+    
     <article class="post-preview" data-lang="en">
         <div class="post-meta-tags">
             <span class="post-meta">Sep 22, 2024 • 3 min read</span>
@@ -232,6 +257,7 @@
 </p>
 <p>The rise of AI in architecture raises a critical question: How do we merge the intuitive intelligence built over years of practice with the logic of …</p></p>
     </article>
+    
     
     
     <article class="post-preview" data-lang="en">
@@ -254,6 +280,7 @@
     </article>
     
     
+    
     <article class="post-preview" data-lang="en">
         <div class="post-meta-tags">
             <span class="post-meta">Jul 9, 2023 • 2 min read</span>
@@ -270,6 +297,7 @@
         <h2 class="post-title"><a href="/posts/church-technology/">Bridging the Gap: Balancing Tradition and Innovation in the Digital Church</a></h2>
         <p class="post-summary"><p>We live in a world that changes fast. With technology advancing every day, the church faces a unique challenge: how do we respond? Do we resist the tide, or do …</p></p>
     </article>
+    
     
     
     <article class="post-preview" data-lang="en">
@@ -290,6 +318,7 @@
     </article>
     
     
+    
     <article class="post-preview" data-lang="en">
         <div class="post-meta-tags">
             <span class="post-meta">Jul 2, 2023 • 3 min read</span>
@@ -308,6 +337,7 @@
     </article>
     
     
+    
     <article class="post-preview" data-lang="en">
         <div class="post-meta-tags">
             <span class="post-meta">Jun 23, 2023 • 3 min read</span>
@@ -324,6 +354,7 @@
         <h2 class="post-title"><a href="/posts/gen-design-techniques/">Exploring the Techniques of Generative Design</a></h2>
         <p class="post-summary"><p>Generative design is often talked about as a single concept, but in reality, it is a collection of distinct mathematical and computational techniques. For …</p></p>
     </article>
+    
     
     
     <article class="post-preview" data-lang="en">
@@ -402,7 +433,7 @@
         filterBtns.forEach(btn => {
             btn.addEventListener("click", () => {
                 const filter = btn.getAttribute("data-filter");
-                if (filter === "all") {
+                if (filter === "en") {
                     history.replaceState(null, "", window.location.pathname);
                 } else {
                     window.location.hash = filter;
@@ -415,11 +446,9 @@
         const hash = window.location.hash.replace("#", "").toLowerCase();
         const urlParams = new URLSearchParams(window.location.search);
         const langParam = urlParams.get("lang");
-        const initialFilter = ["id", "en"].includes(hash) ? hash : (["id", "en"].includes(langParam) ? langParam : "all");
+        const initialFilter = ["id", "en", "all"].includes(hash) ? hash : (["id", "en", "all"].includes(langParam) ? langParam : "en");
 
-        if (initialFilter !== "all") {
-            applyFilter(initialFilter);
-        }
+        applyFilter(initialFilter);
     });
 </script>
 

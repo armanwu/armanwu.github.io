@@ -6,8 +6,15 @@
     <description>Recent content on Arman Wu</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Aug 2026 12:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 08:04:46 +0700</lastBuildDate>
     <atom:link href="https://armanwu.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Navigasi Ruang Laten</title>
+      <link>https://armanwu.com/posts/navigasi-ruang-laten/</link>
+      <pubDate>Sat, 29 Aug 2026 08:04:46 +0700</pubDate>
+      <guid>https://armanwu.com/posts/navigasi-ruang-laten/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://armanwu.com/img/posts/navigasi-ruang-laten.webp&#34; alt=&#34;Navigasi Ruang Laten&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Kekecewaan arsitek terhadap kecerdasan buatan (artificial intelligence) sering kali berpangkal pada kekeliruan ekspektasi: memperlakukan sistem generatif layaknya asisten manusia yang memiliki intuisi ruang, lalu memprotes hasilnya ketika bentukan yang lahir terasa janggal, tidak tektonis, atau melenceng dari intensi desain.&lt;/p&gt;&#xA;&lt;p&gt;Protes semacam ini kerap lahir dari ketidaktahuan kita terhadap apa yang sesungguhnya terjadi di dalam &amp;ldquo;kotak hitam&amp;rdquo; (black box) tersebut. Sebagaimana ditegaskan Neil Leach, AI bukanlah entitas berpikiran sadar dan bukan pula sekadar perangkat lunak CAD berbasis geometri pasti. AI adalah mesin pengenalan pola probabilistik. Memprotes hasil keluarannya tanpa memahami epistemologi di balik cara ia belajar dan berpikir adalah sebuah kenaifan metodologis.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Building a Better Bridge: A Revit-SketchUp Story</title>
       <link>https://armanwu.com/posts/revit-to-sketchup-bridge/</link>

@@ -14,19 +14,53 @@
     <link rel="alternate" type="application/rss+xml" title="Arman Wu" href="https://armanwu.com/tags/index.xml">
     
 
-    <meta property="og:url" content="https://armanwu.com/tags/">
-  <meta property="og:site_name" content="Arman Wu">
-  <meta property="og:title" content="Tags">
-  <meta property="og:description" content="Dr. Arman Arisman — architect, design technologist, and researcher exploring how computation and AI shape architectural thinking, from BIM to generative design.">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
-    <meta property="og:image" content="https://armanwu.com/img/logo.png">
+    
+
 
     
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://armanwu.com/img/logo.png">
-  <meta name="twitter:title" content="Tags">
-  <meta name="twitter:description" content="Dr. Arman Arisman — architect, design technologist, and researcher exploring how computation and AI shape architectural thinking, from BIM to generative design.">
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+    
+
+
+
+
+    
+        
+    
+
+
+
+
+
+<meta property="og:title" content="Tags | Arman Wu">
+<meta property="og:description" content="Dr. Arman Arisman — architect, design technologist, and researcher exploring how computation and AI shape architectural thinking, from BIM to generative design.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://armanwu.com/tags/">
+<meta property="og:image" content="https://armanwu.com/img/logo.png">
+<meta property="og:site_name" content="Arman Wu">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tags | Arman Wu">
+<meta name="twitter:description" content="Dr. Arman Arisman — architect, design technologist, and researcher exploring how computation and AI shape architectural thinking, from BIM to generative design.">
+<meta name="twitter:image" content="https://armanwu.com/img/logo.png">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +70,7 @@
         rel="stylesheet">
 
     
-    <link rel="stylesheet" href="/css/style.min.a2feefb77006ef1d82f18058c862feb78968624eee201780a08c61e8bdfcf7dd.css" integrity="sha256-ov7vt3AG7x2C8YBYyGL&#43;t4loYk7uIBeAoIxh6L38990=">
+    <link rel="stylesheet" href="/css/style.min.14c668bdb928ba85288dc60d663fee39febf79e20059c18c4d6d72b12af0e438.css" integrity="sha256-FMZovbkouoUojcYNZj/uOf6/eeIAWcGMTW1ysSrw5Dg=">
 
     <link rel="icon" href="/img/logo.png" type="image/png">
     <link rel="apple-touch-icon" href="/img/logo.png">
@@ -109,9 +143,95 @@
     <h1>Essays</h1>
     <p>Essays and notes on architecture, computation, and design cognition.</p>
 </section>
-<div class="post-feed">
+
+
+<div class="post-filter-toolbar" id="post-filter-toolbar">
+    <button class="filter-btn active" data-filter="all">All <span class="filter-count" id="count-all">0</span></button>
+    <button class="filter-btn" data-filter="en">English <span class="filter-count" id="count-en">0</span></button>
+    <button class="filter-btn" data-filter="id">Bahasa Indonesia <span class="filter-count" id="count-id">0</span></button>
+</div>
+
+<div class="post-feed" id="post-feed">
     
 </div>
+
+<div id="no-posts-msg" style="display:none; padding: 40px 0; color: var(--color-navy-muted); text-align: center;">
+    Tidak ada artikel dalam pilihan bahasa ini.
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const filterBtns = document.querySelectorAll(".filter-btn");
+        const posts = document.querySelectorAll(".post-feed .post-preview");
+        const noPostsMsg = document.getElementById("no-posts-msg");
+
+        
+        let countAll = posts.length;
+        let countId = 0;
+        let countEn = 0;
+
+        posts.forEach(post => {
+            const lang = post.getAttribute("data-lang");
+            if (lang === "id") countId++;
+            else countEn++;
+        });
+
+        const countAllEl = document.getElementById("count-all");
+        const countIdEl = document.getElementById("count-id");
+        const countEnEl = document.getElementById("count-en");
+
+        if (countAllEl) countAllEl.textContent = countAll;
+        if (countIdEl) countIdEl.textContent = countId;
+        if (countEnEl) countEnEl.textContent = countEn;
+
+        function applyFilter(filter) {
+            let visibleCount = 0;
+            posts.forEach(post => {
+                const lang = post.getAttribute("data-lang");
+                if (filter === "all" || lang === filter) {
+                    post.classList.remove("is-hidden");
+                    visibleCount++;
+                } else {
+                    post.classList.add("is-hidden");
+                }
+            });
+
+            filterBtns.forEach(btn => {
+                if (btn.getAttribute("data-filter") === filter) {
+                    btn.classList.add("active");
+                } else {
+                    btn.classList.remove("active");
+                }
+            });
+
+            if (noPostsMsg) {
+                noPostsMsg.style.display = visibleCount === 0 ? "block" : "none";
+            }
+        }
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                const filter = btn.getAttribute("data-filter");
+                if (filter === "all") {
+                    history.replaceState(null, "", window.location.pathname);
+                } else {
+                    window.location.hash = filter;
+                }
+                applyFilter(filter);
+            });
+        });
+
+        
+        const hash = window.location.hash.replace("#", "").toLowerCase();
+        const urlParams = new URLSearchParams(window.location.search);
+        const langParam = urlParams.get("lang");
+        const initialFilter = ["id", "en"].includes(hash) ? hash : (["id", "en"].includes(langParam) ? langParam : "all");
+
+        if (initialFilter !== "all") {
+            applyFilter(initialFilter);
+        }
+    });
+</script>
 
     </main>
 

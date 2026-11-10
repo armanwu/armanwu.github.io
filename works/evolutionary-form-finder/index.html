@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> | Dr. Arman Arisman</title>
+
+    <meta name="description"
+        content="">
+    <link rel="canonical" href="http://localhost:1313/works/evolutionary-form-finder/">
+
+    
+
+    
+
+
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+    
+
+
+
+
+    
+        
+    
+
+
+
+
+
+<meta property="og:title" content=" | Dr. Arman Arisman">
+<meta property="og:description" content="Dr. Arman Arisman — architect, design technologist, and researcher exploring how computation and AI shape architectural thinking, from BIM to generative design.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1313/works/evolutionary-form-finder/">
+<meta property="og:image" content="http://localhost:1313/img/logo.png">
+<meta property="og:site_name" content="Dr. Arman Arisman">
+<meta name="author" content="Dr. Arman Arisman">
+
+
+
+<meta property="article:author" content="Dr. Arman Arisman">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content=" | Dr. Arman Arisman">
+<meta name="twitter:description" content="Dr. Arman Arisman — architect, design technologist, and researcher exploring how computation and AI shape architectural thinking, from BIM to generative design.">
+<meta name="twitter:image" content="http://localhost:1313/img/logo.png">
+
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="/css/style.min.5a0b92cba1fd50121c9e5b1e8a113658610822bd9d092bc0e2e87365de42e0b3.css" integrity="sha256-WguSy6H9UBIcnlseihE2WGEIIr2dCSvA4uhzZd5C4LM=">
+
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="/img/logo.png">
+
+    
+</head>
+
+<body>
+
+    <div id="reading-progress" class="reading-progress"></div>
+
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/" class="nav-logo" aria-label="Dr. Arman Arisman">
+            <img src="/img/logo.webp" alt="Logo" width="32" height="32">
+        </a>
+
+        <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+            
+            
+            
+            <li class="nav-item">
+                <a href="/posts" class="nav-link">Essays</a>
+            </li>
+            
+            
+            <li class="nav-item">
+                <a href="/works" class="nav-link active" aria-current="page">Works</a>
+            </li>
+            
+            
+            <li class="nav-item">
+                <a href="/publications" class="nav-link">Publications</a>
+            </li>
+            
+            
+            <li class="nav-item">
+                <a href="/code" class="nav-link">Code</a>
+            </li>
+            
+            
+            <li class="nav-item">
+                <a href="/about" class="nav-link">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+
+    <main class="container">
+        
+
+<article class="full-article">
+
+    <header class="article-header">
+        <div class="post-meta-tags" style="margin-bottom: 14px;">
+            
+            <span class="lang-badge lang-en" title="English">English</span>
+            
+            
+        </div>
+        <h1></h1>
+        <div class="article-meta-row">
+            <span class="article-author">Dr. Arman Arisman</span>
+            <span class="meta-dot"></span>
+            <span class="article-date">Jan 1, 0001</span>
+            <span class="meta-dot"></span>
+            <span class="article-readtime">0 min read</span>
+        </div>
+    </header>
+
+    
+
+    <div class="article-content">
+        
+    </div>
+
+    <nav class="prev-next">
+        
+        <div></div>
+        
+
+        
+        <a href="/works/titanium-clash/" class="prev-next-card next">
+            <div class="prev-next-label">Next →</div>
+            <div class="prev-next-title">Titanium Clash</div>
+        </a>
+        
+    </nav>
+
+</article>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Arman Arisman</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        if (hamburger) {
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            });
+        }
+
+        
+        const progressBar = document.getElementById("reading-progress");
+        const article = document.querySelector(".article-content");
+        if (progressBar && article) {
+            window.addEventListener("scroll", () => {
+                const rect = article.getBoundingClientRect();
+                const totalHeight = article.offsetHeight;
+                const windowHeight = window.innerHeight;
+                const scrollOffset = -rect.top;
+                const maxScroll = totalHeight - windowHeight + 100;
+                const progress = Math.min(100, Math.max(0, (scrollOffset / maxScroll) * 100));
+                progressBar.style.width = progress + "%";
+            }, { passive: true });
+        }
+
+        
+        document.querySelectorAll("pre").forEach((pre) => {
+            const btn = document.createElement("button");
+            btn.className = "copy-code-btn";
+            btn.setAttribute("aria-label", "Copy code");
+            btn.textContent = "Copy";
+            btn.addEventListener("click", async () => {
+                const code = pre.querySelector("code") || pre;
+                try {
+                    await navigator.clipboard.writeText(code.innerText);
+                    btn.textContent = "Copied!";
+                    btn.classList.add("copied");
+                    setTimeout(() => {
+                        btn.textContent = "Copy";
+                        btn.classList.remove("copied");
+                    }, 2000);
+                } catch (err) {
+                    btn.textContent = "Failed";
+                }
+            });
+            pre.appendChild(btn);
+        });
+
+        
+        const backToTopBtn = document.getElementById("back-to-top");
+        if (backToTopBtn) {
+            const toggleBackToTop = () => {
+                const scrollY = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+                if (scrollY > 180) {
+                    backToTopBtn.classList.add("visible");
+                } else {
+                    backToTopBtn.classList.remove("visible");
+                }
+            };
+            window.addEventListener("scroll", toggleBackToTop, { passive: true });
+            toggleBackToTop();
+
+            backToTopBtn.addEventListener("click", () => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        }
+
+        
+        document.querySelectorAll('a[href^="http://"], a[href^="https://"]').forEach(link => {
+            if (link.hostname && link.hostname !== window.location.hostname) {
+                link.setAttribute('target', '_blank');
+                link.setAttribute('rel', 'noopener noreferrer');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

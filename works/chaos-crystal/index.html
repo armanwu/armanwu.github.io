@@ -7,7 +7,7 @@
     <title>Chaos Crystal | Dr. Arman Arisman</title>
 
     <meta name="description"
-        content="An urban-scale digital geode generated via spherical vertex perturbation in Julia, pairing chaotic geometry with oxidized copper materiality.">
+        content="An urban cultural landmark synthesized via spherical radial perturbation and grid-based triangulation in Julia, translating mathematical mesh topology into folded zinc, concrete, and diagrid glass tectonics.">
     <link rel="canonical" href="https://armanwu.com/works/chaos-crystal/">
 
     
@@ -37,10 +37,10 @@
 
 
 <meta property="og:title" content="Chaos Crystal | Dr. Arman Arisman">
-<meta property="og:description" content="An urban-scale digital geode generated via spherical vertex perturbation in Julia, pairing chaotic geometry with oxidized copper materiality.">
+<meta property="og:description" content="An urban cultural landmark synthesized via spherical radial perturbation and grid-based triangulation in Julia, translating mathematical mesh topology into folded zinc, concrete, and diagrid glass tectonics.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://armanwu.com/works/chaos-crystal/">
-<meta property="og:image" content="https://armanwu.com/img/projects/chaos-crystal/chaos-crystal-1.webp">
+<meta property="og:image" content="https://armanwu.com/img/projects/chaos-crystal/chaos-crystal-exterior.webp">
 <meta property="og:site_name" content="Dr. Arman Arisman">
 <meta name="author" content="Dr. Arman Arisman">
 
@@ -52,8 +52,8 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Chaos Crystal | Dr. Arman Arisman">
-<meta name="twitter:description" content="An urban-scale digital geode generated via spherical vertex perturbation in Julia, pairing chaotic geometry with oxidized copper materiality.">
-<meta name="twitter:image" content="https://armanwu.com/img/projects/chaos-crystal/chaos-crystal-1.webp">
+<meta name="twitter:description" content="An urban cultural landmark synthesized via spherical radial perturbation and grid-based triangulation in Julia, translating mathematical mesh topology into folded zinc, concrete, and diagrid glass tectonics.">
+<meta name="twitter:image" content="https://armanwu.com/img/projects/chaos-crystal/chaos-crystal-exterior.webp">
 
 
 
@@ -173,7 +173,7 @@
                         
                         
                         <dt>Brief</dt>
-                        <dd>An urban-scale digital geode generated via spherical vertex perturbation in Julia, pairing chaotic geometry with oxidized copper materiality.</dd>
+                        <dd>An urban cultural landmark synthesized via spherical radial perturbation and grid-based triangulation in Julia, translating mathematical mesh topology into folded zinc, concrete, and diagrid glass tectonics.</dd>
                         
                     </dl>
                     <a href="/works" class="sidebar-back-link">← All Works</a>
@@ -183,25 +183,162 @@
 
         <div class="essay-main">
             <div class="article-content">
-                <figure><img src="/img/projects/chaos-crystal/chaos-crystal-1.webp">
+                <figure><img src="/img/projects/chaos-crystal/chaos-crystal-exterior.webp">
 </figure>
 
-<p><strong>Chaos Crystal</strong> stands as a digital geode brought to the urban scale. While traditional architecture often seeks symmetry and smooth lines, this project embraces the beauty of the jagged and the irregular. It mimics the way raw minerals form in nature—sharp, unpredictable, yet possessing an inherent geometric logic.</p>
-<h2 id="the-logic-controlled-randomness">The Logic: Controlled Randomness</h2>
-<p>The form was generated using a custom script in <strong>Julia</strong>. The core concept was &ldquo;spherical perturbation.&rdquo;</p>
-<figure><img src="/img/projects/chaos-crystal/chaos-crystal-3.webp">
+<h2 id="concept--urban-tectonics">Concept &amp; Urban Tectonics</h2>
+<p><strong>Chaos Crystal</strong> investigates how a purely mathematical coordinate transformation can be disciplined into a buildable civic landmark. Rather than sculpting deconstructivist forms by hand, the project begins with an analytical sphere and subjects it to controlled radial perturbation—producing an expressive crystalline silhouette that anchors a stepped urban plaza.</p>
+<p>To ground its aggressive geometry within the city fabric, the building is organized as a tectonic dialogue between three primary systems: a heavy, board-formed concrete base that absorbs pedestrian circulation from the plaza; an interlocking opaque shell of matte charcoal titanium-zinc panels; and triangular structural glass apertures that slice across the folds to reveal the warm, multi-level public atrium within.</p>
+<h2 id="the-computational-pipeline">The Computational Pipeline</h2>
+<p>The form-finding workflow is written entirely in <strong>Julia</strong> (<code>GeometryBasics</code> and <code>GLMakie</code>), translating spherical trigonometry into a watertight, triangulated surface mesh through four sequential operations:</p>
+<figure><img src="/img/projects/chaos-crystal/chaos-crystal-process-diagram.webp">
 </figure>
 
-<p>Imagine a perfect sphere. The code takes every vertex of that sphere and pushes or pulls it by a random amount. As seen in the wireframe process above, this transforms a smooth ball into a chaotic, spiked mesh. The challenge was finding the &ldquo;sweet spot&rdquo; in the code—too much randomness creates a mess, too little looks like a boring polygon.</p>
-<h2 id="materiality-industrial-warmth">Materiality: Industrial Warmth</h2>
-<p>Once the geometry was frozen, the visualization process in <strong>Nano Banana</strong> focused on grounding this alien form in reality.</p>
-<p>Instead of futuristic sci-fi materials, we chose <strong>oxidized copper</strong> and <strong>rusted metal</strong> panels. This gives the building a sense of age and permanence, contrasting the high-tech generative process with low-tech, tactile materials. The heavy, opaque panels are sliced open by large crystalline glass facades, allowing light to penetrate the &ldquo;rock.&rdquo;</p>
-<h2 id="interior-the-cavern">Interior: The Cavern</h2>
-<figure><img src="/img/projects/chaos-crystal/chaos-crystal-2.webp">
+<ul>
+<li><strong>Discrete Spherical Parametrization ($12 \times 12$ Grid):</strong> Instead of a high-density mesh that would yield noisy surface ripples, the script locks the polar ($\theta \in [0, \pi]$) and azimuthal ($\phi \in [0, 2\pi]$) domains to a deliberate <code>12 × 12</code> resolution with a base radius of $r_0 = 12.0$. At this coarse resolution, every grid cell naturally assumes the scale of a primary architectural facade module.</li>
+<li><strong>Asymmetric Radial Perturbation ($\Delta r \in [-5.0, +15.0]$):</strong> Each vertex radius is displaced stochastically via $r = r_0 + \Delta r$, spanning an actual radial envelope of <code>7.0</code> to <code>27.0</code> units. Inward compressions (<code>-5.0</code>) carve deep re-entrant valleys, while outward extensions (<code>+15.0</code>) project dramatic cantilevered spires.</li>
+<li><strong>Cartesian Transformation &amp; Ground-Datum Clamping ($Z = 0$):</strong> Once projected into Cartesian space $(x, y, z)$, the entire geometry is shifted upward by <code>+10.0</code> units and clamped against the ground plane using $z = \max(r \cos\theta + 10, 0)$. This single mathematical constraint flattens the lower hemisphere into a stable, load-bearing architectural footprint.</li>
+<li><strong>Manifold Seam Closure &amp; Grid-Based Triangulation:</strong> To ensure a closed solid without naked edges, the azimuthal seam ($\phi = 2\pi \rightarrow 0$) and polar apexes are stitched before each quadrilateral cell <code>(p1, p2, p3, p4)</code> is subdivided into two outward-facing <code>GLTriangleFace</code> elements.</li>
+</ul>
+<h2 id="core-julia-implementation">Core Julia Implementation</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span><span style="color:#cf222e">using</span> GLMakie
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> GeometryBasics
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> Random
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> Colors
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Create the 3D drawing environment</span>
+</span></span><span style="display:flex;"><span>fig <span style="color:#0550ae">=</span> Figure<span style="color:#1f2328">(</span>size<span style="color:#0550ae">=</span><span style="color:#1f2328">(</span><span style="color:#0550ae">800</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">800</span><span style="color:#1f2328">))</span>
+</span></span><span style="display:flex;"><span>ax <span style="color:#0550ae">=</span> Axis3<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>    fig<span style="color:#1f2328">[</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">],</span>
+</span></span><span style="display:flex;"><span>    aspect<span style="color:#0550ae">=</span><span style="color:#032f62">:data</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    azimuth<span style="color:#0550ae">=</span><span style="color:#1f2328">(</span><span style="color:#0550ae">-</span><span style="color:#6639ba">π</span> <span style="color:#0550ae">/</span> <span style="color:#0550ae">2</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>    elevation<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    perspectiveness<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>hidedecorations!<span style="color:#1f2328">(</span>ax<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>hidespines!<span style="color:#1f2328">(</span>ax<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Create the ground plane</span>
+</span></span><span style="display:flex;"><span>wireframe!<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>    ax<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    Rect3f<span style="color:#1f2328">(</span>Point3f<span style="color:#1f2328">(</span><span style="color:#0550ae">-</span><span style="color:#0550ae">30</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">-</span><span style="color:#0550ae">30</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">),</span> Vec3f<span style="color:#1f2328">(</span><span style="color:#0550ae">60</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">60</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">)),</span>
+</span></span><span style="display:flex;"><span>    color<span style="color:#0550ae">=</span><span style="color:#1f2328">(</span><span style="color:#032f62">:white</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.1</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>    linewidth<span style="color:#0550ae">=</span><span style="color:#0550ae">0.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Generate the Chaos Crystal geometry</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">function</span> chaos_crystal<span style="color:#1f2328">()</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Define the main parameters</span>
+</span></span><span style="display:flex;"><span>    resolution <span style="color:#0550ae">=</span> <span style="color:#0550ae">12</span>
+</span></span><span style="display:flex;"><span>    base_radius <span style="color:#0550ae">=</span> <span style="color:#0550ae">12</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Initialize mesh data</span>
+</span></span><span style="display:flex;"><span>    points <span style="color:#0550ae">=</span> Point3f<span style="color:#1f2328">[]</span>
+</span></span><span style="display:flex;"><span>    faces <span style="color:#0550ae">=</span> GLTriangleFace<span style="color:#1f2328">[]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Create a grid to store 3D points</span>
+</span></span><span style="display:flex;"><span>    grid_points <span style="color:#0550ae">=</span> <span style="color:#cf222e">Matrix</span><span style="color:#1f2328">{</span><span style="color:#cf222e">Point3f</span><span style="color:#1f2328">}(</span><span style="color:#6639ba">undef</span><span style="color:#1f2328">,</span> resolution<span style="color:#1f2328">,</span> resolution<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Generate points using spherical coordinates</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">for</span> i <span style="color:#cf222e">in</span> <span style="color:#0550ae">1</span><span style="color:#0550ae">:</span>resolution
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">for</span> j <span style="color:#cf222e">in</span> <span style="color:#0550ae">1</span><span style="color:#0550ae">:</span>resolution
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            theta <span style="color:#0550ae">=</span> <span style="color:#6639ba">π</span> <span style="color:#0550ae">*</span> <span style="color:#1f2328">(</span>i <span style="color:#0550ae">-</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">/</span> <span style="color:#1f2328">(</span>resolution <span style="color:#0550ae">-</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>            phi <span style="color:#0550ae">=</span> <span style="color:#0550ae">2</span><span style="color:#6639ba">π</span> <span style="color:#0550ae">*</span> <span style="color:#1f2328">(</span>j <span style="color:#0550ae">-</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">/</span> <span style="color:#1f2328">(</span>resolution <span style="color:#0550ae">-</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#57606a"># Apply random radius variation</span>
+</span></span><span style="display:flex;"><span>            random_radius <span style="color:#0550ae">=</span> base_radius <span style="color:#0550ae">+</span> rand<span style="color:#1f2328">(</span><span style="color:#0550ae">-</span><span style="color:#0550ae">5.0</span><span style="color:#0550ae">:</span><span style="color:#0550ae">15.0</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#57606a"># Convert spherical coordinates into Cartesian coordinates</span>
+</span></span><span style="display:flex;"><span>            x <span style="color:#0550ae">=</span> random_radius <span style="color:#0550ae">*</span> sin<span style="color:#1f2328">(</span>theta<span style="color:#1f2328">)</span> <span style="color:#0550ae">*</span> cos<span style="color:#1f2328">(</span>phi<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>            y <span style="color:#0550ae">=</span> random_radius <span style="color:#0550ae">*</span> sin<span style="color:#1f2328">(</span>theta<span style="color:#1f2328">)</span> <span style="color:#0550ae">*</span> sin<span style="color:#1f2328">(</span>phi<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>            z <span style="color:#0550ae">=</span> random_radius <span style="color:#0550ae">*</span> cos<span style="color:#1f2328">(</span>theta<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#57606a"># Raise the geometry above ground</span>
+</span></span><span style="display:flex;"><span>            final_z <span style="color:#0550ae">=</span> max<span style="color:#1f2328">(</span>z <span style="color:#0550ae">+</span> <span style="color:#0550ae">10</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            grid_points<span style="color:#1f2328">[</span>i<span style="color:#1f2328">,</span> j<span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> Point3f<span style="color:#1f2328">(</span>x<span style="color:#1f2328">,</span> y<span style="color:#1f2328">,</span> final_z<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">end</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Close the spherical surface</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">for</span> i <span style="color:#cf222e">in</span> <span style="color:#0550ae">1</span><span style="color:#0550ae">:</span>resolution
+</span></span><span style="display:flex;"><span>        grid_points<span style="color:#1f2328">[</span>i<span style="color:#1f2328">,</span> resolution<span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> grid_points<span style="color:#1f2328">[</span>i<span style="color:#1f2328">,</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Connect the top and bottom poles</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">for</span> j <span style="color:#cf222e">in</span> <span style="color:#0550ae">1</span><span style="color:#0550ae">:</span>resolution
+</span></span><span style="display:flex;"><span>        grid_points<span style="color:#1f2328">[</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> j<span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> grid_points<span style="color:#1f2328">[</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>        grid_points<span style="color:#1f2328">[</span>resolution<span style="color:#1f2328">,</span> j<span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> grid_points<span style="color:#1f2328">[</span>resolution<span style="color:#1f2328">,</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Connect neighboring points to create triangular faces</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">for</span> i <span style="color:#cf222e">in</span> <span style="color:#0550ae">1</span><span style="color:#0550ae">:</span><span style="color:#1f2328">(</span>resolution<span style="color:#0550ae">-</span><span style="color:#0550ae">1</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">for</span> j <span style="color:#cf222e">in</span> <span style="color:#0550ae">1</span><span style="color:#0550ae">:</span><span style="color:#1f2328">(</span>resolution<span style="color:#0550ae">-</span><span style="color:#0550ae">1</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            p1 <span style="color:#0550ae">=</span> grid_points<span style="color:#1f2328">[</span>i<span style="color:#1f2328">,</span> j<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>            p2 <span style="color:#0550ae">=</span> grid_points<span style="color:#1f2328">[</span>i<span style="color:#1f2328">,</span> j<span style="color:#0550ae">+</span><span style="color:#0550ae">1</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>            p3 <span style="color:#0550ae">=</span> grid_points<span style="color:#1f2328">[</span>i<span style="color:#0550ae">+</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> j<span style="color:#0550ae">+</span><span style="color:#0550ae">1</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>            p4 <span style="color:#0550ae">=</span> grid_points<span style="color:#1f2328">[</span>i<span style="color:#0550ae">+</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> j<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            push!<span style="color:#1f2328">(</span>points<span style="color:#1f2328">,</span> p1<span style="color:#1f2328">,</span> p2<span style="color:#1f2328">,</span> p3<span style="color:#1f2328">,</span> p4<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#57606a"># Divide each quadrilateral into two outward-facing triangles</span>
+</span></span><span style="display:flex;"><span>            current <span style="color:#0550ae">=</span> length<span style="color:#1f2328">(</span>points<span style="color:#1f2328">)</span> <span style="color:#0550ae">-</span> <span style="color:#0550ae">3</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            push!<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>                faces<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                GLTriangleFace<span style="color:#1f2328">(</span>current<span style="color:#1f2328">,</span> current <span style="color:#0550ae">+</span> <span style="color:#0550ae">3</span><span style="color:#1f2328">,</span> current <span style="color:#0550ae">+</span> <span style="color:#0550ae">2</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>                GLTriangleFace<span style="color:#1f2328">(</span>current <span style="color:#0550ae">+</span> <span style="color:#0550ae">2</span><span style="color:#1f2328">,</span> current <span style="color:#0550ae">+</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> current<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">end</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Return the final 3D mesh</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> GeometryBasics<span style="color:#0550ae">.</span>Mesh<span style="color:#1f2328">(</span>points<span style="color:#1f2328">,</span> faces<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Generate the crystal</span>
+</span></span><span style="display:flex;"><span>crystal_mesh <span style="color:#0550ae">=</span> chaos_crystal<span style="color:#1f2328">()</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Display the solid surface</span>
+</span></span><span style="display:flex;"><span>mesh!<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>    ax<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    crystal_mesh<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    color<span style="color:#0550ae">=</span><span style="color:#1f2328">(</span>RGB<span style="color:#1f2328">(</span><span style="color:#0550ae">0.50</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.70</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.68</span><span style="color:#1f2328">),</span> <span style="color:#0550ae">0.9</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>    shading<span style="color:#0550ae">=</span><span style="color:#6639ba">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Display the mesh edges</span>
+</span></span><span style="display:flex;"><span>wireframe!<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>    ax<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    crystal_mesh<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    color<span style="color:#0550ae">=</span><span style="color:#1f2328">(</span><span style="color:#032f62">:black</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.28</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>    linewidth<span style="color:#0550ae">=</span><span style="color:#0550ae">1.2</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Render the final result</span>
+</span></span><span style="display:flex;"><span>display<span style="color:#1f2328">(</span>fig<span style="color:#1f2328">)</span>
+</span></span></code></pre></div><figure><img src="/img/projects/chaos-crystal/chaos-crystal-julia-mesh.webp">
 </figure>
 
-<p>Stepping inside feels like entering a hollowed-out gemstone. The interior structure reflects the exterior chaos, with angled ceilings and faceted walls. However, the atmosphere is surprisingly warm.</p>
-<p>By combining the industrial copper skin with warm wood flooring and indoor trees, the space acts as a cozy, sheltered cavern for public gathering. It creates a unique spatial experience where the walls themselves seem to fold and crash around the visitors, yet still offer a sense of protection.</p>
+<h2 id="planar-triangulation--tectonic-rationalization">Planar Triangulation &amp; Tectonic Rationalization</h2>
+<p>A recurring challenge in computational architecture is translating stochastic, freeform meshes into constructible building envelopes. Because four-point quadrilateral faces almost always warp into non-planar surfaces under random vertex perturbation, the script explicitly triangulates every cell into rigid three-point <code>GLTriangleFace</code> primitives.</p>
+<figure><img src="/img/projects/chaos-crystal/chaos-crystal-maquette.webp">
+</figure>
+
+<p>Because three points in space always define a perfectly flat plane, the entire crystalline envelope is 100% developable from flat sheet stock. As demonstrated in the architectural study model above—fabricated from matte museum board, laser-scored triangular facets, transparent acrylic glazing, and a stepped basswood plinth—the exact topology exported from Julia translates directly into physical assembly without requiring doubly curved panels.</p>
+<h2 id="interior-tectonics--spatial-experience">Interior Tectonics &amp; Spatial Experience</h2>
+<figure><img src="/img/projects/chaos-crystal/chaos-crystal-interior.webp">
+</figure>
+
+<p>Inside the building, the geometric aggression of the exterior shell opens into a luminous, multi-level cultural atrium. Rather than concealing the structural logic behind false ceilings, the interior expresses the triangulated geometry as a primary tectonic system:</p>
+<ul>
+<li><strong>Inclined Concrete Cores &amp; Skybridges:</strong> Monumental board-formed concrete piers anchor the exhibition galleries, connected across the void by slender steel pedestrian bridges that allow visitors to experience the crystal from multiple elevations.</li>
+<li><strong>Diagrid Glazing &amp; Folded Acoustic Soffits:</strong> Where the faceted envelope opens to the sky, inclined steel mullion grids trace the underlying mesh topology, while the opaque upper cones are lined with warm-lit acoustic panels that diffuse daylight deep into the public concourse.</li>
+</ul>
 
             </div>
 

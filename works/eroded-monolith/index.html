@@ -188,22 +188,107 @@
 
 <p><strong>Eroded Monolith</strong> challenges the traditional typology of the skyscraper. Usually, high-rise buildings are sealed, air-conditioned glass boxes that isolate people from the elements. This project asks: What happens if we &ldquo;break&rdquo; the box to let nature in?</p>
 <p>The concept creates a dialogue between two opposing forces: the perfection of the modernist grid versus the imperfection of organic erosion.</p>
-<h2 id="the-logic-algorithmic-subtraction">The Logic: Algorithmic Subtraction</h2>
-<p>The form-finding process was driven by a script written in <strong>Julia</strong>. Unlike the additive process used in <em>Jenga Village</em> (stacking blocks), this project uses a <strong>subtractive</strong> method.</p>
+<h2 id="the-computational-pipeline-euclidean-voxel-subtraction">The Computational Pipeline: Euclidean Voxel Subtraction</h2>
+<p>The form-finding process is driven by a custom script in <strong>Julia</strong> (<code>GLMakie</code>, <code>GeometryBasics</code>, and <code>LinearAlgebra</code>). Unlike additive aggregation workflows that stack units organically, this project employs a <strong>subtractive Boolean distance-field</strong> method on a discrete 3D voxel lattice:</p>
+<ul>
+<li><strong>Prismatic High-Rise Lattice (<code>11 × 11 × 21</code> Grid):</strong> The tower envelope is initialized as a Cartesian voxel matrix spanning <code>x ∈ [-5, 5]</code>, <code>y ∈ [-5, 5]</code>, and <code>z ∈ [0, 20]</code>, establishing a rigid orthogonal structural grid within a wireframe site boundary (<code>Rect3f</code>).</li>
+<li><strong>Spherical Distance-Field Erosion (<code>norm(point - cutter_center) &gt; cutter_radius</code>):</strong> A spherical cutting attractor is positioned along the corner edge at mid-height (<code>cutter_center = Point3f(5, 5, 10)</code> with <code>cutter_radius = 7.0</code>). As the algorithm iterates through each <code>(x, y, z)</code> coordinate, it computes the Euclidean distance to the attractor center and excises any voxel falling inside the <code>7.0</code>-unit radius.</li>
+<li><strong>Real-Time Progressive Assembly (<code>Observable</code> &amp; <code>@async</code>):</strong> Using reactive <code>Observable</code> data streams (<code>voxels_live</code> and <code>colors_live</code>) coupled with <code>meshscatter!</code>, the script builds and visualizes the tower floor-by-floor in real time, mapping each retained voxel&rsquo;s Euclidean distance value to an <code>:ice</code> color gradient (<code>colorrange = (0, 15)</code>).</li>
+</ul>
 <figure><img src="/img/projects/eroded-monolith/eroded-monolith-2.webp">
 </figure>
 
-<p>I started with a solid, massive volume—a &ldquo;monolith.&rdquo; Then, using a customized noise algorithm, the script identified specific voxels to be removed. Think of it like a digital termite colony carving out a nest, or water eroding a canyon over centuries. The code allowed me to control the intensity of the erosion, ensuring the structural core remained intact while opening up deep cavernous spaces on the façade.</p>
-<h2 id="visualization-the-warmth-within">Visualization: The Warmth Within</h2>
-<p>Rendered with <strong>Nano Banana</strong>, the visualization highlights the stark contrast in materiality.</p>
+<details class="code-drawer">
+<summary>View Julia Source Code (eroded_monolith.jl)</summary>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span><span style="color:#cf222e">using</span> GLMakie
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> GeometryBasics
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> LinearAlgebra
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Define the voxel grid boundaries</span>
+</span></span><span style="display:flex;"><span>x_range <span style="color:#0550ae">=</span> <span style="color:#0550ae">-</span><span style="color:#0550ae">5</span><span style="color:#0550ae">:</span><span style="color:#0550ae">5</span>
+</span></span><span style="display:flex;"><span>y_range <span style="color:#0550ae">=</span> <span style="color:#0550ae">-</span><span style="color:#0550ae">5</span><span style="color:#0550ae">:</span><span style="color:#0550ae">5</span>
+</span></span><span style="display:flex;"><span>z_range <span style="color:#0550ae">=</span> <span style="color:#0550ae">0</span><span style="color:#0550ae">:</span><span style="color:#0550ae">20</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Define the spherical cutting tool</span>
+</span></span><span style="display:flex;"><span>cutter_center <span style="color:#0550ae">=</span> Point3f<span style="color:#1f2328">(</span><span style="color:#0550ae">5</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">5</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">10</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>cutter_radius <span style="color:#0550ae">=</span> <span style="color:#0550ae">7.0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Initialize observable data for real-time visualization</span>
+</span></span><span style="display:flex;"><span>voxels_live <span style="color:#0550ae">=</span> Observable<span style="color:#1f2328">(</span>Point3f<span style="color:#1f2328">[])</span>
+</span></span><span style="display:flex;"><span>colors_live <span style="color:#0550ae">=</span> Observable<span style="color:#1f2328">(</span><span style="color:#cf222e">Float64</span><span style="color:#1f2328">[])</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Create the visualization figure and 3D scene</span>
+</span></span><span style="display:flex;"><span>fig <span style="color:#0550ae">=</span> Figure<span style="color:#1f2328">(</span>size<span style="color:#0550ae">=</span><span style="color:#1f2328">(</span><span style="color:#0550ae">1000</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1000</span><span style="color:#1f2328">))</span>
+</span></span><span style="display:flex;"><span>ax <span style="color:#0550ae">=</span> LScene<span style="color:#1f2328">(</span>fig<span style="color:#1f2328">[</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">])</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Define the site boundary as a transparent wireframe box</span>
+</span></span><span style="display:flex;"><span>site_bounds <span style="color:#0550ae">=</span> Rect3f<span style="color:#1f2328">(</span>Vec3f<span style="color:#1f2328">(</span><span style="color:#0550ae">-</span><span style="color:#0550ae">7</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">-</span><span style="color:#0550ae">7</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">),</span> Vec3f<span style="color:#1f2328">(</span><span style="color:#0550ae">14</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">14</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">21</span><span style="color:#1f2328">))</span>
+</span></span><span style="display:flex;"><span>wireframe!<span style="color:#1f2328">(</span>ax<span style="color:#1f2328">,</span> site_bounds<span style="color:#1f2328">,</span> color<span style="color:#0550ae">=</span><span style="color:#032f62">:grey30</span><span style="color:#1f2328">,</span> linewidth<span style="color:#0550ae">=</span><span style="color:#0550ae">0.2</span><span style="color:#1f2328">,</span> transparency<span style="color:#0550ae">=</span><span style="color:#6639ba">true</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Visualize voxels using individual cube markers</span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Color intensity represents the distance from the cutting tool center</span>
+</span></span><span style="display:flex;"><span>meshscatter!<span style="color:#1f2328">(</span>ax<span style="color:#1f2328">,</span> voxels_live<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    marker<span style="color:#0550ae">=</span>Rect3f<span style="color:#1f2328">(</span>Vec3f<span style="color:#1f2328">(</span><span style="color:#0550ae">-</span><span style="color:#0550ae">0.5</span><span style="color:#1f2328">),</span> Vec3f<span style="color:#1f2328">(</span><span style="color:#0550ae">1</span><span style="color:#1f2328">)),</span>
+</span></span><span style="display:flex;"><span>    markersize<span style="color:#0550ae">=</span><span style="color:#0550ae">1.0</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    color<span style="color:#0550ae">=</span>colors_live<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    colormap<span style="color:#0550ae">=</span><span style="color:#032f62">:ice</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    colorrange<span style="color:#0550ae">=</span><span style="color:#1f2328">(</span><span style="color:#0550ae">0</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">15</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Display the initial visualization</span>
+</span></span><span style="display:flex;"><span>display<span style="color:#1f2328">(</span>fig<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Execute the voxel generation process asynchronously</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">@async</span> <span style="color:#cf222e">begin</span>
+</span></span><span style="display:flex;"><span>    println<span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;Starting voxel generation...&#34;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Create temporary arrays to store voxel positions and colors</span>
+</span></span><span style="display:flex;"><span>    temp_voxels <span style="color:#0550ae">=</span> Point3f<span style="color:#1f2328">[]</span>
+</span></span><span style="display:flex;"><span>    temp_colors <span style="color:#0550ae">=</span> <span style="color:#cf222e">Float64</span><span style="color:#1f2328">[]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Iterate through the entire 3D voxel grid</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">for</span> z <span style="color:#cf222e">in</span> z_range
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">for</span> x <span style="color:#cf222e">in</span> x_range
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">for</span> y <span style="color:#cf222e">in</span> y_range
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#57606a"># Define the current voxel position</span>
+</span></span><span style="display:flex;"><span>                point <span style="color:#0550ae">=</span> Point3f<span style="color:#1f2328">(</span>x<span style="color:#1f2328">,</span> y<span style="color:#1f2328">,</span> z<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#57606a"># Calculate the Euclidean distance from the cutting tool center</span>
+</span></span><span style="display:flex;"><span>                distance <span style="color:#0550ae">=</span> norm<span style="color:#1f2328">(</span>point <span style="color:#0550ae">-</span> cutter_center<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#57606a"># Retain voxels located outside the spherical cutting region</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">if</span> distance <span style="color:#0550ae">&gt;</span> cutter_radius
+</span></span><span style="display:flex;"><span>                    push!<span style="color:#1f2328">(</span>temp_voxels<span style="color:#1f2328">,</span> point<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>                    push!<span style="color:#1f2328">(</span>temp_colors<span style="color:#1f2328">,</span> distance<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#57606a"># Update the visualization in real time</span>
+</span></span><span style="display:flex;"><span>                    voxels_live<span style="color:#1f2328">[]</span> <span style="color:#0550ae">=</span> temp_voxels
+</span></span><span style="display:flex;"><span>                    colors_live<span style="color:#1f2328">[]</span> <span style="color:#0550ae">=</span> temp_colors
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#57606a"># Introduce a short delay for progressive visualization</span>
+</span></span><span style="display:flex;"><span>                    sleep<span style="color:#1f2328">(</span><span style="color:#0550ae">0.00001</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">end</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">end</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Allow the rendering process to refresh between layers</span>
+</span></span><span style="display:flex;"><span>        sleep<span style="color:#1f2328">(</span><span style="color:#0550ae">0.00001</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    println<span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;Voxel generation completed!&#34;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">end</span>
+</span></span></code></pre></div></details>
+<h2 id="tectonic-contrast--vertical-sky-gardens">Tectonic Contrast &amp; Vertical Sky Gardens</h2>
+<p>In translating the eroded voxel matrix into high-rise architecture, the design emphasizes the tectonic duality between the intact perimeter and the excavated void:</p>
 <ul>
-<li><strong>The Shell:</strong> The exterior is sleek, reflective glass—representative of the corporate world.</li>
-<li><strong>The Core:</strong> The eroded interior is clad in warm timber and filled with hanging gardens.</li>
+<li><strong>The Orthogonal Curtain-Wall Shell:</strong> The un-eroded faces retain a disciplined, reflective glass curtain wall that responds to the urban street grid and maximizes floor-plate efficiency.</li>
+<li><strong>The Excavated Biophilic Core:</strong> Where the spherical boolean operation carves into the corner mass (<code>Point3f(5, 5, 10)</code>), the exposed stepped voxel terraces are clad in warm timber soffits and planted as multi-level sky gardens.</li>
 </ul>
 <figure><img src="/img/projects/eroded-monolith/eroded-monolith-3.webp">
 </figure>
 
-<p>This &ldquo;erosion&rdquo; functions as a communal lung for the building. It creates shaded terraces, breakout spaces, and vertical parks that connect different floors. It proves that even in a massive tower, we can use code to carve out spaces that feel intimate and human.</p>
+<p>This algorithmic excavation functions as a bioclimatic lung for the tower—introducing deep self-shading cantilevers, natural cross-ventilation pockets, and communal outdoor terraces that reconnect high-rise occupants with the vertical landscape.</p>
 
             </div>
 

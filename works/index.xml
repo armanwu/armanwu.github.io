@@ -37,11 +37,11 @@
       <description>&lt;figure&gt;&lt;img src=&#34;https://armanwu.com/img/projects/eroded-monolith/eroded-monolith-1.webp&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;&lt;strong&gt;Eroded Monolith&lt;/strong&gt; challenges the traditional typology of the skyscraper. Usually, high-rise buildings are sealed, air-conditioned glass boxes that isolate people from the elements. This project asks: What happens if we &amp;ldquo;break&amp;rdquo; the box to let nature in?&lt;/p&gt;&#xA;&lt;p&gt;The concept creates a dialogue between two opposing forces: the perfection of the modernist grid versus the imperfection of organic erosion.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-computational-pipeline-euclidean-voxel-subtraction&#34;&gt;The Computational Pipeline: Euclidean Voxel Subtraction&lt;/h2&gt;&#xA;&lt;p&gt;The form-finding process is driven by a custom script in &lt;strong&gt;Julia&lt;/strong&gt; (&lt;code&gt;GLMakie&lt;/code&gt;, &lt;code&gt;GeometryBasics&lt;/code&gt;, and &lt;code&gt;LinearAlgebra&lt;/code&gt;). Unlike additive aggregation workflows that stack units organically, this project employs a &lt;strong&gt;subtractive Boolean distance-field&lt;/strong&gt; method on a discrete 3D voxel lattice:&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Flux Pavilion</title>
-      <link>https://armanwu.com/works/flux-paviliun/</link>
+      <title>Flux Vaults</title>
+      <link>https://armanwu.com/works/flux-vaults/</link>
       <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://armanwu.com/works/flux-paviliun/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;https://armanwu.com/img/projects/flux-pavilion/flux-pavilion-1.webp&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;&lt;strong&gt;Flux Pavilion&lt;/strong&gt; is an exploration of continuity and flow. In architecture, we often deal with rigid lines and static forms, but nature operates on curves and rhythms. This project attempts to capture the essence of movement—like a sound wave or a rolling ocean—frozen in a structural shell.&lt;/p&gt;&#xA;&lt;p&gt;It reimagines the concept of a public shelter not just as a roof, but as a landscape that rises and falls to create pockets of space.&lt;/p&gt;</description>
+      <guid>https://armanwu.com/works/flux-vaults/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://armanwu.com/img/projects/flux-vaults/flux-vaults-exterior.webp&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;concept--vaulted-tectonics&#34;&gt;Concept &amp;amp; Vaulted Tectonics&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Flux Vaults&lt;/strong&gt; investigates how serial mathematical variation can generate a monumental vaulted civic concourse. Rather than treating a long-span roof as a uniform extrusion, the project conceives the building envelope as a rhythmic sequence of offset semicircular shells that rise, widen, and shift laterally along a 100-meter axis—creating an interlocking topography of board-formed concrete arches and glazed clerestory crescents poised above a reflecting water basin.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Jenga Village</title>

@@ -7,7 +7,7 @@
     <title>Jenga Village | Dr. Arman Arisman</title>
 
     <meta name="description"
-        content="A modular hillside housing study using rule-based voxel aggregation in Julia to generate interlocking residential units and roof terraces.">
+        content="A modular tropical kampong housing study synthesized via stochastic block aggregation and discrete yaw rotation in Julia, translating shifted hexahedral volumes into interlocking courtyards and roof terraces.">
     <link rel="canonical" href="https://armanwu.com/works/jenga-village/">
 
     
@@ -37,10 +37,10 @@
 
 
 <meta property="og:title" content="Jenga Village | Dr. Arman Arisman">
-<meta property="og:description" content="A modular hillside housing study using rule-based voxel aggregation in Julia to generate interlocking residential units and roof terraces.">
+<meta property="og:description" content="A modular tropical kampong housing study synthesized via stochastic block aggregation and discrete yaw rotation in Julia, translating shifted hexahedral volumes into interlocking courtyards and roof terraces.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://armanwu.com/works/jenga-village/">
-<meta property="og:image" content="https://armanwu.com/img/projects/jenga-village/jenga-village-1.webp">
+<meta property="og:image" content="https://armanwu.com/img/projects/jenga-village/jenga-village-aerial.webp">
 <meta property="og:site_name" content="Dr. Arman Arisman">
 <meta name="author" content="Dr. Arman Arisman">
 
@@ -52,8 +52,8 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Jenga Village | Dr. Arman Arisman">
-<meta name="twitter:description" content="A modular hillside housing study using rule-based voxel aggregation in Julia to generate interlocking residential units and roof terraces.">
-<meta name="twitter:image" content="https://armanwu.com/img/projects/jenga-village/jenga-village-1.webp">
+<meta name="twitter:description" content="A modular tropical kampong housing study synthesized via stochastic block aggregation and discrete yaw rotation in Julia, translating shifted hexahedral volumes into interlocking courtyards and roof terraces.">
+<meta name="twitter:image" content="https://armanwu.com/img/projects/jenga-village/jenga-village-aerial.webp">
 
 
 
@@ -173,7 +173,7 @@
                         
                         
                         <dt>Brief</dt>
-                        <dd>A modular hillside housing study using rule-based voxel aggregation in Julia to generate interlocking residential units and roof terraces.</dd>
+                        <dd>A modular tropical kampong housing study synthesized via stochastic block aggregation and discrete yaw rotation in Julia, translating shifted hexahedral volumes into interlocking courtyards and roof terraces.</dd>
                         
                     </dl>
                     <a href="/works" class="sidebar-back-link">← All Works</a>
@@ -183,31 +183,329 @@
 
         <div class="essay-main">
             <div class="article-content">
-                <figure><img src="/img/projects/jenga-village/jenga-village-1.webp">
+                <figure><img src="/img/projects/jenga-village/jenga-village-aerial.webp">
 </figure>
 
-<p><strong>Jenga Village</strong> is a playful yet serious exploration of modular housing. While modern apartment blocks often feel repetitive and isolating, this project asks: Can we use code to create a &ldquo;vertical village&rdquo; where every unit feels unique?</p>
-<p>Using the metaphor of the game <em>Jenga</em>, the design stacks living units (voxels) in a seemingly random arrangement, creating a rich texture of solids and voids that adapts to the hillside topography.</p>
-<h2 id="the-logic-voxel-aggregation">The Logic: Voxel Aggregation</h2>
-<p>Written in <strong>Julia</strong>, the script for this project operates on a voxel-based grid system. Unlike traditional modeling where we draw walls and floors, here the code treats space as a collection of 3D pixels.</p>
-<figure><img src="/img/projects/jenga-village/jenga-village-3.webp">
+<h2 id="concept--modular-porosity">Concept &amp; Modular Porosity</h2>
+<p><strong>Jenga Village</strong> explores how simple geometric rules can break the monotony of repetitive modular housing while recapturing the spatial warmth of an organic tropical <em>kampong</em>. Where conventional apartment blocks rely on uniform vertical stacks, this study tests how slight horizontal shifts, varied room proportions, and fixed angular rotations can turn simple boxes into a porous &ldquo;vertical village&rdquo; filled with shaded alleys, courtyards, and roof terraces.</p>
+<h2 id="the-computational-logic-rule-based-stacking">The Computational Logic: Rule-Based Stacking</h2>
+<p>Written in <strong>Julia</strong>, the script organizes the neighborhood on a <code>4 × 4</code> plot grid using a <code>10-meter</code> base module and a <code>4-meter</code> story height. As illustrated in the workflow diagram below, the algorithm transforms a flat site grid into an interlocking village cluster by applying four simple geometric rules to every block:</p>
+<figure><img src="/img/projects/jenga-village/jenga-village-process-diagram.webp">
 </figure>
 
-<p>The algorithm generates these stacks with specific rules:</p>
-<ol>
-<li><strong>Adjacency:</strong> Units must connect logically to support one another.</li>
-<li><strong>Variation:</strong> The script introduces random shifts to prevent the façade from becoming flat.</li>
-<li><strong>Subtraction:</strong> Strategic removal of blocks creates pockets for open spaces.</li>
-</ol>
-<h2 id="breathing-room-in-high-density">Breathing Room in High Density</h2>
-<p>The beauty of this algorithmic approach is the accidental quality of space it creates. By shifting the blocks, the roof of one unit becomes the terrace of the neighbor above.</p>
-<p>This transforms a high-density complex into a series of garden homes. The &ldquo;randomness&rdquo; of the code ensures that almost every resident gets a private outdoor area, natural light, and a view—luxuries often lost in standard boxy apartments.</p>
-<h2 id="visualization">Visualization</h2>
-<p>The scene was rendered using <strong>Nano Banana</strong>, focusing on the warmth of the materials to contrast the digital origin of the form.</p>
-<figure><img src="/img/projects/jenga-village/jenga-village-2.webp">
+<ul>
+<li><strong>Grid &amp; Vertical Stacking (<code>1</code> to <code>3</code> Floors):</strong> Across the <code>4 × 4</code> plot grid, each site is randomly assigned between one and three stories—creating an undulating roofscape that lets daylight and breeze reach the center of the cluster.</li>
+<li><strong>Block Proportion &amp; Elongation (<code>0.7×</code> to <code>1.8×</code>):</strong> Instead of identical cubes, each block is stretched or narrowed along its length (<code>1.0×</code> to <code>1.8×</code>) and width (<code>0.7×</code> to <code>1.0×</code>) to accommodate different room sizes and dwelling layouts.</li>
+<li><strong>Fixed Angular Rotation (<code>0°</code>, <code>15°</code>, <code>30°</code>, <code>45°</code>, <code>90°</code>):</strong> Rather than chaotic angles, each volume turns around its vertical axis using five clean construction angles, opening up diagonal views and pocket courtyards between neighboring homes.</li>
+<li><strong>Horizontal Displacement (<code>±2.5 m</code>):</strong> As units stack upward, each floor shifts horizontally on X and Y by up to <code>2.5 meters</code>—creating cantilevers that shade the walkways below while exposing the roof beneath as an outdoor terrace.</li>
+</ul>
+<figure><img src="/img/projects/jenga-village/jenga-village-julia-mesh.webp">
 </figure>
 
-<p>I combined exposed concrete with timber cladding to give the voxels a tactile, human scale. The extensive greenery placed on the terraces softens the hard edges of the geometry, blending the architecture into the surrounding green hill. It is a vision of how computational design can coexist with nature.</p>
+<details class="code-drawer">
+<summary>View Julia Source Code (jenga_village.jl)</summary>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span><span style="color:#cf222e">using</span> GLMakie
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> GeometryBasics
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> Random
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> Colors
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Initialize the random generation system</span>
+</span></span><span style="display:flex;"><span>seed <span style="color:#0550ae">=</span> <span style="color:#0550ae">2026</span>
+</span></span><span style="display:flex;"><span>rng <span style="color:#0550ae">=</span> MersenneTwister<span style="color:#1f2328">(</span>seed<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Initialize the 3D visualization environment</span>
+</span></span><span style="display:flex;"><span>fig <span style="color:#0550ae">=</span> Figure<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>    size<span style="color:#0550ae">=</span><span style="color:#1f2328">(</span><span style="color:#0550ae">900</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">900</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>    backgroundcolor<span style="color:#0550ae">=</span><span style="color:#032f62">:white</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>view_limits <span style="color:#0550ae">=</span> <span style="color:#1f2328">(</span><span style="color:#0550ae">-</span><span style="color:#0550ae">15</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">60</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">-</span><span style="color:#0550ae">15</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">60</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">25</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ax <span style="color:#0550ae">=</span> Axis3<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>    fig<span style="color:#1f2328">[</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">],</span>
+</span></span><span style="display:flex;"><span>    aspect<span style="color:#0550ae">=</span><span style="color:#032f62">:data</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    limits<span style="color:#0550ae">=</span>view_limits<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    perspectiveness<span style="color:#0550ae">=</span><span style="color:#0550ae">0.05</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    azimuth<span style="color:#0550ae">=</span><span style="color:#0550ae">0.25</span><span style="color:#6639ba">π</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    elevation<span style="color:#0550ae">=</span><span style="color:#0550ae">0.2</span><span style="color:#6639ba">π</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Hide axis decorations and spines</span>
+</span></span><span style="display:flex;"><span>hidedecorations!<span style="color:#1f2328">(</span>ax<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>hidespines!<span style="color:#1f2328">(</span>ax<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Display the visualization window</span>
+</span></span><span style="display:flex;"><span>display<span style="color:#1f2328">(</span>fig<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Define the basic architectural parameters</span>
+</span></span><span style="display:flex;"><span>block_size <span style="color:#0550ae">=</span> <span style="color:#0550ae">10.0</span>
+</span></span><span style="display:flex;"><span>floor_height <span style="color:#0550ae">=</span> <span style="color:#0550ae">4.0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>grid_count_x <span style="color:#0550ae">=</span> <span style="color:#0550ae">4</span>
+</span></span><span style="display:flex;"><span>grid_count_y <span style="color:#0550ae">=</span> <span style="color:#0550ae">4</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>grid_spacing <span style="color:#0550ae">=</span> <span style="color:#0550ae">1.3</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>min_floors <span style="color:#0550ae">=</span> <span style="color:#0550ae">1</span>
+</span></span><span style="display:flex;"><span>max_floors <span style="color:#0550ae">=</span> <span style="color:#0550ae">3</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Define the generative transformation parameters</span>
+</span></span><span style="display:flex;"><span>rotation_angles <span style="color:#0550ae">=</span> <span style="color:#1f2328">[</span><span style="color:#0550ae">0</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">15</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">30</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">45</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">90</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>length_factors <span style="color:#0550ae">=</span> <span style="color:#1f2328">[</span><span style="color:#0550ae">1.0</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1.0</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1.3</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1.5</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1.8</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>width_factors <span style="color:#0550ae">=</span> <span style="color:#1f2328">[</span><span style="color:#0550ae">0.7</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.8</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1.0</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1.0</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>max_displacement <span style="color:#0550ae">=</span> <span style="color:#0550ae">2.5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Define the architectural color palette</span>
+</span></span><span style="display:flex;"><span>color_palette <span style="color:#0550ae">=</span> <span style="color:#1f2328">[</span>
+</span></span><span style="display:flex;"><span>    RGBAf<span style="color:#1f2328">(</span><span style="color:#0550ae">0.0</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.8</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.9</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.9</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>    RGBAf<span style="color:#1f2328">(</span><span style="color:#0550ae">0.0</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.5</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.6</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.9</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>    RGBAf<span style="color:#1f2328">(</span><span style="color:#0550ae">0.2</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.7</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.6</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.9</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>    RGBAf<span style="color:#1f2328">(</span><span style="color:#0550ae">0.6</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.65</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.7</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.9</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Create a rotated architectural block</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">function</span> create_rotated_block!<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>    ax<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    center_x<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    center_y<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    base_z<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    length_x<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    width_y<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    height_z<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    angle<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    block_color
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Convert the rotation angle to radians</span>
+</span></span><span style="display:flex;"><span>    theta <span style="color:#0550ae">=</span> deg2rad<span style="color:#1f2328">(</span>angle<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Calculate the rotation components</span>
+</span></span><span style="display:flex;"><span>    cos_theta <span style="color:#0550ae">=</span> cos<span style="color:#1f2328">(</span>theta<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    sin_theta <span style="color:#0550ae">=</span> sin<span style="color:#1f2328">(</span>theta<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Define the local block corners</span>
+</span></span><span style="display:flex;"><span>    local_corners <span style="color:#0550ae">=</span> <span style="color:#1f2328">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">(</span><span style="color:#0550ae">-</span>length_x <span style="color:#0550ae">/</span> <span style="color:#0550ae">2</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">-</span>width_y <span style="color:#0550ae">/</span> <span style="color:#0550ae">2</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">(</span> length_x <span style="color:#0550ae">/</span> <span style="color:#0550ae">2</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">-</span>width_y <span style="color:#0550ae">/</span> <span style="color:#0550ae">2</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">(</span> length_x <span style="color:#0550ae">/</span> <span style="color:#0550ae">2</span><span style="color:#1f2328">,</span>  width_y <span style="color:#0550ae">/</span> <span style="color:#0550ae">2</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">(</span><span style="color:#0550ae">-</span>length_x <span style="color:#0550ae">/</span> <span style="color:#0550ae">2</span><span style="color:#1f2328">,</span>  width_y <span style="color:#0550ae">/</span> <span style="color:#0550ae">2</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Rotate the block corners around the vertical axis</span>
+</span></span><span style="display:flex;"><span>    rotated_corners <span style="color:#0550ae">=</span> Point3f<span style="color:#1f2328">[]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">for</span> <span style="color:#1f2328">(</span>local_x<span style="color:#1f2328">,</span> local_y<span style="color:#1f2328">)</span> <span style="color:#cf222e">in</span> local_corners
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        rotated_x <span style="color:#0550ae">=</span>
+</span></span><span style="display:flex;"><span>            center_x <span style="color:#0550ae">+</span>
+</span></span><span style="display:flex;"><span>            local_x <span style="color:#0550ae">*</span> cos_theta <span style="color:#0550ae">-</span>
+</span></span><span style="display:flex;"><span>            local_y <span style="color:#0550ae">*</span> sin_theta
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        rotated_y <span style="color:#0550ae">=</span>
+</span></span><span style="display:flex;"><span>            center_y <span style="color:#0550ae">+</span>
+</span></span><span style="display:flex;"><span>            local_x <span style="color:#0550ae">*</span> sin_theta <span style="color:#0550ae">+</span>
+</span></span><span style="display:flex;"><span>            local_y <span style="color:#0550ae">*</span> cos_theta
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        push!<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>            rotated_corners<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>            Point3f<span style="color:#1f2328">(</span>rotated_x<span style="color:#1f2328">,</span> rotated_y<span style="color:#1f2328">,</span> base_z<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Generate the bottom and top vertices</span>
+</span></span><span style="display:flex;"><span>    vertices <span style="color:#0550ae">=</span> Point3f<span style="color:#1f2328">[]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">for</span> point <span style="color:#cf222e">in</span> rotated_corners
+</span></span><span style="display:flex;"><span>        push!<span style="color:#1f2328">(</span>vertices<span style="color:#1f2328">,</span> point<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">for</span> point <span style="color:#cf222e">in</span> rotated_corners
+</span></span><span style="display:flex;"><span>        push!<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>            vertices<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>            Point3f<span style="color:#1f2328">(</span>point<span style="color:#1f2328">[</span><span style="color:#0550ae">1</span><span style="color:#1f2328">],</span> point<span style="color:#1f2328">[</span><span style="color:#0550ae">2</span><span style="color:#1f2328">],</span> base_z <span style="color:#0550ae">+</span> height_z<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Define the triangular faces of the block</span>
+</span></span><span style="display:flex;"><span>    faces <span style="color:#0550ae">=</span> <span style="color:#1f2328">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0550ae">1</span> <span style="color:#0550ae">3</span> <span style="color:#0550ae">2</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0550ae">1</span> <span style="color:#0550ae">4</span> <span style="color:#0550ae">3</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0550ae">5</span> <span style="color:#0550ae">6</span> <span style="color:#0550ae">7</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0550ae">5</span> <span style="color:#0550ae">7</span> <span style="color:#0550ae">8</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0550ae">1</span> <span style="color:#0550ae">2</span> <span style="color:#0550ae">6</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0550ae">1</span> <span style="color:#0550ae">6</span> <span style="color:#0550ae">5</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0550ae">2</span> <span style="color:#0550ae">3</span> <span style="color:#0550ae">7</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0550ae">2</span> <span style="color:#0550ae">7</span> <span style="color:#0550ae">6</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0550ae">3</span> <span style="color:#0550ae">4</span> <span style="color:#0550ae">8</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0550ae">3</span> <span style="color:#0550ae">8</span> <span style="color:#0550ae">7</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0550ae">4</span> <span style="color:#0550ae">1</span> <span style="color:#0550ae">5</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0550ae">4</span> <span style="color:#0550ae">5</span> <span style="color:#0550ae">8</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Convert the face indices into triangle faces</span>
+</span></span><span style="display:flex;"><span>    triangle_faces <span style="color:#0550ae">=</span> <span style="color:#1f2328">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">TriangleFace</span><span style="color:#1f2328">{</span><span style="color:#cf222e">Int</span><span style="color:#1f2328">}(</span>
+</span></span><span style="display:flex;"><span>            faces<span style="color:#1f2328">[</span>i<span style="color:#1f2328">,</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">],</span>
+</span></span><span style="display:flex;"><span>            faces<span style="color:#1f2328">[</span>i<span style="color:#1f2328">,</span> <span style="color:#0550ae">2</span><span style="color:#1f2328">],</span>
+</span></span><span style="display:flex;"><span>            faces<span style="color:#1f2328">[</span>i<span style="color:#1f2328">,</span> <span style="color:#0550ae">3</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">for</span> i <span style="color:#cf222e">in</span> <span style="color:#0550ae">1</span><span style="color:#0550ae">:</span>size<span style="color:#1f2328">(</span>faces<span style="color:#1f2328">,</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Construct the rotated block geometry</span>
+</span></span><span style="display:flex;"><span>    block_mesh <span style="color:#0550ae">=</span> GeometryBasics<span style="color:#0550ae">.</span>Mesh<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>        vertices<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>        triangle_faces
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Render the architectural mass</span>
+</span></span><span style="display:flex;"><span>    mesh!<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>        ax<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>        block_mesh<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>        color<span style="color:#0550ae">=</span>block_color<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>        shading<span style="color:#0550ae">=</span><span style="color:#6639ba">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Define the twelve visible block edges</span>
+</span></span><span style="display:flex;"><span>    edge_pairs <span style="color:#0550ae">=</span> <span style="color:#1f2328">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">(</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">2</span><span style="color:#1f2328">),</span> <span style="color:#1f2328">(</span><span style="color:#0550ae">2</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">3</span><span style="color:#1f2328">),</span> <span style="color:#1f2328">(</span><span style="color:#0550ae">3</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">4</span><span style="color:#1f2328">),</span> <span style="color:#1f2328">(</span><span style="color:#0550ae">4</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">(</span><span style="color:#0550ae">5</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">6</span><span style="color:#1f2328">),</span> <span style="color:#1f2328">(</span><span style="color:#0550ae">6</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">7</span><span style="color:#1f2328">),</span> <span style="color:#1f2328">(</span><span style="color:#0550ae">7</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">8</span><span style="color:#1f2328">),</span> <span style="color:#1f2328">(</span><span style="color:#0550ae">8</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">5</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">(</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">5</span><span style="color:#1f2328">),</span> <span style="color:#1f2328">(</span><span style="color:#0550ae">2</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">6</span><span style="color:#1f2328">),</span> <span style="color:#1f2328">(</span><span style="color:#0550ae">3</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">7</span><span style="color:#1f2328">),</span> <span style="color:#1f2328">(</span><span style="color:#0550ae">4</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">8</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Draw the architectural outlines</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">for</span> <span style="color:#1f2328">(</span>start_index<span style="color:#1f2328">,</span> end_index<span style="color:#1f2328">)</span> <span style="color:#cf222e">in</span> edge_pairs
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        lines!<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>            ax<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">[</span>
+</span></span><span style="display:flex;"><span>                vertices<span style="color:#1f2328">[</span>start_index<span style="color:#1f2328">],</span>
+</span></span><span style="display:flex;"><span>                vertices<span style="color:#1f2328">[</span>end_index<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">],</span>
+</span></span><span style="display:flex;"><span>            color<span style="color:#0550ae">=</span><span style="color:#032f62">:black</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>            linewidth<span style="color:#0550ae">=</span><span style="color:#0550ae">1.0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Generate the architectural village asynchronously</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">@async</span> <span style="color:#cf222e">begin</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Iterate through the horizontal village grid</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">for</span> x <span style="color:#cf222e">in</span> <span style="color:#0550ae">1</span><span style="color:#0550ae">:</span>grid_count_x
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">for</span> y <span style="color:#cf222e">in</span> <span style="color:#0550ae">1</span><span style="color:#0550ae">:</span>grid_count_y
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#57606a"># Randomly determine the building height</span>
+</span></span><span style="display:flex;"><span>            floor_count <span style="color:#0550ae">=</span> rand<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>                rng<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                min_floors<span style="color:#0550ae">:</span>max_floors
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#57606a"># Calculate the building grid position</span>
+</span></span><span style="display:flex;"><span>            base_x <span style="color:#0550ae">=</span> <span style="color:#1f2328">(</span>x <span style="color:#0550ae">-</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">*</span> block_size <span style="color:#0550ae">*</span> grid_spacing
+</span></span><span style="display:flex;"><span>            base_y <span style="color:#0550ae">=</span> <span style="color:#1f2328">(</span>y <span style="color:#0550ae">-</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">*</span> block_size <span style="color:#0550ae">*</span> grid_spacing
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#57606a"># Generate the stacked building masses</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">for</span> z <span style="color:#cf222e">in</span> <span style="color:#0550ae">1</span><span style="color:#0550ae">:</span>floor_count
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#57606a"># Calculate the vertical position</span>
+</span></span><span style="display:flex;"><span>                pos_z <span style="color:#0550ae">=</span> <span style="color:#1f2328">(</span>z <span style="color:#0550ae">-</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">*</span> floor_height
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#57606a"># Generate random horizontal displacements</span>
+</span></span><span style="display:flex;"><span>                offset_x <span style="color:#0550ae">=</span> <span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>                    rand<span style="color:#1f2328">(</span>rng<span style="color:#1f2328">)</span> <span style="color:#0550ae">*</span> <span style="color:#0550ae">2</span> <span style="color:#0550ae">-</span> <span style="color:#0550ae">1</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">)</span> <span style="color:#0550ae">*</span> max_displacement
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                offset_y <span style="color:#0550ae">=</span> <span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>                    rand<span style="color:#1f2328">(</span>rng<span style="color:#1f2328">)</span> <span style="color:#0550ae">*</span> <span style="color:#0550ae">2</span> <span style="color:#0550ae">-</span> <span style="color:#0550ae">1</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">)</span> <span style="color:#0550ae">*</span> max_displacement
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#57606a"># Generate random block dimensions</span>
+</span></span><span style="display:flex;"><span>                length_factor <span style="color:#0550ae">=</span> rand<span style="color:#1f2328">(</span>rng<span style="color:#1f2328">,</span> length_factors<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>                width_factor <span style="color:#0550ae">=</span> rand<span style="color:#1f2328">(</span>rng<span style="color:#1f2328">,</span> width_factors<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                length_x <span style="color:#0550ae">=</span> block_size <span style="color:#0550ae">*</span> length_factor
+</span></span><span style="display:flex;"><span>                width_y <span style="color:#0550ae">=</span> block_size <span style="color:#0550ae">*</span> width_factor
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#57606a"># Randomly select a rotation angle</span>
+</span></span><span style="display:flex;"><span>                rotation_angle <span style="color:#0550ae">=</span> rand<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>                    rng<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                    rotation_angles
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#57606a"># Calculate the center of the architectural mass</span>
+</span></span><span style="display:flex;"><span>                center_x <span style="color:#0550ae">=</span>
+</span></span><span style="display:flex;"><span>                    base_x <span style="color:#0550ae">+</span> block_size <span style="color:#0550ae">/</span> <span style="color:#0550ae">2</span> <span style="color:#0550ae">+</span> offset_x
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                center_y <span style="color:#0550ae">=</span>
+</span></span><span style="display:flex;"><span>                    base_y <span style="color:#0550ae">+</span> block_size <span style="color:#0550ae">/</span> <span style="color:#0550ae">2</span> <span style="color:#0550ae">+</span> offset_y
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#57606a"># Randomly select the architectural color</span>
+</span></span><span style="display:flex;"><span>                block_color <span style="color:#0550ae">=</span> rand<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>                    rng<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                    color_palette
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#57606a"># Generate the transformed architectural block</span>
+</span></span><span style="display:flex;"><span>                create_rotated_block!<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>                    ax<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                    center_x<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                    center_y<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                    pos_z<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                    length_x<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                    width_y<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                    floor_height<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                    rotation_angle<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                    block_color
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#57606a"># Animate the construction sequence</span>
+</span></span><span style="display:flex;"><span>                sleep<span style="color:#1f2328">(</span><span style="color:#0550ae">0.1</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Pause between village grid columns</span>
+</span></span><span style="display:flex;"><span>        sleep<span style="color:#1f2328">(</span><span style="color:#0550ae">0.2</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">end</span>
+</span></span></code></pre></div></details>
+<h2 id="from-digital-blocks-to-physical-study-model">From Digital Blocks to Physical Study Model</h2>
+<p>Because the script builds every unit as a clean rectangular box rotated to a fixed angle (<code>15°</code>, <code>30°</code>, <code>45°</code>, or <code>90°</code>), every module remains straightforward to build despite the organic look of the overall village.</p>
+<figure><img src="/img/projects/jenga-village/jenga-village-maquette.webp">
+</figure>
+
+<p>In the physical study model above, the color-coded blocks from the Julia script are translated into a clear two-part structural hierarchy using grey museum board and basswood:</p>
+<ul>
+<li><strong>Heavy Structural Cores (Grey Volumes):</strong> Flat-roofed concrete and masonry bases anchor the corners of each plot, supporting the cantilevered blocks above while providing flat roof decks for upper-level terraces.</li>
+<li><strong>Lightweight Timber Pavilions (Wood Volumes):</strong> The rotated upper blocks become warm timber-framed living spaces with sloped roofs, window sunshades, and open pergolas, connected across the gaps between plots by exterior stairways.</li>
+</ul>
+<h2 id="vernacular-materiality--courtyard-life">Vernacular Materiality &amp; Courtyard Life</h2>
+<p>While the Julia code only arranges geometric boxes in space, architectural interpretation turns those shifted volumes into a livable tropical neighborhood:</p>
+<figure><img src="/img/projects/jenga-village/jenga-village-courtyard.webp">
+</figure>
+
+<ul>
+<li><strong>Tropical Material Palette:</strong> The four block colors in the script are interpreted as a layered local palette—exposed concrete frames, red-brick ground walls, natural stone retaining walls, and timber upper floors shaded by woven bamboo trellises.</li>
+<li><strong>Pocket Courtyards &amp; Exterior Stairs:</strong> The spacing between the <code>4 × 4</code> plots and the angled rotations naturally carve out communal pocket gardens, shaded pedestrian lanes, and stone staircases that weave through the village.</li>
+</ul>
+<figure><img src="/img/projects/jenga-village/jenga-village-terrace-view.webp">
+</figure>
+
+<h2 id="living-on-the-terraces">Living on the Terraces</h2>
+<p>From inside the upper homes, the <code>2.5-meter</code> horizontal shifts and angled rotations create a generous domestic experience. Whenever an upper block slides or turns over the unit below, the exposed lower roof becomes a private balcony or garden terrace. Instead of looking straight into a neighbor&rsquo;s window, sliding timber doors open diagonally across the shared green courtyard.</p>
+<figure><img src="/img/projects/jenga-village/jenga-village-night.webp">
+</figure>
+
+<p>At dusk, warm light from the timber windows and string-lit roof pergolas brings the stepped terraces and pedestrian alleys to life—turning a simple <code>4 × 4</code> computational grid into an intimate, human-scaled community.</p>
 
             </div>
 

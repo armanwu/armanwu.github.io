@@ -189,16 +189,16 @@
 <h2 id="concept--urban-tectonics">Concept &amp; Urban Tectonics</h2>
 <p><strong>Chaos Crystal</strong> investigates how a purely mathematical coordinate transformation can be disciplined into a buildable civic landmark. Rather than sculpting deconstructivist forms by hand, the project begins with an analytical sphere and subjects it to controlled radial perturbation—producing an expressive crystalline silhouette that anchors a stepped urban plaza.</p>
 <p>To ground its aggressive geometry within the city fabric, the building is organized as a tectonic dialogue between three primary systems: a heavy, board-formed concrete base that absorbs pedestrian circulation from the plaza; an interlocking opaque shell of matte charcoal titanium-zinc panels; and triangular structural glass apertures that slice across the folds to reveal the warm, multi-level public atrium within.</p>
-<h2 id="the-computational-pipeline">The Computational Pipeline</h2>
-<p>The form-finding workflow is written entirely in <strong>Julia</strong> (<code>GeometryBasics</code> and <code>GLMakie</code>), translating spherical trigonometry into a watertight, triangulated surface mesh through four sequential operations:</p>
+<h2 id="the-computational-logic-from-sphere-to-crystal">The Computational Logic: From Sphere to Crystal</h2>
+<p>The form-finding workflow is written in <strong>Julia</strong>, transforming a simple mathematical sphere into a faceted building envelope through four clear geometric steps:</p>
 <figure><img src="/img/projects/chaos-crystal/chaos-crystal-generative-process.webp">
 </figure>
 
 <ul>
-<li><strong>Discrete Spherical Parametrization (12 × 12 Grid):</strong> Instead of a high-density mesh that would yield noisy surface ripples, the script locks the polar (<code>θ ∈ [0, π]</code>) and azimuthal (<code>φ ∈ [0, 2π]</code>) domains to a deliberate <code>12 × 12</code> resolution with a base radius of <code>r₀ = 12.0</code>. At this coarse resolution, every grid cell naturally assumes the scale of a primary architectural facade module.</li>
-<li><strong>Asymmetric Radial Perturbation (<code>Δr ∈ [-5.0, +15.0]</code>):</strong> Each vertex radius is displaced stochastically via <code>r = r₀ + Δr</code>, spanning an actual radial envelope of <code>7.0</code> to <code>27.0</code> units. Inward compressions (<code>-5.0</code>) carve deep re-entrant valleys, while outward extensions (<code>+15.0</code>) project dramatic cantilevered spires.</li>
-<li><strong>Cartesian Transformation &amp; Ground-Datum Clamping (<code>Z = 0</code>):</strong> Once projected into Cartesian space <code>(x, y, z)</code>, the entire geometry is shifted upward by <code>+10.0</code> units and clamped against the ground plane using <code>z = max(r cos θ + 10, 0)</code>. This single mathematical constraint flattens the lower hemisphere into a stable, load-bearing architectural footprint.</li>
-<li><strong>Manifold Seam Closure &amp; Grid-Based Triangulation:</strong> To ensure a closed solid without naked edges, the azimuthal seam (<code>φ = 2π → 0</code>) and polar apexes are stitched before each quadrilateral cell <code>(p1, p2, p3, p4)</code> is subdivided into two outward-facing <code>GLTriangleFace</code> elements.</li>
+<li><strong>Coarse Spherical Grid (<code>12 × 12</code> Resolution):</strong> Instead of a high-density mesh that would create noisy surface ripples, the script divides a sphere of radius <code>12.0</code> into a deliberate <code>12 × 12</code> grid. At this coarse scale, every grid cell naturally becomes the size of a full architectural facade facet.</li>
+<li><strong>Controlled Radial Push and Pull (<code>-5.0</code> to <code>+15.0</code>):</strong> Every point on the sphere is pushed outward or pulled inward by a random distance between <code>-5.0</code> and <code>+15.0</code> units. Inward pulls carve deep alcoves and valleys, while outward pushes project dramatic cantilevered spires.</li>
+<li><strong>Flattening the Base on the Ground (<code>Z = 0</code>):</strong> The entire crystal is lifted <code>+10.0</code> units upward, and any point falling below ground level is automatically flattened to <code>Z = 0</code>. This single rule turns the bottom of the floating sphere into a stable, flat floor plate on the plaza.</li>
+<li><strong>Closing the Surface with Flat Triangles:</strong> Finally, the script stitches the seams and poles together and divides every four-sided grid cell into two flat triangular faces—ensuring a completely closed, buildable volume.</li>
 </ul>
 <figure><img src="/img/projects/chaos-crystal/chaos-crystal-julia-mesh.webp">
 </figure>
@@ -326,38 +326,38 @@
 </span></span><span style="display:flex;"><span><span style="color:#57606a"># Render the final result</span>
 </span></span><span style="display:flex;"><span>display<span style="color:#1f2328">(</span>fig<span style="color:#1f2328">)</span>
 </span></span></code></pre></div></details>
-<h2 id="planar-triangulation--tectonic-rationalization">Planar Triangulation &amp; Tectonic Rationalization</h2>
-<p>A recurring challenge in computational architecture is translating stochastic, freeform meshes into constructible building envelopes. Because four-point quadrilateral faces almost always warp into non-planar surfaces under random vertex perturbation, the script explicitly triangulates every cell into rigid three-point <code>GLTriangleFace</code> primitives.</p>
+<h2 id="why-triangles-matter-from-elevation-to-physical-model">Why Triangles Matter: From Elevation to Physical Model</h2>
+<p>A classic challenge in freeform architecture is building complex surfaces without expensive curved glass or twisted metal panels. Because a four-sided polygon almost always warps when its corners move randomly, the Julia script explicitly splits every grid cell into <strong>triangles</strong>.</p>
 <figure><img src="/img/projects/chaos-crystal/chaos-crystal-elevation-drawing.webp">
 </figure>
 
-<p>Notice how the <code>GLMakie</code> viewport in the script is configured as a true parallel projection (<code>elevation = 0</code>, <code>perspectiveness = 0</code>, <code>azimuth = -π / 2</code>). This allows the raw mathematical output to translate directly into a scaled architectural orthographic elevation. Against the heavy <code>Z = 0</code> ground datum line (<code>final_z = max(z + 10, 0)</code>), each primary triangular facet is further rationalized into secondary tectonic components: board-formed concrete base walls at pedestrian level, standing-seam titanium-zinc cladding across the opaque shards, and subdivided curtain-wall glazing modules calibrated to human scale.</p>
+<p>In the script, the 3D camera is set to a pure orthographic front view—allowing the raw Julia output to translate directly into a scaled architectural elevation drawing. Resting firmly on the flat <code>Z = 0</code> ground line, the large triangular facets are broken down into human-scaled building systems: a board-formed concrete base at street level, standing-seam titanium-zinc panels across the solid peaks, and subdivided curtain-wall glazing.</p>
 <figure><img src="/img/projects/chaos-crystal/chaos-crystal-maquette.webp">
 </figure>
 
-<p>Because three points in space always define a perfectly flat plane, the entire crystalline envelope is 100% developable from flat sheet stock. As demonstrated in the architectural study model above—fabricated from matte museum board, laser-scored triangular facets, transparent acrylic glazing, and a stepped basswood plinth—the exact topology exported from Julia translates directly into physical assembly without requiring doubly curved panels.</p>
-<h2 id="interior-tectonics--spatial-experience">Interior Tectonics &amp; Spatial Experience</h2>
+<p>Because any three points in space always form a perfectly flat plane, the entire building skin can be cut from flat sheets. As shown in the physical study model above—built from grey museum board, flat acrylic glazing, and a stepped basswood plaza—the geometry from Julia translates directly into physical construction without a single curved panel.</p>
+<h2 id="interior-space--light">Interior Space &amp; Light</h2>
 <figure><img src="/img/projects/chaos-crystal/chaos-crystal-interior.webp">
 </figure>
 
-<p>Inside the building, the geometric aggression of the exterior shell opens into a luminous, multi-level cultural atrium. Rather than concealing the structural logic behind false ceilings, the interior expresses the triangulated geometry as a primary tectonic system:</p>
+<p>Inside, the sharp exterior shell opens up into a bright, multi-level public atrium where the triangular geometry becomes the main structural expression:</p>
 <ul>
-<li><strong>Inclined Concrete Cores &amp; Skybridges:</strong> Monumental board-formed concrete piers anchor the exhibition galleries, connected across the void by slender steel pedestrian bridges that allow visitors to experience the crystal from multiple elevations.</li>
-<li><strong>Diagrid Glazing &amp; Folded Acoustic Soffits:</strong> Where the faceted envelope opens to the sky, inclined steel mullion grids trace the underlying mesh topology, while the opaque upper cones are lined with warm-lit acoustic panels that diffuse daylight deep into the public concourse.</li>
+<li><strong>Sloped Concrete Piers &amp; Skybridges:</strong> Massive cast-in-place concrete piers support the upper exhibition galleries, linked across the central void by slender steel bridges that let visitors experience the space from different heights.</li>
+<li><strong>Triangulated Skylights &amp; Acoustic Ceilings:</strong> Where the shell opens toward the sky, angled steel mullions follow the triangular mesh lines, while the solid peaks are lined with warm-lit acoustic panels that bounce daylight deep into the concourse.</li>
 </ul>
 <figure><img src="/img/projects/chaos-crystal/chaos-crystal-perimeter-promenade.webp">
 </figure>
 
-<p>Along the building&rsquo;s perimeter, the outward radial projections (<code>Δr &gt; 0</code>) become habitable triple-height viewing pockets where cantilevered walkways and floating stairs converge directly behind the faceted glass skin. Here, the multi-nodal steel diagrid junctions—corresponding directly to the perturbed vertices of the Julia mesh—frame oblique vistas back down toward the stepped civic plaza and across the surrounding urban skyline while casting dynamic diagonal sun patterns across the polished concrete decks.</p>
+<p>Along the outer edge of the building, the outward-pushed points of the crystal become triple-height viewing galleries where walkways and stairs meet right behind the glass facade. From here, the steel diagrid joints frame diagonal views back down to the stepped plaza and out toward the city skyline while casting long afternoon shadow patterns across the floor.</p>
 <figure><img src="/img/projects/chaos-crystal/chaos-crystal-interior-mezzanine.webp">
 </figure>
 
-<p>From the upper mezzanine promenade, the spatial choreography between the outer shell and the inner structural frame becomes fully legible. A row of raked board-formed concrete columns supports the cantilevered gallery walkways, while a central stair and escalator spine draws visitors upward through the folded volume—framing dramatic views across the concourse against the fractured glazing.</p>
-<h2 id="diurnal-tectonic-inversion--architectural-reading">Diurnal Tectonic Inversion &amp; Architectural Reading</h2>
+<p>From the upper mezzanine walkway, the relationship between the outer shell and the inner concrete frame becomes clear. Inclined concrete columns support the cantilevered gallery floors, while a central stair and escalator spine draws visitors upward through the folded volume.</p>
+<h2 id="day-to-night-transformation">Day-to-Night Transformation</h2>
 <figure><img src="/img/projects/chaos-crystal/chaos-crystal-night-plaza.webp">
 </figure>
 
-<p>While the Julia script itself only computes spherical coordinates and random radial offsets (<code>Δr ∈ [-5, 15]</code>), architectural translation turns this raw mathematical mesh into a phenomenological instrument of time and light. Under daylight, the curated form reads as an earthbound, gravitational monolith carved by deep shadow; as the sun lowers, the perturbed diagrid nodes frame shifting geometric shadows across the interior concourse. After dusk, this reading inverts—warm interior illumination radiates outward through the triangular apertures while linear grazing lights trace the folded ridge seams, transforming the heavy shell into a glowing civic lantern on the urban plaza.</p>
+<p>While the Julia script only calculates spherical coordinates and random radial distances, architectural interpretation turns that raw mesh into an experience of light and time. By day, the crystal reads as a heavy, sculptural monolith carved by shadow. At dusk, that reading flips completely—warm light from the galleries glows outward through the triangular glass facets while subtle linear lights trace the folded seams, turning the building into a welcoming lantern on the public plaza.</p>
 
             </div>
 

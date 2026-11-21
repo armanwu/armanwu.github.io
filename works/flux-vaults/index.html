@@ -188,16 +188,16 @@
 
 <h2 id="concept--vaulted-tectonics">Concept &amp; Vaulted Tectonics</h2>
 <p><strong>Flux Vaults</strong> investigates how serial mathematical variation can generate a monumental vaulted civic concourse. Rather than treating a long-span roof as a uniform extrusion, the project conceives the building envelope as a rhythmic sequence of offset semicircular shells that rise, widen, and shift laterally along a 100-meter axis—creating an interlocking topography of board-formed concrete arches and glazed clerestory crescents poised above a reflecting water basin.</p>
-<h2 id="the-computational-pipeline-parametric-rib-lofting">The Computational Pipeline: Parametric Rib Lofting</h2>
-<p>Written in <strong>Julia</strong> (<code>GLMakie</code> and <code>GeometryBasics</code>), the generative algorithm synthesizes the shell by lofting a series of trigonometrically parameterized arches across a longitudinal spine:</p>
+<h2 id="the-computational-logic-parametric-arches">The Computational Logic: Parametric Arches</h2>
+<p>Written in <strong>Julia</strong>, the script builds the shell by generating a row of semicircular arches along a straight spine and connecting them into a continuous surface:</p>
 <figure><img src="/img/projects/flux-vaults/flux-vaults-process-diagram.webp">
 </figure>
 
 <ul>
-<li><strong>Serial Transverse Rib Array (<code>L = 100</code>, <code>N = 30</code>, <code>R = 30</code>):</strong> The 100-unit longitudinal axis (<code>building_length = 100</code>) is subdivided into <code>rib_count = 30</code> transverse arch stations, each discretized into <code>curve_resolution = 30</code> angular increments over <code>θ ∈ [0, π]</code>.</li>
-<li><strong>Stochastic Amplitude, Span &amp; Axis Modulation:</strong> At each station <code>i</code>, three geometric parameters are varied independently—half-span width (<code>wᵢ ∈ [5.0, 15.0]</code>), apex height (<code>hᵢ ∈ [4.0, 20.0]</code>), and lateral centerline drift (<code>Δyᵢ ∈ [-5.0, 5.0]</code>).</li>
-<li><strong>Trigonometric Arch Projection (<code>cos θ</code> &amp; <code>sin θ</code>):</strong> Each rib profile is computed via <code>y = Δyᵢ - (wᵢ * cos(θ))</code> and <code>z = hᵢ * sin(θ)</code>. Because <code>sin(0) = 0</code> and <code>sin(π) = 0</code>, every arch—regardless of its randomized height or lateral drift—automatically anchors both springing points cleanly onto the <code>Z = 0</code> ground datum.</li>
-<li><strong>Rib-to-Rib Triangulated Lofting (<code>GLTriangleFace</code>):</strong> Adjacent ribs (<code>current_rib</code> and <code>next_rib</code>) are stitched together segment by segment, subdividing each four-node bay <code>(p1, p2, p3, p4)</code> into two planar triangles to form a continuous structural shell.</li>
+<li><strong>A Row of 30 Arches (<code>100 m</code> Length):</strong> A <code>100-meter</code> axis is divided into <code>30</code> equally spaced arch ribs, with each arch curve plotted using <code>30</code> points from one side to the other.</li>
+<li><strong>Varying Width, Height, and Shift:</strong> Instead of repeating identical arches, the script randomly varies three dimensions for each rib—its span width (<code>5</code> to <code>15</code> units), its peak height (<code>4</code> to <code>20</code> units), and its sideways shift (<code>-5</code> to <code>+5</code> units).</li>
+<li><strong>Grounded Arch Geometry:</strong> Each arch curve is drawn using simple sine and cosine waves. Because a half-sine wave always starts and ends at zero, every arch—no matter how tall, wide, or shifted—lands both of its feet cleanly on the flat ground plane (<code>Z = 0</code>).</li>
+<li><strong>Connecting Ribs into a Shell:</strong> Finally, the script connects each arch to its neighbor with a grid of flat triangles, creating a continuous vaulted roof structure.</li>
 </ul>
 <figure><img src="/img/projects/flux-vaults/flux-vaults-julia-mesh.webp">
 </figure>
@@ -309,25 +309,25 @@
 </span></span><span style="display:flex;"><span><span style="color:#57606a"># Display the final 3D visualization</span>
 </span></span><span style="display:flex;"><span>display<span style="color:#1f2328">(</span>fig<span style="color:#1f2328">)</span>
 </span></span></code></pre></div></details>
-<h2 id="tectonic-rationalization--physical-study-model">Tectonic Rationalization &amp; Physical Study Model</h2>
-<p>To bridge the continuous triangulated mesh (<code>GeometryBasics.Mesh</code>) and real-world construction, consecutive arch ribs are clustered into distinct vault shells separated by crescent-shaped clerestory setbacks.</p>
+<h2 id="from-wireframe-mesh-to-physical-model">From Wireframe Mesh to Physical Model</h2>
+<p>To turn the continuous digital mesh into a buildable roof structure, neighboring ribs are grouped into overlapping vault shells separated by crescent-shaped glass skylights.</p>
 <figure><img src="/img/projects/flux-vaults/flux-vaults-maquette.webp">
 </figure>
 
-<p>As explored in the physical architectural scale model above—constructed from layered grey museum board arches, segmented white shell cladding, basswood foundation plinths, and radially mullioned acrylic glazing—discretizing each arch into <code>R = 30</code> linear chords allows the curved vaults to be assembled from standardized, developable panel strips and planar structural ribs.</p>
-<h2 id="interior-concourse--nocturnal-reflection">Interior Concourse &amp; Nocturnal Reflection</h2>
+<p>As shown in the physical study model above—built from layered grey museum-board arches, segmented white shell panels, basswood bases, and radial acrylic glazing—dividing each arch into <code>30</code> straight segments allows the curved vaults to be constructed from simple flat panel strips and standard arch ribs.</p>
+<h2 id="interior-concourse--evening-atmosphere">Interior Concourse &amp; Evening Atmosphere</h2>
 <figure><img src="/img/projects/flux-vaults/flux-vaults-interior.webp">
 </figure>
 
-<p>In translating the parametric rib sequence into a full-scale civic building, the differential height (<code>hᵢ ∈ [4.0, 20.0]</code>) and lateral displacement (<code>Δyᵢ ∈ [-5.0, 5.0]</code>) between consecutive arches are exploited as a primary architectural device:</p>
+<p>Inside the building, the height differences (<code>4</code> to <code>20</code> meters) and sideways shifts between consecutive arches become the main architectural feature:</p>
 <ul>
-<li><strong>Monumental Concrete Arch Ribs:</strong> Primary board-formed concrete arches transfer roof loads down to the concourse perimeter while framing an expansive, column-free public hall, mezzanine bridge, and vertical escalator circulation.</li>
-<li><strong>Crescent Clerestory Apertures:</strong> Where adjacent ribs shift in radius and elevation, the resulting offset gaps are glazed as curved clerestory ribbons and lateral curtain walls—washing the acoustic plaster soffits with daylight and opening views out to the surrounding reflecting pool.</li>
+<li><strong>Monumental Concrete Arches:</strong> Thick board-formed concrete arch ribs carry the roof loads down to the floor while framing a wide, column-free public hall with escalators and an upper mezzanine bridge.</li>
+<li><strong>Crescent Skylights:</strong> Wherever one arch rises higher or shifts sideways next to its neighbor, the gap between them is filled with curved clerestory glass—washing the concrete vaults with natural daylight and opening views out to the surrounding water.</li>
 </ul>
 <figure><img src="/img/projects/flux-vaults/flux-vaults-exterior-night.webp">
 </figure>
 
-<p>Although the Julia script merely randomizes arch widths, heights (<code>hᵢ</code>), and lateral offsets (<code>Δyᵢ</code>) along a linear array, architectural curation translates these raw trigonometric ribs into a kinesthetic choreography of spatial compression and release. As visitors move along the 100-meter concourse, the body experiences the rhythmic rise and fall of the concrete vaults alongside shifting crescents of daylight and water. At dusk, warm grazing uplights illuminate the deep concrete arch intrados while interior lighting radiates through the radial entrance portal and clerestory ribbons—mirroring the vaulted sequence across the still water basin.</p>
+<p>While the Julia script simply randomizes arch widths, heights, and offsets along a line, architectural interpretation turns those numbers into a physical rhythm of expansion and compression as people walk through the <code>100-meter</code> hall. At dusk, warm uplighting washes the underside of the concrete arches while interior light glows through the glazed entrance and crescent skylights, mirroring the vaults across the still water basin.</p>
 
             </div>
 

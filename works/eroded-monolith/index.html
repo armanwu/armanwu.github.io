@@ -7,7 +7,7 @@
     <title>Eroded Monolith | Dr. Arman Arisman</title>
 
     <meta name="description"
-        content="A high-rise typology study using algorithmic voxel subtraction in Julia to carve communal vertical gardens into a modernist tower.">
+        content="A high-rise typology study using spherical voxel subtraction in Julia to carve a stepped vertical park and Corten-lined sky terraces into an orthogonal corner tower.">
     <link rel="canonical" href="https://armanwu.com/works/eroded-monolith/">
 
     
@@ -37,10 +37,10 @@
 
 
 <meta property="og:title" content="Eroded Monolith | Dr. Arman Arisman">
-<meta property="og:description" content="A high-rise typology study using algorithmic voxel subtraction in Julia to carve communal vertical gardens into a modernist tower.">
+<meta property="og:description" content="A high-rise typology study using spherical voxel subtraction in Julia to carve a stepped vertical park and Corten-lined sky terraces into an orthogonal corner tower.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://armanwu.com/works/eroded-monolith/">
-<meta property="og:image" content="https://armanwu.com/img/projects/eroded-monolith/eroded-monolith-1.webp">
+<meta property="og:image" content="https://armanwu.com/img/projects/eroded-monolith/eroded-monolith-exterior.webp">
 <meta property="og:site_name" content="Dr. Arman Arisman">
 <meta name="author" content="Dr. Arman Arisman">
 
@@ -52,8 +52,8 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Eroded Monolith | Dr. Arman Arisman">
-<meta name="twitter:description" content="A high-rise typology study using algorithmic voxel subtraction in Julia to carve communal vertical gardens into a modernist tower.">
-<meta name="twitter:image" content="https://armanwu.com/img/projects/eroded-monolith/eroded-monolith-1.webp">
+<meta name="twitter:description" content="A high-rise typology study using spherical voxel subtraction in Julia to carve a stepped vertical park and Corten-lined sky terraces into an orthogonal corner tower.">
+<meta name="twitter:image" content="https://armanwu.com/img/projects/eroded-monolith/eroded-monolith-exterior.webp">
 
 
 
@@ -173,7 +173,7 @@
                         
                         
                         <dt>Brief</dt>
-                        <dd>A high-rise typology study using algorithmic voxel subtraction in Julia to carve communal vertical gardens into a modernist tower.</dd>
+                        <dd>A high-rise typology study using spherical voxel subtraction in Julia to carve a stepped vertical park and Corten-lined sky terraces into an orthogonal corner tower.</dd>
                         
                     </dl>
                     <a href="/works" class="sidebar-back-link">← All Works</a>
@@ -183,19 +183,22 @@
 
         <div class="essay-main">
             <div class="article-content">
-                <figure><img src="/img/projects/eroded-monolith/eroded-monolith-1.webp">
+                <figure><img src="/img/projects/eroded-monolith/eroded-monolith-exterior.webp">
 </figure>
 
-<p><strong>Eroded Monolith</strong> challenges the traditional typology of the skyscraper. Usually, high-rise buildings are sealed, air-conditioned glass boxes that isolate people from the elements. This project asks: What happens if we &ldquo;break&rdquo; the box to let nature in?</p>
-<p>The concept creates a dialogue between two opposing forces: the perfection of the modernist grid versus the imperfection of organic erosion.</p>
+<h2 id="concept--the-porous-high-rise">Concept &amp; The Porous High-Rise</h2>
+<p><strong>Eroded Monolith</strong> challenges the sealed, air-conditioned box of conventional high-rise architecture. Positioned at a prominent urban street corner, the project asks what happens when we subtract a massive three-dimensional void out of a rigid modernist grid—opening the heart of the tower to daylight, cross-breezes, and stepped communal gardens.</p>
 <h2 id="the-computational-logic-carving-with-distance">The Computational Logic: Carving with Distance</h2>
-<p>The form-finding process is driven by a script in <strong>Julia</strong>. Unlike additive workflows that stack blocks upward, this project uses a <strong>subtractive</strong> method—carving space out of a solid tower volume:</p>
+<p>Written in <strong>Julia</strong>, the form-finding workflow uses a <strong>subtractive</strong> method rather than stacking blocks upward. As shown in the concept diagram below, the algorithm sculpts the tower by subtracting an invisible sphere from a solid grid of cubes:</p>
+<figure><img src="/img/projects/eroded-monolith/eroded-monolith-process-diagram.webp">
+</figure>
+
 <ul>
-<li><strong>A Solid Tower Grid (<code>11 × 11 × 21</code> Blocks):</strong> The building starts as a regular 3D grid of cubes (<code>11 × 11</code> units wide and <code>21</code> stories tall), representing a standard orthogonal office tower.</li>
-<li><strong>Carving with an Invisible Sphere:</strong> An invisible spherical &ldquo;cutting tool&rdquo; (radius <code>7.0</code>) is placed along the corner of the tower at mid-height (<code>x = 5, y = 5, z = 10</code>). As the script checks every block in the grid, it measures the straight-line distance from that block to the center of the sphere—deleting any block that falls inside the sphere&rsquo;s radius.</li>
-<li><strong>Floor-by-Floor Growth:</strong> As the code runs, it builds the remaining blocks layer by layer from the ground up and colors each block according to its distance from the carved void, revealing a stepped spherical canyon cut deep into the corner of the monolith.</li>
+<li><strong>A Solid Voxel Tower (<code>11 × 11 × 21</code> Blocks):</strong> The building begins as a complete 3D matrix of <code>2,541</code> cubic modules (<code>x</code> and <code>y</code> from <code>-5</code> to <code>5</code>, and <code>z</code> from <code>0</code> to <code>20</code>), establishing a disciplined orthogonal tower envelope.</li>
+<li><strong>The Spherical Cutter (<code>Radius = 7.0</code>):</strong> An invisible cutting sphere is centered along the front corner edge at mid-height (<code>x = 5, y = 5, z = 10</code>). For every cube in the tower, the script measures its straight-line distance (<code>d</code>) to the center of the sphere and removes any block where <code>d ≤ 7.0</code>.</li>
+<li><strong>Progressive Real-Time Growth:</strong> Using Julia&rsquo;s live visualization stream, the remaining blocks assemble floor by floor from the ground up and are shaded along an ice-blue gradient according to their distance from the carved void.</li>
 </ul>
-<figure><img src="/img/projects/eroded-monolith/eroded-monolith-2.webp">
+<figure><img src="/img/projects/eroded-monolith/eroded-monolith-julia-mesh.webp">
 </figure>
 
 <details class="code-drawer">
@@ -279,16 +282,17 @@
 </span></span><span style="display:flex;"><span>    println<span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;Voxel generation completed!&#34;</span><span style="color:#1f2328">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">end</span>
 </span></span></code></pre></div></details>
-<h2 id="tectonic-contrast--vertical-sky-gardens">Tectonic Contrast &amp; Vertical Sky Gardens</h2>
-<p>In translating the eroded voxel matrix into high-rise architecture, the design emphasizes the tectonic duality between the intact perimeter and the excavated void:</p>
+<h2 id="architectural-translation-the-carved-vertical-park">Architectural Translation: The Carved Vertical Park</h2>
+<p>While the Julia script simply filters out cubes within a <code>7.0-unit</code> radius, architectural interpretation turns that stepped mathematical cavity into a dramatic public and bioclimatic heart for the building:</p>
 <ul>
-<li><strong>The Orthogonal Curtain-Wall Shell:</strong> The un-eroded faces retain a disciplined, reflective glass curtain wall that responds to the urban street grid and maximizes floor-plate efficiency.</li>
-<li><strong>The Excavated Biophilic Core:</strong> Where the spherical boolean operation carves into the corner mass (<code>Point3f(5, 5, 10)</code>), the exposed stepped voxel terraces are clad in warm timber soffits and planted as multi-level sky gardens.</li>
+<li><strong>Outer Grid vs. Inner Canyon:</strong> The untouched outer faces of the tower keep a clean concrete-and-glass curtain wall anchored by dark stone piers at street level. Where the sphere cuts into the corner, the exposed voxel steps are clad in warm weathered Corten steel and board-formed concrete—visually expressing the &ldquo;cut&rdquo; as if a geological layer has been exposed.</li>
+<li><strong>Stepped Amphitheater Gardens:</strong> The lower half of the carved sphere naturally forms a cascading series of planted terraces and outdoor stairs, while the upper half creates a dramatic stepped concrete soffit that shelters the gardens below from direct rain and midday sun.</li>
 </ul>
-<figure><img src="/img/projects/eroded-monolith/eroded-monolith-3.webp">
+<figure><img src="/img/projects/eroded-monolith/eroded-monolith-sky-garden.webp">
 </figure>
 
-<p>This algorithmic excavation functions as a bioclimatic lung for the tower—introducing deep self-shading cantilevers, natural cross-ventilation pockets, and communal outdoor terraces that reconnect high-rise occupants with the vertical landscape.</p>
+<h2 id="experience-inside-the-void">Experience Inside the Void</h2>
+<p>Standing on the elevated timber deck inside the carved corner, the abstract voxel grid becomes a tangible spatial experience. Overhead, the stepped concrete ceiling recalls the cubic resolution of the Julia algorithm, while double-height glass walls connect the indoor workspaces directly to the planted terraces. Rather than isolating occupants behind a sealed glass facade, the eroded corner frames panoramic views down the tree-lined boulevard at sunset—turning a simple distance formula into a living vertical park.</p>
 
             </div>
 

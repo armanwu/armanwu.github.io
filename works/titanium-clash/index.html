@@ -7,7 +7,7 @@
     <title>Titanium Clash | Dr. Arman Arisman</title>
 
     <meta name="description"
-        content="An experimental deconstructivist massing study using Julia to generate and curate spatial collisions of titanium and glass prisms.">
+        content="An experimental deconstructivist massing study in Julia that collides eight tetrahedral shards into a cantilevered civic landmark clad in brushed titanium and inclined curtain walls.">
     <link rel="canonical" href="https://armanwu.com/works/titanium-clash/">
 
     
@@ -37,10 +37,10 @@
 
 
 <meta property="og:title" content="Titanium Clash | Dr. Arman Arisman">
-<meta property="og:description" content="An experimental deconstructivist massing study using Julia to generate and curate spatial collisions of titanium and glass prisms.">
+<meta property="og:description" content="An experimental deconstructivist massing study in Julia that collides eight tetrahedral shards into a cantilevered civic landmark clad in brushed titanium and inclined curtain walls.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://armanwu.com/works/titanium-clash/">
-<meta property="og:image" content="https://armanwu.com/img/projects/titanium-clash/titanium-clash-5.webp">
+<meta property="og:image" content="https://armanwu.com/img/projects/titanium-clash/titanium-clash-exterior.webp">
 <meta property="og:site_name" content="Dr. Arman Arisman">
 <meta name="author" content="Dr. Arman Arisman">
 
@@ -52,8 +52,8 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Titanium Clash | Dr. Arman Arisman">
-<meta name="twitter:description" content="An experimental deconstructivist massing study using Julia to generate and curate spatial collisions of titanium and glass prisms.">
-<meta name="twitter:image" content="https://armanwu.com/img/projects/titanium-clash/titanium-clash-5.webp">
+<meta name="twitter:description" content="An experimental deconstructivist massing study in Julia that collides eight tetrahedral shards into a cantilevered civic landmark clad in brushed titanium and inclined curtain walls.">
+<meta name="twitter:image" content="https://armanwu.com/img/projects/titanium-clash/titanium-clash-exterior.webp">
 
 
 
@@ -173,7 +173,7 @@
                         
                         
                         <dt>Brief</dt>
-                        <dd>An experimental deconstructivist massing study using Julia to generate and curate spatial collisions of titanium and glass prisms.</dd>
+                        <dd>An experimental deconstructivist massing study in Julia that collides eight tetrahedral shards into a cantilevered civic landmark clad in brushed titanium and inclined curtain walls.</dd>
                         
                     </dl>
                     <a href="/works" class="sidebar-back-link">← All Works</a>
@@ -183,31 +183,130 @@
 
         <div class="essay-main">
             <div class="article-content">
-                <figure><img src="/img/projects/titanium-clash/titanium-clash-5.webp">
+                <figure><img src="/img/projects/titanium-clash/titanium-clash-exterior.webp">
 </figure>
 
-<p><strong>Titanium Clash</strong> is an experimental project exploring the boundaries between algorithmic chaos and architectural order. Drawing inspiration from the fragmented style of deconstructivism, this project investigates how code can be used to generate complex spatial collisions that would be hard to model manually.</p>
-<h2 id="the-process-code-as-the-sketchpad">The Process: Code as the Sketchpad</h2>
-<figure><img src="/img/projects/titanium-clash/titanium-clash-1.webp">
+<h2 id="concept--spatial-collision">Concept &amp; Spatial Collision</h2>
+<p><strong>Titanium Clash</strong> explores the boundary between algorithmic randomness and architectural order. Drawing inspiration from deconstructivist form-making, the project tests how a simple script can generate high-energy spatial collisions—where sharp, soaring spires pierce and counter-balance one another above a calm reflecting pool.</p>
+<h2 id="the-computational-logic-stochastic-shard-aggregation">The Computational Logic: Stochastic Shard Aggregation</h2>
+<p>Instead of starting with a manual sketch or a clay model, this study begins with a script in <strong>Julia</strong> that builds a complex deconstructivist massing by aggregating eight irregular tetrahedral shards around a shared origin:</p>
+<figure><img src="/img/projects/titanium-clash/titanium-clash-process-diagram.webp">
 </figure>
 
-<p>Instead of starting with a sketch or a massing model, this project began with a script written in <strong>Julia</strong>. I chose Julia for its fast computational capabilities, allowing for rapid iteration of complex geometric calculations.</p>
-<p>The core of the script was designed to generate &ldquo;randomized collisions.&rdquo; I set up algorithms to spawn multiple prismatic forms with varying vectors, scales, and rotation angles. The goal was to create a sense of dynamic tension—where forms don&rsquo;t just touch, but aggressively intersect and pierce through one another.</p>
-<h2 id="the-role-of-the-architect-curation">The Role of the Architect: Curation</h2>
-<p>While the computer generated the geometry, the role of the architect shifted from <em>creator</em> to <em>curator</em>. The script produced hundreds of variations—some were too messy, some too simple.</p>
-<figure><img src="/img/projects/titanium-clash/titanium-clash-2.webp">
+<ul>
+<li><strong>Tetrahedral Geometry Logic (<code>p1, p2, p3</code> + <code>apex</code>):</strong> Each shard is constructed from four randomized points—three base vertices scattered near ground level (<code>x, y ∈ [-35, 35]</code>, <code>z ∈ [-5, 5]</code>) and one elevated apex projected high into the air (<code>x, y ∈ [-55, 55]</code>, <code>z ∈ [60, 85]</code>). Connecting these four points forms an irregular four-face tetrahedron whose surfaces are always flat triangles.</li>
+<li><strong>Sequential Aggregation Loop (<code>1</code> to <code>8</code> Shards):</strong> In an iterative loop (<code>i = 1</code> to <code>8</code>), eight independent shards are generated around <code>Point3f(0, 0, 0)</code>. As the loop progresses from a single pyramid to the full eight-shard cluster, the leaning volumes pierce and interlock with one another—rendered in a four-tone metallic slate palette with crisp white wireframe edges.</li>
+</ul>
+<figure><img src="/img/projects/titanium-clash/titanium-clash-julia-mesh.webp">
 </figure>
 
-<p>The final form selected for &ldquo;Titanium Clash&rdquo; stood out because of its balanced composition. It captured a frozen moment of impact, where sharp, aggressive shards of geometry create a dramatic silhouette against the sky. This stage highlights a crucial philosophy in AI and generative design: the machine provides the options, but human intuition provides the meaning.</p>
-<h2 id="visualization">Visualization</h2>
-<p>To bring these raw mathematical geometries to life, the model was rendered using <strong>Nano Banana</strong>. The focus was on materiality—specifically, the contrast between the cold, brushed titanium cladding and the transparency of the glass shards.</p>
-<p>The result is a structure that feels alien yet grounded, a &ldquo;clash&rdquo; of materials and forms that serves as a proof of the potential of scripting in architectural form-finding.</p>
-<figure><img src="/img/projects/titanium-clash/titanium-clash-3.webp">
+<details class="code-drawer">
+<summary>View Julia Source Code (titanium_clash.jl)</summary>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span><span style="color:#cf222e">using</span> GLMakie
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> GeometryBasics
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> Random
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> Colors
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Initialize the 3D visualization environment</span>
+</span></span><span style="display:flex;"><span>fig <span style="color:#0550ae">=</span> Figure<span style="color:#1f2328">(</span>size<span style="color:#0550ae">=</span><span style="color:#1f2328">(</span><span style="color:#0550ae">800</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">800</span><span style="color:#1f2328">))</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Configure the 3D camera and viewing angle</span>
+</span></span><span style="display:flex;"><span>ax <span style="color:#0550ae">=</span> Axis3<span style="color:#1f2328">(</span>fig<span style="color:#1f2328">[</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">],</span>
+</span></span><span style="display:flex;"><span>    aspect<span style="color:#0550ae">=</span><span style="color:#032f62">:data</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    perspectiveness<span style="color:#0550ae">=</span><span style="color:#0550ae">0.2</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    azimuth<span style="color:#0550ae">=</span><span style="color:#0550ae">0.35</span><span style="color:#6639ba">π</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    elevation<span style="color:#0550ae">=</span><span style="color:#0550ae">0.15</span><span style="color:#6639ba">π</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Hide axis decorations and spines</span>
+</span></span><span style="display:flex;"><span>hidedecorations!<span style="color:#1f2328">(</span>ax<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>hidespines!<span style="color:#1f2328">(</span>ax<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Define the spatial boundaries</span>
+</span></span><span style="display:flex;"><span>limits!<span style="color:#1f2328">(</span>ax<span style="color:#1f2328">,</span> <span style="color:#0550ae">-</span><span style="color:#0550ae">60</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">60</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">-</span><span style="color:#0550ae">60</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">60</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">90</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Display the visualization window</span>
+</span></span><span style="display:flex;"><span>display<span style="color:#1f2328">(</span>fig<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Generate an aggressive shard geometry</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">function</span> create_aggressive_shard<span style="color:#1f2328">(</span>center<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Generate three randomly displaced base vertices</span>
+</span></span><span style="display:flex;"><span>    p1 <span style="color:#0550ae">=</span> center <span style="color:#0550ae">+</span> Point3f<span style="color:#1f2328">(</span>rand<span style="color:#1f2328">(</span><span style="color:#0550ae">-</span><span style="color:#0550ae">35</span><span style="color:#0550ae">:</span><span style="color:#0550ae">35</span><span style="color:#1f2328">),</span> rand<span style="color:#1f2328">(</span><span style="color:#0550ae">-</span><span style="color:#0550ae">35</span><span style="color:#0550ae">:</span><span style="color:#0550ae">35</span><span style="color:#1f2328">),</span> rand<span style="color:#1f2328">(</span><span style="color:#0550ae">-</span><span style="color:#0550ae">5</span><span style="color:#0550ae">:</span><span style="color:#0550ae">5</span><span style="color:#1f2328">))</span>
+</span></span><span style="display:flex;"><span>    p2 <span style="color:#0550ae">=</span> center <span style="color:#0550ae">+</span> Point3f<span style="color:#1f2328">(</span>rand<span style="color:#1f2328">(</span><span style="color:#0550ae">-</span><span style="color:#0550ae">35</span><span style="color:#0550ae">:</span><span style="color:#0550ae">35</span><span style="color:#1f2328">),</span> rand<span style="color:#1f2328">(</span><span style="color:#0550ae">-</span><span style="color:#0550ae">35</span><span style="color:#0550ae">:</span><span style="color:#0550ae">35</span><span style="color:#1f2328">),</span> rand<span style="color:#1f2328">(</span><span style="color:#0550ae">-</span><span style="color:#0550ae">5</span><span style="color:#0550ae">:</span><span style="color:#0550ae">5</span><span style="color:#1f2328">))</span>
+</span></span><span style="display:flex;"><span>    p3 <span style="color:#0550ae">=</span> center <span style="color:#0550ae">+</span> Point3f<span style="color:#1f2328">(</span>rand<span style="color:#1f2328">(</span><span style="color:#0550ae">-</span><span style="color:#0550ae">35</span><span style="color:#0550ae">:</span><span style="color:#0550ae">35</span><span style="color:#1f2328">),</span> rand<span style="color:#1f2328">(</span><span style="color:#0550ae">-</span><span style="color:#0550ae">35</span><span style="color:#0550ae">:</span><span style="color:#0550ae">35</span><span style="color:#1f2328">),</span> rand<span style="color:#1f2328">(</span><span style="color:#0550ae">-</span><span style="color:#0550ae">5</span><span style="color:#0550ae">:</span><span style="color:#0550ae">5</span><span style="color:#1f2328">))</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Generate a randomly displaced elevated apex</span>
+</span></span><span style="display:flex;"><span>    apex <span style="color:#0550ae">=</span> center <span style="color:#0550ae">+</span> Point3f<span style="color:#1f2328">(</span>rand<span style="color:#1f2328">(</span><span style="color:#0550ae">-</span><span style="color:#0550ae">55</span><span style="color:#0550ae">:</span><span style="color:#0550ae">55</span><span style="color:#1f2328">),</span> rand<span style="color:#1f2328">(</span><span style="color:#0550ae">-</span><span style="color:#0550ae">55</span><span style="color:#0550ae">:</span><span style="color:#0550ae">55</span><span style="color:#1f2328">),</span> rand<span style="color:#1f2328">(</span><span style="color:#0550ae">60</span><span style="color:#0550ae">:</span><span style="color:#0550ae">85</span><span style="color:#1f2328">))</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Assemble the four vertices of the shard</span>
+</span></span><span style="display:flex;"><span>    vertices <span style="color:#0550ae">=</span> <span style="color:#1f2328">[</span>p1<span style="color:#1f2328">,</span> p2<span style="color:#1f2328">,</span> p3<span style="color:#1f2328">,</span> apex<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Define the triangular faces of the geometry</span>
+</span></span><span style="display:flex;"><span>    faces <span style="color:#0550ae">=</span> <span style="color:#1f2328">[</span>
+</span></span><span style="display:flex;"><span>        TriangleFace<span style="color:#1f2328">(</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">2</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">4</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>        TriangleFace<span style="color:#1f2328">(</span><span style="color:#0550ae">2</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">3</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">4</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>        TriangleFace<span style="color:#1f2328">(</span><span style="color:#0550ae">3</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">4</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>        TriangleFace<span style="color:#1f2328">(</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">2</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">3</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Construct and return the triangular mesh</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> GeometryBasics<span style="color:#0550ae">.</span>Mesh<span style="color:#1f2328">(</span>vertices<span style="color:#1f2328">,</span> faces<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Define the architectural shard color palette</span>
+</span></span><span style="display:flex;"><span>shard_palette <span style="color:#0550ae">=</span> <span style="color:#1f2328">[</span>
+</span></span><span style="display:flex;"><span>    RGBAf<span style="color:#1f2328">(</span><span style="color:#0550ae">0.5</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.6</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.7</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.95</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>    RGBAf<span style="color:#1f2328">(</span><span style="color:#0550ae">0.3</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.4</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.5</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.95</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>    RGBAf<span style="color:#1f2328">(</span><span style="color:#0550ae">0.7</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.8</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.9</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.9</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>    RGBAf<span style="color:#1f2328">(</span><span style="color:#0550ae">0.2</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.2</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.3</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1.0</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Generate and visualize eight randomly shaped shards</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">@async</span> <span style="color:#cf222e">begin</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">for</span> i <span style="color:#cf222e">in</span> <span style="color:#0550ae">1</span><span style="color:#0550ae">:</span><span style="color:#0550ae">8</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Generate a new shard at the origin</span>
+</span></span><span style="display:flex;"><span>        shard <span style="color:#0550ae">=</span> create_aggressive_shard<span style="color:#1f2328">(</span>Point3f<span style="color:#1f2328">(</span><span style="color:#0550ae">0</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">))</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Render the shard with a randomly selected color</span>
+</span></span><span style="display:flex;"><span>        mesh!<span style="color:#1f2328">(</span>ax<span style="color:#1f2328">,</span> shard<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>            color<span style="color:#0550ae">=</span>rand<span style="color:#1f2328">(</span>shard_palette<span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>            shading<span style="color:#0550ae">=</span><span style="color:#6639ba">true</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Highlight the triangular edges with white wireframes</span>
+</span></span><span style="display:flex;"><span>        wireframe!<span style="color:#1f2328">(</span>ax<span style="color:#1f2328">,</span> shard<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>            color<span style="color:#0550ae">=</span><span style="color:#032f62">:white</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>            linewidth<span style="color:#0550ae">=</span><span style="color:#0550ae">2.0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Introduce a short delay for sequential generation</span>
+</span></span><span style="display:flex;"><span>        sleep<span style="color:#1f2328">(</span><span style="color:#0550ae">0.3</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">end</span>
+</span></span></code></pre></div></details>
+<h2 id="the-role-of-the-architect-curation--physical-model">The Role of the Architect: Curation &amp; Physical Model</h2>
+<p>While the computer generates raw geometric collisions in seconds, the role of the architect shifts from manual drafter to <strong>spatial curator</strong>. Running the script dozens of times produces countless variations—some too fragmented, others too flat. The final composition was selected because its leaning spires achieve a dynamic visual equilibrium.</p>
+<figure><img src="/img/projects/titanium-clash/titanium-clash-maquette.webp">
 </figure>
 
-<figure><img src="/img/projects/titanium-clash/titanium-clash-4.webp">
+<p>Because every shard is a pure four-point tetrahedron, every single surface in the composition is a flat triangle. As demonstrated in the physical study model above—built from matte metallic grey board, blue-tinted acrylic glazing panels, and a contoured plywood site base—these colliding digital shards can be unrolled and fabricated entirely from flat sheet materials without any curved panels.</p>
+<h2 id="interior-atrium--architectural-translation">Interior Atrium &amp; Architectural Translation</h2>
+<figure><img src="/img/projects/titanium-clash/titanium-clash-interior.webp">
 </figure>
 
+<p>Because the Julia script only outputs raw tetrahedral meshes and color tones, translating the computational cluster into architecture involves four deliberate design interpretations:</p>
+<ul>
+<li><strong>Titanium-Clad Planes &amp; Inclined Glazing:</strong> The opaque gray and graphite faces of the digital mesh are interpreted as brushed titanium cladding panels, while the ice-blue facets become soaring, inclined glass curtain walls that flood the public lobby with daylight.</li>
+<li><strong>Exposed Trusses &amp; Helical Staircase:</strong> Overhead, long-span steel roof trusses and suspended polyhedral volumes reveal how the cantilevered spires lock together structurally, while a sweeping stainless-steel spiral staircase rises through the atrium as a fluid counterpoint to the sharp exterior angles.</li>
+</ul>
+<figure><img src="/img/projects/titanium-clash/titanium-clash-exterior-night.webp">
+</figure>
+
+<ul>
+<li><strong>White Edge Highlighting:</strong> At night, the white wireframe overlay plotted in the Julia script (<code>linewidth = 2.0</code>) is reimagined as recessed linear LED lighting along the sharp ridge lines of the titanium shards—turning the computational wireframe into a glowing nocturnal silhouette reflected across the water basin.</li>
+</ul>
 
             </div>
 

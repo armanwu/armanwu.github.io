@@ -6,8 +6,15 @@
     <description>Recent content on Dr. Arman Arisman</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://armanwu.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Light-Sculpted Mass</title>
+      <link>https://armanwu.com/works/light-sculpted-mass/</link>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://armanwu.com/works/light-sculpted-mass/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://armanwu.com/img/projects/light-sculpted-mass/light-sculpted-mass-aerial.webp&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;concept--climate-informed-monoliths&#34;&gt;Concept &amp;amp; Climate-Informed Monoliths&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Light-Sculpted Mass&lt;/strong&gt; bridges generative form-finding and environmental performance analysis within a single interactive &lt;strong&gt;Julia&lt;/strong&gt; application. Calibrated to the equatorial solar geometry of &lt;strong&gt;Bandung, Indonesia&lt;/strong&gt; (&lt;code&gt;6.9175° S, 107.6191° E&lt;/code&gt;), the project investigates how monumental, monolithic architecture can be carved open by courtyards, deep entrance portals, roof terraces, and narrow vertical light slots—and how those spatial voids perform under tropical daylight.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://armanwu.com/img/projects/light-sculpted-mass/light-sculpted-mass-exterior.webp&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Rather than treating massing generation and solar simulation as separate stages across different software packages, this custom tool integrates &lt;strong&gt;Constructive Solid Geometry (CSG)&lt;/strong&gt; directly with an analytical &lt;strong&gt;solar ray-casting engine&lt;/strong&gt; and a real-time evaluation dashboard.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Crystalline Monolith Pavilion</title>
       <link>https://armanwu.com/works/crystalline-monolith-pavilion/</link>
